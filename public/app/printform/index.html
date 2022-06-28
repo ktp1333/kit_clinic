@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en" data-ng-app="app" ng-controller="AppCtrl">
+
+<head>
+  <meta charset="utf-8" />
+  <title>printform form</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../../app/printform/css/div.css">
+  <link rel="stylesheet" href="../../app/printform/css/color_green.css">
+  <link rel="stylesheet" href="../../app/printform/css/font.css">
+  <script src="../../template/moment/moment.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/signature_pad/1.5.3/signature_pad.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+  <!-- <script src="../src/signature.js"></script> -->
+  <script src="../../bower_components/signaturejs/signature.js"></script>
+  <script src="../../app/printform/app.js"></script>
+  <script type="text/javascript" src="../../../node_modules/html2canvas/dist/html2canvas.min.js"></script>
+
+  <style>
+    html,
+    body {
+      height: 100%;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      border: 1px solid red;
+      padding: 10px 10px 40px 10px;
+      position: relative;
+      margin: 0 auto 0 auto;
+      height: 100%;
+    }
+
+    .container .signature {
+      border: 1px solid orange;
+      margin: 0 auto;
+      cursor: pointer;
+    }
+
+    .container .signature canvas {
+      border: 1px solid #999;
+      margin: 0 auto;
+      cursor: pointer;
+    }
+
+    .container .buttons {
+      position: absolute;
+      bottom: 10px;
+      left: 10px;
+    }
+
+    .container .sizes {
+      position: absolute;
+      bottom: 10px;
+      right: 10px;
+    }
+
+    .container .sizes input {
+      width: 4em;
+      text-align: center;
+    }
+
+    .result {
+      border: 1px solid blue;
+      margin: 30px auto 0 auto;
+      height: 220px;
+      width: 568px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- <img class="" src="app/image/printformform1.jpg" alt="No picture found"> -->
+  <!-- <label style="position: absolute;top:130px;left:60px;"> {{mHN}} </label> -->
+  <div id="printform" style="background-image: url('../app/printform/t_form.jpg');
+  background-repeat: no-repeat;    background-size: cover;
+  width: 210mm;height: 297mm;">
+  <label style="position: absolute;top:120px;left:100px;"> {{name}} </label>
+  <label style="position: absolute;top:380px;left:415px;"> {{name}} </label>
+  <!-- <label style="position: absolute;top:70px;left:530px;"> {{HN}} </label> -->
+  <label style="position: absolute;top:167px;left:200px;">  {{nationalid}} </label>
+  <!-- <label style="position: absolute;top:110px;left:600px;">  {{gender}} </label> -->
+  <!-- <label style="position: absolute;top:150px;left:100px;"> {{dob}} </label> -->
+  <!-- <label style="position: absolute;top:200px;left:100px;"> {{thaiDOB}} </label> -->
+  <label style="position: absolute;top:145px;left:100px;">  {{age}} </label>
+
+ 
+  <!-- <label style="position: absolute;top:130px;left:60px;"> {{EN}} </label> -->
+  <signature-pad accept="accept" clear="clear" height="70" width="250" dataurl="dataUrl"
+   style="position: absolute;top:280px;left:380px;background-color: rgb(243, 243, 243)">
+  </signature-pad>
+
+  <!-- <signature-pad accept="accept1" clear="clear1" height="50" width="150" dataurl="dataUrl1" 
+  style="position: absolute;top:950px;left:110px;background-color: rgb(241, 241, 241)">
+    </signature-pad> -->
+    </div>
+  <!-- <div class="container" ng-style="{'max-width': boundingBox.width + 'px', 'max-height': boundingBox.height + 'px'}"> -->
+
+
+  <div class="panel-heading align-c" flex layout="row" style="position: absolute;top:380px;left:700px;">
+    <button type="text" class="btn btn-default" ng-click="clearsig()">
+      Clear
+    </button>
+    <button ng-click="savedata(accept(),accept1())" class="btn btn-default" >save</button>
+  </div>
+
+
+  <!-- <div class="result" ng-show="signature"> -->
+    <!-- <img ng-src="{{ signature.dataUrl }}">
+    <img ng-src="{{ signature1.dataUrl }}"> -->
+    <!-- <img ng-src="{{ signatureResult }}"> -->
+  <!-- </div> -->
+</body>
+
+</html>

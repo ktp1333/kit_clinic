@@ -1,0 +1,89 @@
+<html>
+
+<head>
+  <title></title>
+</head>
+
+
+<body style="background-color: white;">
+
+
+  <form name="myForm" id="menu_form" class="form-horizontal" role="form">
+    <!-- <style type="text/css">
+     .ff1 {
+      padding-left: 60;
+      font-size: large;
+      color: #f7f5f2 !important;
+    }
+  </style> -->
+    <div layout="column" style="height: auto !important;" ng-cloak>
+      <section layout="row" flex>
+        <md-sidenav class="bgcolor100 width40vW" md-component-id="left" md-disable-backdrop md-whiteframe="7">
+          <md-toolbar class="">
+            <div flex layout="row" class="bgcolor200">
+              <button type="text" class="btn btn-primary " ng-click="hidemenu()">
+                <span class="glyphicon glyphicon-backward"></span>
+              </button>
+              <button type="text" class="btn btn-default" ng-click="gohome()" data-placement="bottom" title="Home"
+                onmouseenter="$(this).tooltip('show')">
+                <img class="square0" src="../app/image/home.png" alt="No picture found">
+              </button>
+
+
+              <button type="text" class="btn btn-default" ng-click="openORpage()" data-placement="bottom" title="show OR case"
+                onmouseenter="$(this).tooltip('show')">
+                <!-- <span class="glyphicon glyphicon-search"></span> -->case OR
+              </button>
+
+              <!-- </h1> -->
+            </div>
+          </md-toolbar>
+
+          <div class="panel-heading" flex layout="row">
+            <!-- <md-button ng-click="refreshmenu()" class="md-raised" style="width:100px;">
+                      <md-icon ng-bind="'fast_forward'"></md-icon>
+                    </md-button> -->
+            <!-- <button type="text" class="btn btn-primary" ng-click="refreshmenu()" data-placement="bottom" title="reload" onmouseenter="$(this).tooltip('show')">
+                <span class="glyphicon glyphicon-refresh"></span>
+              </button> -->
+            <input type="text" class="form-control" ng-model="vm.msearch" placeholder="search here" value="" autofocus>
+            <button type="text" class="btn btn-primary" ng-click="searchicd9(vm.msearch,1)" data-placement="bottom"
+              title="search ICD9" onmouseenter="$(this).tooltip('show')">
+              <span class="glyphicon glyphicon-search"></span>
+            </button>
+            <button type="text" class="btn btn-primary" ng-click="searchlocal(vm.msearch,1)" data-placement="bottom"
+              title="search local procedure" onmouseenter="$(this).tooltip('show')">
+              <span class="glyphicon glyphicon-list-alt"></span>
+            </button>
+          </div>
+          <div ng-show="showicd9">
+            <table class="font-1em margin15">
+              <tr ng-repeat="detail in icd9  | orderBy:'description'">
+                <td class="width100p">
+                  <div class="" flex layout="row">
+                    <!-- <div class="align-l marginleft15">
+                      <font color="red"> {{detail.description}}</font>
+                    </div> -->
+                    <button type="text" class="btn btn-default width50vW align-l" ng-click="showdetail(detail.code,detail.description)"
+                      data-placement="bottom" title="" onmouseenter="$(this).tooltip('show')">
+                      {{detail.description}} {{detail.code}} <span class="glyphicon glyphicon-play"></span>
+                    </button>
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </div>
+
+        </md-sidenav>
+
+
+        <!-- <md-content flex layout-padding>
+      
+        </md-content> -->
+      </section>
+    </div>
+  </form>
+
+</body>
+
+</html>

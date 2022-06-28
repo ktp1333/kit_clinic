@@ -1,0 +1,116 @@
+<html ng-app="myApp" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+  <title>Clinic</title>
+  <!-- <meta http-equiv="refresh" content="50" /> -->
+  <meta name="apple-mobile-web-app-title" content="Q" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="description" content="">
+  <meta name="viewport" content="width = device-width, initial-scale = 1.0, minimum-scale = 1, maximum-scale = 3, user-scalable = yes" />
+  <!-- <link rel="icon" sizes="192x192" href="chart.png"> -->
+
+  <script src="../../bower_components/underscore/underscore.js"></script>
+ <link rel="stylesheet" href="../../app/index_link/angular-material.min.css">
+
+  <script src="../../app/index_link/1.5.5/angular.min.js"></script>
+  <script src="../../app/index_link/1.5.5/angular-animate.min.js"></script>
+  <script src="../../app/index_link/1.5.5/angular-aria.min.js"></script>
+  <script src="../../app/index_link/1.5.5/angular-messages.min.js"></script>
+  <!-- Angular Material Library -->
+  <script src="../../app/index_link/1.1.0/angular-material.min.js"></script>
+
+  <!-- <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500"> -->
+  <link rel="stylesheet" href="../../app/search/assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../../app/search/assets/font-awesome/css/font-awesome.min.css">
+  <!-- <link rel="stylesheet" href="../../app/search/assets/css/form-elements.css"> -->
+  <!-- <link rel="stylesheet" href="../../app/search/assets/css/style.css"> -->
+  <script src="../../app/index_link/0.5.17/angular-filter.min.js"></script>
+  <script type="text/javascript" src="../../bower_components/async/dist/async.min.js"></script>
+
+  <script src="../../bower_components/angular/angular-route.min.js"></script>
+  <script src="../../app/search/assets/js/jquery-1.11.1.min.js"></script>
+  <script src="../../app/search/assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="../../app/search/assets/js/jquery.backstretch.min.js"></script>
+  <script src="../../app/search/assets/js/scripts.js"></script>
+  <script src="../../template/moment/moment.min.js"></script>
+  <script src="../../bower_components/xlsx/dist/xlsx.full.min.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="../../app/tabulator/dist/css/semantic-ui/tabulator_semantic-ui.min.css">
+  <link href="../../app/tabulator/dist/css/tabulator.min.css" rel="stylesheet">
+  <script type="text/javascript" src="../../app/tabulator/dist/js/tabulator_core.min.js"></script>
+  <script type="text/javascript" src="../../app/script/tabulator.min.js"></script>
+  <script type="text/javascript" src="../../app/tabulator/dist/js/modules/format.min.js"></script>
+
+  <link rel="stylesheet" href="../../app/a_clinic/css/div.css">
+  <link rel="stylesheet" href="../../app/a_clinic/css/color_green.css">
+  <link rel="stylesheet" href="../../app/a_clinic/css/font.css">
+  <link rel="stylesheet" href="../../app/a_clinic/css/w3.css">
+
+  <script src="../app/a_clinic/a_clinic.controller.js"></script>
+  <script src="../../bower_components/angular/angular.js"></script>
+  <script src="../../bower_components/qrcode/lib/qrcode.min.js"></script>
+  <script src="../../bower_components/angular-qr/angular-qr.min.js"></script>
+  <script src="../../node_modules/jspdf/dist/jspdf.min.js"></script>
+  <script type="text/javascript" src="../../node_modules/jspdf/dist/jspdf.umd.js"></script>
+  <script type="text/javascript" src="../../node_modules/jspdf-autotable/dist/jspdf.plugin.autotable.min.js"></script>
+  <script type="text/javascript" src="../../fonts/THSarabunNew/THSarabunNew-normal.js"></script>
+  <script type="text/javascript" src="../../bower_components/js-sha3/build/sha3.min.js"></script>
+  <script type="text/javascript" src="../../bower_components/angular-md5/angular-md5.min.js"></script>
+  <script type="text/javascript" src="../../app/app.factory.js"></script>
+</head>
+<style>
+  html {
+    height: 100%;
+  }
+
+  body {
+    height: 100%;
+  }
+
+  .content {
+    display: flex;
+    height: 100%;
+    flex-flow: column;
+  }
+
+  #section0,
+  #sectionscan,
+  #sectioncredit,
+  .contentheader {
+    flex: 0 1 auto;
+    /* 0 ตาม heigh ของ content */
+    flex-direction: column;
+  }
+
+  #sectionorder,
+  .contentdetail {
+    flex: 1 1 auto;
+    /* overflow: auto; */
+    overflow-y: hidden;
+    /*1 fill พื้นที่ที่เหลือ */
+  }
+
+  .contentfooter {
+    flex: 0 1 auto;
+    /* 0 ตาม heigh ของ content */
+  }
+</style>
+
+<body style="background-color: white;" ng-controller="a_clinicController as vm">
+
+  <div class="content">
+  <div ng-include="'../../app/a_clinic/a_menu.html'"></div>
+  <div class="contentdetail">
+  <div style="display:flex; flex-direction:row">
+    <!-- <div style=" width: 35%;" ng-include="'../../app/a_clinic/left.html'"  ng-show="left"></div>
+    <div style=" width: 63%;" ng-include="'../../app/a_clinic/right.html'" ng-show="right"></div> -->
+    <div style=" width: 100%;" ng-include="'../../app/a_clinic/mainform.html'"></div>
+  </div>
+  </div>
+</div>
+  <!-- <div style=" width: 27%;min-height: 48vH;max-height: 48vH;" ng-include="'../../app/page1/left.html'"></div>
+  <div style=" width: 72%;min-height: 48vH;max-height: 48vH;" ng-include="'../../app/page1/right.html'"></div> -->
+</body>
+
+</html>

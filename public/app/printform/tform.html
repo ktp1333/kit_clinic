@@ -1,0 +1,134 @@
+<html ng-app="myApp" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+  <title>Price estimate</title>
+  <!-- <meta http-equiv="refresh" content="50" /> -->
+  <meta name="apple-mobile-web-app-title" content="Q" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="description" content="">
+  <meta name="viewport"
+    content="width = device-width, initial-scale = 1.0, minimum-scale = 1, maximum-scale = 3, user-scalable = yes" />
+  <link rel="icon" sizes="192x192" href="chart.png">
+
+  <script src="../../bower_components/underscore/underscore.js"></script>
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-aria.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-messages.min.js"></script>
+  <!-- Angular Material Library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.js"></script>
+
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500">
+  <link rel="stylesheet" href="../../app/search/assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../../app/search/assets/font-awesome/css/font-awesome.min.css">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-filter/0.5.17/angular-filter.min.js"></script>
+
+  <script src="../../bower_components/angular/angular-route.min.js"></script>
+  <script src="../../app/search/assets/js/jquery-1.11.1.min.js"></script>
+  <script src="../../app/search/assets/bootstrap/js/bootstrap.min.js"></script>
+
+  <script src="../../app/search/assets/js/scripts.js"></script>
+  <script src="../../template/moment/moment.min.js"></script>
+
+  <link rel="stylesheet" href="../../app/printform/css/div.css">
+  <link rel="stylesheet" href="../../app/printform/css/color_green.css">
+  <link rel="stylesheet" href="../../app/printform/css/font.css">
+  <script src="../app/printform/eform.js"></script>
+  <script src="../../bower_components/angular/angular.js"></script>
+
+</head>
+
+<body ng-controller="eformCtrl as vm">
+
+  <div id="printableArea" style="background-image: url('../app/printform/t_form.jpg');
+  background-repeat: no-repeat;    background-size: cover;
+  width: 210mm;height: 297mm;">
+    <label style="position: absolute;top:30px;left:450px;">Date: {{cdate  | date : "dd/MM/y" }} </label>
+    <label style="position: absolute;top:50px;left:450px;">HN: {{HN}} </label>
+    <label style="position: absolute;top:70px;left:450px;">Name: {{patientname}}</label>
+    <label style="position: absolute;top:70px;left:620px;">Gender:{{gender}}</label>
+    <label style="position: absolute;top:90px;left:450px;">Date of birth: {{thaiDOB}}</label>
+    <label style="position: absolute;top:110px;left:450px;">Age:{{age}}</label>
+    <label style="position: absolute;top:130px;left:450px;">Physician:{{drname}}</label>
+
+    <label style="position: absolute;top:215px;left:100px;">{{relativename}}</label>
+    <label style="position: absolute;top:215px;left:480px;">{{patientname}}</label>
+    <label style="position: absolute;top:260px;left:95px;">{{drname}}</label>
+
+    <label style="position: absolute;top:285px;left:395px;">{{procedure}}</label>
+    <label style="position: absolute;top:310px;left:360px;">{{loo}}</label>
+    <label style="position: absolute;top:335px;left:180px;">{{los}}</label>
+    <label style="position: absolute;top:335px;left:330px;">{{ICUlos}}</label>
+    <label style="position: absolute;top:335px;left:460px;">{{wardlos}}</label>
+
+    <div ng-if="item1">
+      <label style="position: absolute;top:400px;left:110px;">{{item1}}</label>
+      <label style="position: absolute;top:400px;left:510px;">=</label>
+      <label style="position: absolute;top:400px;left:550px;">{{itemprice1 | number :0}}</label>
+      <label style="position: absolute;top:400px;left:650px;">Baht</label>
+    </div>
+    <div ng-if="item2">
+      <label style="position: absolute;top:420px;left:110px;">{{item2}}</label>
+      <label style="position: absolute;top:420px;left:510px;">=</label>
+      <label style="position: absolute;top:420px;left:550px;">{{itemprice2 | number :0}}</label>
+      <label style="position: absolute;top:420px;left:650px;">Baht</label>
+    </div>
+    <div ng-if="item3">
+      <label style="position: absolute;top:440px;left:110px;">{{item3}}</label>
+      <label style="position: absolute;top:440px;left:510px;">=</label>
+      <label style="position: absolute;top:440px;left:550px;">{{itemprice3 | number :0}}</label>
+      <label style="position: absolute;top:440px;left:650px;">Baht</label>
+    </div>
+    <div ng-if="item41">
+      <label style="position: absolute;top:460px;left:110px;">{{item41}}</label>
+      <label style="position: absolute;top:460px;left:510px;">=</label>
+      <label style="position: absolute;top:460px;left:550px;">{{itemprice41 | number :0}}</label>
+      <label style="position: absolute;top:460px;left:650px;">Baht</label>
+
+    </div>
+    <div ng-if="item42">
+      <label style="position: absolute;top:480px;left:110px;">{{item42}}</label>
+      <label style="position: absolute;top:480px;left:510px;">=</label>
+      <label style="position: absolute;top:480px;left:550px;">{{itemprice42 | number :0}}</label>
+      <label style="position: absolute;top:480px;left:650px;">Baht</label>
+    </div>
+    <div ng-if="item51">
+      <label style="position: absolute;top:500px;left:110px;">{{item51}}</label>
+      <label style="position: absolute;top:500px;left:510px;">=</label>
+      <label style="position: absolute;top:500px;left:550px;">{{itemprice51 | number :0}}</label>
+      <label style="position: absolute;top:500px;left:650px;">Baht</label>
+    </div>
+    <div ng-if="item52">
+      <label style="position: absolute;top:520px;left:110px;">{{item52}}</label>
+      <label style="position: absolute;top:520px;left:510px;">=</label>
+      <label style="position: absolute;top:520px;left:550px;">{{itemprice52 | number :0}}</label>
+      <label style="position: absolute;top:520px;left:650px;">Baht</label>
+    </div>
+    <div ng-if="item53">
+      <label style="position: absolute;top:540px;left:110px;">{{item53}}</label>
+      <label style="position: absolute;top:540px;left:510px;">=</label>
+      <label style="position: absolute;top:540px;left:550px;">{{itemprice53 | number :0}}</label>
+      <label style="position: absolute;top:540px;left:650px;">Baht</label>
+    </div>
+
+    <label style="position: absolute;top:580px;left:110px;">Total (+/- 20%)</label>
+    <label style="position: absolute;top:580px;left:400px;">=</label>
+    <label style="position: absolute;top:580px;left:450px;">{{gtotal1 | number :0}} - {{gtotal2 | number :0}}</label>
+    <label style="position: absolute;top:580px;left:650px;">Baht</label>
+  </div>
+
+  <div class="panel-heading align-c" flex layout="row" style="position: absolute;top:380px;left:800px;">
+    <button type="text" class="btn btn-default" ng-click="PrintMe()">
+      Print
+    </button>
+    <!-- <button ng-click="savedata(accept(),accept1())" class="btn btn-default">save</button> -->
+  </div>
+
+</body>
+
+</html>

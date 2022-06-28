@@ -1,0 +1,2537 @@
+[
+	{
+		"valuedescription": "MISS",
+		"statusflag": "A",
+		"code": "4"
+	},
+	{
+		"valuedescription": "MR.",
+		"statusflag": "A",
+		"code": "3"
+	},
+	{
+		"valuedescription": "MRS.",
+		"statusflag": "A",
+		"code": "5"
+	},
+	{
+		"valuedescription": "mstr",
+		"statusflag": "A",
+		"code": "1"
+	},
+	{
+		"valuedescription": "ก.ญ.",
+		"statusflag": "A",
+		"code": "688"
+	},
+	{
+		"valuedescription": "ก.ต.",
+		"statusflag": "A",
+		"code": "691"
+	},
+	{
+		"valuedescription": "ก.ท.",
+		"statusflag": "A",
+		"code": "690"
+	},
+	{
+		"valuedescription": "ก.อ.",
+		"statusflag": "A",
+		"code": "689"
+	},
+	{
+		"valuedescription": "ขุน",
+		"statusflag": "A",
+		"code": "125"
+	},
+	{
+		"valuedescription": "คุณ",
+		"statusflag": "A",
+		"code": "129"
+	},
+	{
+		"valuedescription": "คุณพระ",
+		"statusflag": "A",
+		"code": "151"
+	},
+	{
+		"valuedescription": "คุณหญิง",
+		"statusflag": "A",
+		"code": "130"
+	},
+	{
+		"valuedescription": "จ.ต.",
+		"statusflag": "A",
+		"code": "376"
+	},
+	{
+		"valuedescription": "จ.ต.",
+		"statusflag": "A",
+		"code": "525"
+	},
+	{
+		"valuedescription": "จ.ท.",
+		"statusflag": "A",
+		"code": "375"
+	},
+	{
+		"valuedescription": "จ.ท.",
+		"statusflag": "A",
+		"code": "524"
+	},
+	{
+		"valuedescription": "จ.ส.ต.",
+		"statusflag": "A",
+		"code": "222"
+	},
+	{
+		"valuedescription": "จ.ส.ต.",
+		"statusflag": "A",
+		"code": "674"
+	},
+	{
+		"valuedescription": "จ.ส.ต.ม.ร.ว.",
+		"statusflag": "A",
+		"code": "283"
+	},
+	{
+		"valuedescription": "จ.ส.ต.ม.ล.",
+		"statusflag": "A",
+		"code": "258"
+	},
+	{
+		"valuedescription": "จ.ส.ท.",
+		"statusflag": "A",
+		"code": "221"
+	},
+	{
+		"valuedescription": "จ.ส.อ.",
+		"statusflag": "A",
+		"code": "220"
+	},
+	{
+		"valuedescription": "จ.ส.อ.พิเศษ",
+		"statusflag": "A",
+		"code": "294"
+	},
+	{
+		"valuedescription": "จ.ส.อ.ม.ร.ว.",
+		"statusflag": "A",
+		"code": "241"
+	},
+	{
+		"valuedescription": "จ.ส.อ.ม.ล.",
+		"statusflag": "A",
+		"code": "261"
+	},
+	{
+		"valuedescription": "จ.อ.",
+		"statusflag": "A",
+		"code": "374"
+	},
+	{
+		"valuedescription": "จ.อ.",
+		"statusflag": "A",
+		"code": "523"
+	},
+	{
+		"valuedescription": "จอมพล",
+		"statusflag": "A",
+		"code": "272"
+	},
+	{
+		"valuedescription": "จ่าสำรอง",
+		"statusflag": "A",
+		"code": "167"
+	},
+	{
+		"valuedescription": "ซิสเตอร์",
+		"statusflag": "A",
+		"code": "153"
+	},
+	{
+		"valuedescription": "ด.ช.",
+		"statusflag": "A",
+		"code": "001"
+	},
+	{
+		"valuedescription": "ด.ญ.",
+		"statusflag": "A",
+		"code": "002"
+	},
+	{
+		"valuedescription": "ด.ต.",
+		"statusflag": "A",
+		"code": "673"
+	},
+	{
+		"valuedescription": "ด.ต.ม.ล.",
+		"statusflag": "A",
+		"code": "716"
+	},
+	{
+		"valuedescription": "ดร.",
+		"statusflag": "A",
+		"code": "140"
+	},
+	{
+		"valuedescription": "ทญ.",
+		"statusflag": "A",
+		"code": "137"
+	},
+	{
+		"valuedescription": "ทนพญ.",
+		"statusflag": "A",
+		"code": "964"
+	},
+	{
+		"valuedescription": "ทพ.",
+		"statusflag": "A",
+		"code": "136"
+	},
+	{
+		"valuedescription": "ทูลกระหม่อม",
+		"statusflag": "A",
+		"code": "164"
+	},
+	{
+		"valuedescription": "ท่านผู้หญิง",
+		"statusflag": "A",
+		"code": "150"
+	},
+	{
+		"valuedescription": "ท่านผู้หญิง ม.ร.ว.",
+		"statusflag": "A",
+		"code": "287"
+	},
+	{
+		"valuedescription": "ท่านผู้หญิง ม.ล.",
+		"statusflag": "A",
+		"code": "131"
+	},
+	{
+		"valuedescription": "ท้าว",
+		"statusflag": "A",
+		"code": "148"
+	},
+	{
+		"valuedescription": "น.ช.",
+		"statusflag": "A",
+		"code": "007"
+	},
+	{
+		"valuedescription": "น.ช.จ.ส.อ.",
+		"statusflag": "A",
+		"code": "009"
+	},
+	{
+		"valuedescription": "น.ช.จ.อ.",
+		"statusflag": "A",
+		"code": "010"
+	},
+	{
+		"valuedescription": "น.ช.พลฯ.",
+		"statusflag": "A",
+		"code": "011"
+	},
+	{
+		"valuedescription": "น.ช.ม.ล.",
+		"statusflag": "A",
+		"code": "006"
+	},
+	{
+		"valuedescription": "น.ช.ร.ต.",
+		"statusflag": "A",
+		"code": "012"
+	},
+	{
+		"valuedescription": "น.ญ.",
+		"statusflag": "A",
+		"code": "008"
+	},
+	{
+		"valuedescription": "น.ต.",
+		"statusflag": "A",
+		"code": "363"
+	},
+	{
+		"valuedescription": "น.ต.",
+		"statusflag": "A",
+		"code": "512"
+	},
+	{
+		"valuedescription": "น.ต.น.พ.",
+		"statusflag": "A",
+		"code": "395"
+	},
+	{
+		"valuedescription": "น.ต.พ.ญ.",
+		"statusflag": "A",
+		"code": "391"
+	},
+	{
+		"valuedescription": "น.ต.ม.จ.",
+		"statusflag": "A",
+		"code": "383"
+	},
+	{
+		"valuedescription": "น.ต.ม.ร.ว.",
+		"statusflag": "A",
+		"code": "387"
+	},
+	{
+		"valuedescription": "น.ต.ม.ล.",
+		"statusflag": "A",
+		"code": "389"
+	},
+	{
+		"valuedescription": "น.ท.",
+		"statusflag": "A",
+		"code": "361"
+	},
+	{
+		"valuedescription": "น.ท.",
+		"statusflag": "A",
+		"code": "510"
+	},
+	{
+		"valuedescription": "น.ท.ม.จ.",
+		"statusflag": "A",
+		"code": "381"
+	},
+	{
+		"valuedescription": "น.ท.ม.ร.ว.",
+		"statusflag": "A",
+		"code": "386"
+	},
+	{
+		"valuedescription": "น.ท.ม.ล.",
+		"statusflag": "A",
+		"code": "388"
+	},
+	{
+		"valuedescription": "น.พ.อ.",
+		"statusflag": "A",
+		"code": "529"
+	},
+	{
+		"valuedescription": "น.ส.",
+		"statusflag": "A",
+		"code": "004"
+	},
+	{
+		"valuedescription": "น.อ.",
+		"statusflag": "A",
+		"code": "359"
+	},
+	{
+		"valuedescription": "น.อ.",
+		"statusflag": "A",
+		"code": "508"
+	},
+	{
+		"valuedescription": "น.อ.พิเศษ",
+		"statusflag": "A",
+		"code": "357"
+	},
+	{
+		"valuedescription": "น.อ.พิเศษ",
+		"statusflag": "A",
+		"code": "506"
+	},
+	{
+		"valuedescription": "น.อ.ม.จ.",
+		"statusflag": "A",
+		"code": "382"
+	},
+	{
+		"valuedescription": "น.อ.ม.ร.ว.",
+		"statusflag": "A",
+		"code": "385"
+	},
+	{
+		"valuedescription": "น.อ.ม.ล.",
+		"statusflag": "A",
+		"code": "540"
+	},
+	{
+		"valuedescription": "น.อ.หลวง",
+		"statusflag": "A",
+		"code": "392"
+	},
+	{
+		"valuedescription": "นจอ.",
+		"statusflag": "A",
+		"code": "528"
+	},
+	{
+		"valuedescription": "นนร.",
+		"statusflag": "A",
+		"code": "227"
+	},
+	{
+		"valuedescription": "นนร.",
+		"statusflag": "A",
+		"code": "378"
+	},
+	{
+		"valuedescription": "นนร.ม.ล.",
+		"statusflag": "A",
+		"code": "259"
+	},
+	{
+		"valuedescription": "นนส.",
+		"statusflag": "A",
+		"code": "228"
+	},
+	{
+		"valuedescription": "นนอ.",
+		"statusflag": "A",
+		"code": "527"
+	},
+	{
+		"valuedescription": "นพ.",
+		"statusflag": "A",
+		"code": "134"
+	},
+	{
+		"valuedescription": "นพต.",
+		"statusflag": "A",
+		"code": "680"
+	},
+	{
+		"valuedescription": "นรจ.",
+		"statusflag": "A",
+		"code": "379"
+	},
+	{
+		"valuedescription": "นรต.",
+		"statusflag": "A",
+		"code": "678"
+	},
+	{
+		"valuedescription": "นรต.ม.จ.",
+		"statusflag": "A",
+		"code": "705"
+	},
+	{
+		"valuedescription": "นรต.ม.ล.",
+		"statusflag": "A",
+		"code": "714"
+	},
+	{
+		"valuedescription": "นสต.",
+		"statusflag": "A",
+		"code": "679"
+	},
+	{
+		"valuedescription": "นักบวช",
+		"statusflag": "A",
+		"code": "864"
+	},
+	{
+		"valuedescription": "นาง",
+		"statusflag": "A",
+		"code": "005"
+	},
+	{
+		"valuedescription": "นาย",
+		"statusflag": "A",
+		"code": "003"
+	},
+	{
+		"valuedescription": "บริษัท",
+		"statusflag": "A",
+		"code": "998"
+	},
+	{
+		"valuedescription": "บาทหลวง",
+		"statusflag": "A",
+		"code": "838"
+	},
+	{
+		"valuedescription": "ผศ.",
+		"statusflag": "A",
+		"code": "141"
+	},
+	{
+		"valuedescription": "ผศ.นพ.",
+		"statusflag": "A",
+		"code": "965"
+	},
+	{
+		"valuedescription": "พ.จ.ต.",
+		"statusflag": "A",
+		"code": "373"
+	},
+	{
+		"valuedescription": "พ.จ.อ.",
+		"statusflag": "A",
+		"code": "371"
+	},
+	{
+		"valuedescription": "พ.จ.อ.ม.ล.",
+		"statusflag": "A",
+		"code": "390"
+	},
+	{
+		"valuedescription": "พ.ญ.คุณหญิง",
+		"statusflag": "A",
+		"code": "133"
+	},
+	{
+		"valuedescription": "พ.ต.",
+		"statusflag": "A",
+		"code": "212"
+	},
+	{
+		"valuedescription": "พ.ต.คุณหญิง",
+		"statusflag": "A",
+		"code": "282"
+	},
+	{
+		"valuedescription": "พ.ต.ต.",
+		"statusflag": "A",
+		"code": "665"
+	},
+	{
+		"valuedescription": "พ.ต.ต.นพ.",
+		"statusflag": "A",
+		"code": "722"
+	},
+	{
+		"valuedescription": "พ.ต.ต.ม.ร.ว.",
+		"statusflag": "A",
+		"code": "707"
+	},
+	{
+		"valuedescription": "พ.ต.ต.ม.ล.",
+		"statusflag": "A",
+		"code": "717"
+	},
+	{
+		"valuedescription": "พ.ต.ต.หลวง",
+		"statusflag": "A",
+		"code": "724"
+	},
+	{
+		"valuedescription": "พ.ต.ท.",
+		"statusflag": "A",
+		"code": "663"
+	},
+	{
+		"valuedescription": "พ.ต.ท.น.พ.",
+		"statusflag": "A",
+		"code": "719"
+	},
+	{
+		"valuedescription": "พ.ต.ท.ม.จ.",
+		"statusflag": "A",
+		"code": "703"
+	},
+	{
+		"valuedescription": "พ.ต.ท.ม.ร.ว.",
+		"statusflag": "A",
+		"code": "708"
+	},
+	{
+		"valuedescription": "พ.ต.ท.ม.ล.",
+		"statusflag": "A",
+		"code": "713"
+	},
+	{
+		"valuedescription": "พ.ต.น.พ.",
+		"statusflag": "A",
+		"code": "265"
+	},
+	{
+		"valuedescription": "พ.ต.พระเจ้าวรวงศ์เธอพระองค์",
+		"statusflag": "A",
+		"code": "286"
+	},
+	{
+		"valuedescription": "พ.ต.พระเจ้าวรวงศ์เธอพระองค์เจ้า",
+		"statusflag": "A",
+		"code": "274"
+	},
+	{
+		"valuedescription": "พ.ต.ม.ร.ว.",
+		"statusflag": "A",
+		"code": "237"
+	},
+	{
+		"valuedescription": "พ.ต.ม.ล.",
+		"statusflag": "A",
+		"code": "255"
+	},
+	{
+		"valuedescription": "พ.ต.หลวง",
+		"statusflag": "A",
+		"code": "276"
+	},
+	{
+		"valuedescription": "พ.ต.อ.",
+		"statusflag": "A",
+		"code": "661"
+	},
+	{
+		"valuedescription": "พ.ต.อ. (พิเศษ)",
+		"statusflag": "A",
+		"code": "659"
+	},
+	{
+		"valuedescription": "พ.ต.อ.ดร.",
+		"statusflag": "A",
+		"code": "726"
+	},
+	{
+		"valuedescription": "พ.ต.อ.น.พ.",
+		"statusflag": "A",
+		"code": "723"
+	},
+	{
+		"valuedescription": "พ.ต.อ.ม.จ.",
+		"statusflag": "A",
+		"code": "704"
+	},
+	{
+		"valuedescription": "พ.ต.อ.ม.ร.ว.",
+		"statusflag": "A",
+		"code": "709"
+	},
+	{
+		"valuedescription": "พ.ต.อ.ม.ล.",
+		"statusflag": "A",
+		"code": "712"
+	},
+	{
+		"valuedescription": "พ.ต.อ.หญิง ท่านผู้หญิง",
+		"statusflag": "A",
+		"code": "729"
+	},
+	{
+		"valuedescription": "พ.ท.",
+		"statusflag": "A",
+		"code": "210"
+	},
+	{
+		"valuedescription": "พ.ท.คุณหญิง",
+		"statusflag": "A",
+		"code": "289"
+	},
+	{
+		"valuedescription": "พ.ท.น.พ.",
+		"statusflag": "A",
+		"code": "271"
+	},
+	{
+		"valuedescription": "พ.ท.ม.จ.",
+		"statusflag": "A",
+		"code": "235"
+	},
+	{
+		"valuedescription": "พ.ท.ม.ร.ว.",
+		"statusflag": "A",
+		"code": "238"
+	},
+	{
+		"valuedescription": "พ.ท.ม.ล.",
+		"statusflag": "A",
+		"code": "257"
+	},
+	{
+		"valuedescription": "พ.ท.หลวง",
+		"statusflag": "A",
+		"code": "273"
+	},
+	{
+		"valuedescription": "พ.อ.",
+		"statusflag": "A",
+		"code": "208"
+	},
+	{
+		"valuedescription": "พ.อ.(พิเศษ)",
+		"statusflag": "A",
+		"code": "206"
+	},
+	{
+		"valuedescription": "พ.อ.(พิเศษ)ม.ร.ว.",
+		"statusflag": "A",
+		"code": "246"
+	},
+	{
+		"valuedescription": "พ.อ.ต.",
+		"statusflag": "A",
+		"code": "522"
+	},
+	{
+		"valuedescription": "พ.อ.ท.",
+		"statusflag": "A",
+		"code": "521"
+	},
+	{
+		"valuedescription": "พ.อ.น.พ.",
+		"statusflag": "A",
+		"code": "267"
+	},
+	{
+		"valuedescription": "พ.อ.ม.จ.",
+		"statusflag": "A",
+		"code": "236"
+	},
+	{
+		"valuedescription": "พ.อ.ม.ร.ว.",
+		"statusflag": "A",
+		"code": "240"
+	},
+	{
+		"valuedescription": "พ.อ.ม.ล.",
+		"statusflag": "A",
+		"code": "256"
+	},
+	{
+		"valuedescription": "พ.อ.หญิง คุณหญิง",
+		"statusflag": "A",
+		"code": "293"
+	},
+	{
+		"valuedescription": "พ.อ.อ.",
+		"statusflag": "A",
+		"code": "520"
+	},
+	{
+		"valuedescription": "พ.อ.อ.ม.ร.ว.",
+		"statusflag": "A",
+		"code": "530"
+	},
+	{
+		"valuedescription": "พ.อ.อ.ม.ล.",
+		"statusflag": "A",
+		"code": "534"
+	},
+	{
+		"valuedescription": "พจ.",
+		"statusflag": "A",
+		"code": "960"
+	},
+	{
+		"valuedescription": "พญ.",
+		"statusflag": "A",
+		"code": "135"
+	},
+	{
+		"valuedescription": "พระ",
+		"statusflag": "A",
+		"code": "831"
+	},
+	{
+		"valuedescription": "พระครู",
+		"statusflag": "A",
+		"code": "818"
+	},
+	{
+		"valuedescription": "พระครูกาญจนยติกิจ",
+		"statusflag": "A",
+		"code": "917"
+	},
+	{
+		"valuedescription": "พระครูกิตติกาญจนวงศ์",
+		"statusflag": "A",
+		"code": "900"
+	},
+	{
+		"valuedescription": "พระครูจันทเขมคุณ",
+		"statusflag": "A",
+		"code": "922"
+	},
+	{
+		"valuedescription": "พระครูจารุธรรมกิตติ์",
+		"statusflag": "A",
+		"code": "895"
+	},
+	{
+		"valuedescription": "พระครูถาวรสันติคุณ",
+		"statusflag": "A",
+		"code": "884"
+	},
+	{
+		"valuedescription": "พระครูธรรมธร",
+		"statusflag": "A",
+		"code": "820"
+	},
+	{
+		"valuedescription": "พระครูนิเทศปิยธรรม",
+		"statusflag": "A",
+		"code": "950"
+	},
+	{
+		"valuedescription": "พระครูบรรณวัตร",
+		"statusflag": "A",
+		"code": "926"
+	},
+	{
+		"valuedescription": "พระครูบวรรัตนวงศ์",
+		"statusflag": "A",
+		"code": "918"
+	},
+	{
+		"valuedescription": "พระครูปภัสสราธิคุณ",
+		"statusflag": "A",
+		"code": "886"
+	},
+	{
+		"valuedescription": "พระครูประกาศพุทธพากย์",
+		"statusflag": "A",
+		"code": "903"
+	},
+	{
+		"valuedescription": "พระครูประโชติธรรมรัตน์",
+		"statusflag": "A",
+		"code": "894"
+	},
+	{
+		"valuedescription": "พระครูประโชติธรรมานุกูล",
+		"statusflag": "A",
+		"code": "953"
+	},
+	{
+		"valuedescription": "พระครูปลัด",
+		"statusflag": "A",
+		"code": "812"
+	},
+	{
+		"valuedescription": "พระครูปลัดวิมลสิริวัฒน์",
+		"statusflag": "A",
+		"code": "815"
+	},
+	{
+		"valuedescription": "พระครูปลัดสัมพิพัฒนวิริยาจารย์",
+		"statusflag": "A",
+		"code": "901"
+	},
+	{
+		"valuedescription": "พระครูปลัดสุวัฒนญาณคุณ",
+		"statusflag": "A",
+		"code": "813"
+	},
+	{
+		"valuedescription": "พระครูปลัดอาจารย์วัฒน์",
+		"statusflag": "A",
+		"code": "814"
+	},
+	{
+		"valuedescription": "พระครูปัญญาภรณโสภณ",
+		"statusflag": "A",
+		"code": "854"
+	},
+	{
+		"valuedescription": "พระครูปิยสีลสาร",
+		"statusflag": "A",
+		"code": "948"
+	},
+	{
+		"valuedescription": "พระครูผาสุกวิหารการ",
+		"statusflag": "A",
+		"code": "915"
+	},
+	{
+		"valuedescription": "พระครูพรหมวีรสุนทร",
+		"statusflag": "A",
+		"code": "874"
+	},
+	{
+		"valuedescription": "พระครูพัฒนสารคุณ",
+		"statusflag": "A",
+		"code": "872"
+	},
+	{
+		"valuedescription": "พระครูพิทักษ์พรหมรังษี",
+		"statusflag": "A",
+		"code": "896"
+	},
+	{
+		"valuedescription": "พระครูพิบูลสมณธรรม",
+		"statusflag": "A",
+		"code": "606"
+	},
+	{
+		"valuedescription": "พระครูพิบูลโชติธรรม",
+		"statusflag": "A",
+		"code": "911"
+	},
+	{
+		"valuedescription": "พระครูพิพัฒน์ชินวงศ์",
+		"statusflag": "A",
+		"code": "955"
+	},
+	{
+		"valuedescription": "พระครูพิพัฒน์บรรณกิจ",
+		"statusflag": "A",
+		"code": "870"
+	},
+	{
+		"valuedescription": "พระครูพิพิธวรคุณ",
+		"statusflag": "A",
+		"code": "880"
+	},
+	{
+		"valuedescription": "พระครูพิพิธอุดมคุณ",
+		"statusflag": "A",
+		"code": "920"
+	},
+	{
+		"valuedescription": "พระครูพิศิษฎ์ศาสนการ",
+		"statusflag": "A",
+		"code": "946"
+	},
+	{
+		"valuedescription": "พระครูพุทธิธรรมานุศาสน์",
+		"statusflag": "A",
+		"code": "898"
+	},
+	{
+		"valuedescription": "พระครูภาวนาวรกิจ",
+		"statusflag": "A",
+		"code": "957"
+	},
+	{
+		"valuedescription": "พระครูวชิรวุฒิกร",
+		"statusflag": "A",
+		"code": "916"
+	},
+	{
+		"valuedescription": "พระครูวรสังฆกิจ",
+		"statusflag": "A",
+		"code": "887"
+	},
+	{
+		"valuedescription": "พระครูวัชรสีลาภรณ์",
+		"statusflag": "A",
+		"code": "869"
+	},
+	{
+		"valuedescription": "พระครูวิจารณ์สังฆกิจ",
+		"statusflag": "A",
+		"code": "876"
+	},
+	{
+		"valuedescription": "พระครูวิชิตพัฒนคุณ",
+		"statusflag": "A",
+		"code": "910"
+	},
+	{
+		"valuedescription": "พระครูวินัยธร",
+		"statusflag": "A",
+		"code": "860"
+	},
+	{
+		"valuedescription": "พระครูวิบูลกาญจนกิจ",
+		"statusflag": "A",
+		"code": "941"
+	},
+	{
+		"valuedescription": "พระครูวิบูลธรรมกิจ",
+		"statusflag": "A",
+		"code": "871"
+	},
+	{
+		"valuedescription": "พระครูวิบูลย์ธรรมศาสก์",
+		"statusflag": "A",
+		"code": "959"
+	},
+	{
+		"valuedescription": "พระครูวิมลญาณโสภณ",
+		"statusflag": "A",
+		"code": "853"
+	},
+	{
+		"valuedescription": "พระครูวิมลภาณ",
+		"statusflag": "A",
+		"code": "821"
+	},
+	{
+		"valuedescription": "พระครูวิมลสารวิสุทธิ์",
+		"statusflag": "A",
+		"code": "877"
+	},
+	{
+		"valuedescription": "พระครูวิศาลปัญญาคุณ",
+		"statusflag": "A",
+		"code": "867"
+	},
+	{
+		"valuedescription": "พระครูวิสุทธาจาร",
+		"statusflag": "A",
+		"code": "927"
+	},
+	{
+		"valuedescription": "พระครูวิสุทธาจารวิมล",
+		"statusflag": "A",
+		"code": "885"
+	},
+	{
+		"valuedescription": "พระครูวิสุทธิ์กิจจานุกูล",
+		"statusflag": "A",
+		"code": "951"
+	},
+	{
+		"valuedescription": "พระครูศรัทธาธรรมโสภณ",
+		"statusflag": "A",
+		"code": "932"
+	},
+	{
+		"valuedescription": "พระครูศรีธวัชคุณาภรณ์",
+		"statusflag": "A",
+		"code": "936"
+	},
+	{
+		"valuedescription": "พระครูศรีศาสนคุณ",
+		"statusflag": "A",
+		"code": "958"
+	},
+	{
+		"valuedescription": "พระครูศัพทมงคล",
+		"statusflag": "A",
+		"code": "822"
+	},
+	{
+		"valuedescription": "พระครูศีลกันตาภรณ์",
+		"statusflag": "A",
+		"code": "902"
+	},
+	{
+		"valuedescription": "พระครูศีลสารวิสุทธิ์",
+		"statusflag": "A",
+		"code": "923"
+	},
+	{
+		"valuedescription": "พระครูสถิตบุญวัฒน์",
+		"statusflag": "A",
+		"code": "949"
+	},
+	{
+		"valuedescription": "พระครูสมุทรขันตยาภรณ์",
+		"statusflag": "A",
+		"code": "956"
+	},
+	{
+		"valuedescription": "พระครูสมุห์",
+		"statusflag": "A",
+		"code": "817"
+	},
+	{
+		"valuedescription": "พระครูสังฆบริรักษ์",
+		"statusflag": "A",
+		"code": "933"
+	},
+	{
+		"valuedescription": "พระครูสังฆภารวิชัย",
+		"statusflag": "A",
+		"code": "823"
+	},
+	{
+		"valuedescription": "พระครูสังฆรักษ์",
+		"statusflag": "A",
+		"code": "824"
+	},
+	{
+		"valuedescription": "พระครูสังฆวิชัย",
+		"statusflag": "A",
+		"code": "825"
+	},
+	{
+		"valuedescription": "พระครูสังฆวิชิต",
+		"statusflag": "A",
+		"code": "826"
+	},
+	{
+		"valuedescription": "พระครูสิริคุณารักษ์",
+		"statusflag": "A",
+		"code": "909"
+	},
+	{
+		"valuedescription": "พระครูสิริชัยสถิต",
+		"statusflag": "A",
+		"code": "882"
+	},
+	{
+		"valuedescription": "พระครูสุทัศน์ธรรมาภิรม",
+		"statusflag": "A",
+		"code": "905"
+	},
+	{
+		"valuedescription": "พระครูสุธรรมโสภิต",
+		"statusflag": "A",
+		"code": "924"
+	},
+	{
+		"valuedescription": "พระครูสุนทรคณาภิรักษ์",
+		"statusflag": "A",
+		"code": "892"
+	},
+	{
+		"valuedescription": "พระครูสุนทรปภากร",
+		"statusflag": "A",
+		"code": "881"
+	},
+	{
+		"valuedescription": "พระครูสุนทรวรธัช",
+		"statusflag": "A",
+		"code": "939"
+	},
+	{
+		"valuedescription": "พระครูสุนทรวรวัฒน์",
+		"statusflag": "A",
+		"code": "928"
+	},
+	{
+		"valuedescription": "พระครูสุนทรสมณคุณ",
+		"statusflag": "A",
+		"code": "907"
+	},
+	{
+		"valuedescription": "พระครูสุพจน์วรคุณ",
+		"statusflag": "A",
+		"code": "943"
+	},
+	{
+		"valuedescription": "พระครูสุพจน์วราภรณ์",
+		"statusflag": "A",
+		"code": "890"
+	},
+	{
+		"valuedescription": "พระครูสุวรรณพัฒนคุณ",
+		"statusflag": "A",
+		"code": "873"
+	},
+	{
+		"valuedescription": "พระครูอมรธรรมนายก",
+		"statusflag": "A",
+		"code": "945"
+	},
+	{
+		"valuedescription": "พระครูอมรวิสุทธิคุณ",
+		"statusflag": "A",
+		"code": "904"
+	},
+	{
+		"valuedescription": "พระครูอาทรโพธิกิจ",
+		"statusflag": "A",
+		"code": "940"
+	},
+	{
+		"valuedescription": "พระครูอุปถัมภ์นันทกิจ",
+		"statusflag": "A",
+		"code": "875"
+	},
+	{
+		"valuedescription": "พระครูอุปถัมภ์วชิโรภาส",
+		"statusflag": "A",
+		"code": "906"
+	},
+	{
+		"valuedescription": "พระครูอุเทศธรรมนิวิฐ",
+		"statusflag": "A",
+		"code": "925"
+	},
+	{
+		"valuedescription": "พระครูเกษมธรรมานันท์",
+		"statusflag": "A",
+		"code": "883"
+	},
+	{
+		"valuedescription": "พระครูเมธีธรรมานุยุต",
+		"statusflag": "A",
+		"code": "947"
+	},
+	{
+		"valuedescription": "พระครูโกวิทธรรมโสภณ",
+		"statusflag": "A",
+		"code": "889"
+	},
+	{
+		"valuedescription": "พระครูโสภณคุณานุกูล",
+		"statusflag": "A",
+		"code": "914"
+	},
+	{
+		"valuedescription": "พระครูโสภณปริยัติคุณ",
+		"statusflag": "A",
+		"code": "855"
+	},
+	{
+		"valuedescription": "พระครูโสภณสมุทรคุณ",
+		"statusflag": "A",
+		"code": "930"
+	},
+	{
+		"valuedescription": "พระครูโสภิตวัชรกิจ",
+		"statusflag": "A",
+		"code": "937"
+	},
+	{
+		"valuedescription": "พระครูโอภาสธรรมพิมล",
+		"statusflag": "A",
+		"code": "879"
+	},
+	{
+		"valuedescription": "พระครูโอภาสสมาจาร",
+		"statusflag": "A",
+		"code": "935"
+	},
+	{
+		"valuedescription": "พระครูใบฎีกา",
+		"statusflag": "A",
+		"code": "819"
+	},
+	{
+		"valuedescription": "พระครูไพบูลชัยสิทธิ์",
+		"statusflag": "A",
+		"code": "888"
+	},
+	{
+		"valuedescription": "พระครูไพศาลศุภกิจ",
+		"statusflag": "A",
+		"code": "878"
+	},
+	{
+		"valuedescription": "พระครูไพโรจน์อริญชัย",
+		"statusflag": "A",
+		"code": "891"
+	},
+	{
+		"valuedescription": "พระคาร์ดินัล",
+		"statusflag": "A",
+		"code": "835"
+	},
+	{
+		"valuedescription": "พระคุณเจ้า",
+		"statusflag": "A",
+		"code": "837"
+	},
+	{
+		"valuedescription": "พระญาณ",
+		"statusflag": "A",
+		"code": "847"
+	},
+	{
+		"valuedescription": "พระญาณโศภณ",
+		"statusflag": "A",
+		"code": "843"
+	},
+	{
+		"valuedescription": "พระธรรม",
+		"statusflag": "A",
+		"code": "849"
+	},
+	{
+		"valuedescription": "พระธรรมเมธาจารย์",
+		"statusflag": "A",
+		"code": "899"
+	},
+	{
+		"valuedescription": "พระธรรมโสภณ",
+		"statusflag": "A",
+		"code": "851"
+	},
+	{
+		"valuedescription": "พระบาทสมเด็จพระเจ้าอยู่หัว",
+		"statusflag": "A",
+		"code": "100"
+	},
+	{
+		"valuedescription": "พระปริยัติ",
+		"statusflag": "A",
+		"code": "828"
+	},
+	{
+		"valuedescription": "พระปลัด",
+		"statusflag": "A",
+		"code": "833"
+	},
+	{
+		"valuedescription": "พระปลัดขวา",
+		"statusflag": "A",
+		"code": "810"
+	},
+	{
+		"valuedescription": "พระปลัดซ้าย",
+		"statusflag": "A",
+		"code": "811"
+	},
+	{
+		"valuedescription": "พระปิฎก",
+		"statusflag": "A",
+		"code": "827"
+	},
+	{
+		"valuedescription": "พระพรหมมุนี",
+		"statusflag": "A",
+		"code": "908"
+	},
+	{
+		"valuedescription": "พระพรหมวชิรญาณ",
+		"statusflag": "A",
+		"code": "942"
+	},
+	{
+		"valuedescription": "พระพิศาลสารคุณ",
+		"statusflag": "A",
+		"code": "912"
+	},
+	{
+		"valuedescription": "พระมหา",
+		"statusflag": "A",
+		"code": "839"
+	},
+	{
+		"valuedescription": "พระมหานายก",
+		"statusflag": "A",
+		"code": "934"
+	},
+	{
+		"valuedescription": "พระยา",
+		"statusflag": "A",
+		"code": "123"
+	},
+	{
+		"valuedescription": "พระรัตน",
+		"statusflag": "A",
+		"code": "865"
+	},
+	{
+		"valuedescription": "พระรัตนมงคลวิสุทธ์",
+		"statusflag": "A",
+		"code": "913"
+	},
+	{
+		"valuedescription": "พระราช",
+		"statusflag": "A",
+		"code": "808"
+	},
+	{
+		"valuedescription": "พระราชญาณ",
+		"statusflag": "A",
+		"code": "857"
+	},
+	{
+		"valuedescription": "พระราชบัณฑิต",
+		"statusflag": "A",
+		"code": "862"
+	},
+	{
+		"valuedescription": "พระราชปัญญา",
+		"statusflag": "A",
+		"code": "840"
+	},
+	{
+		"valuedescription": "พระราชพัชราภรณ์",
+		"statusflag": "A",
+		"code": "919"
+	},
+	{
+		"valuedescription": "พระราชวชิราภรณ์",
+		"statusflag": "A",
+		"code": "938"
+	},
+	{
+		"valuedescription": "พระราชวิมลโมลี",
+		"statusflag": "A",
+		"code": "944"
+	},
+	{
+		"valuedescription": "พระราชาคณะ",
+		"statusflag": "A",
+		"code": "804"
+	},
+	{
+		"valuedescription": "พระราชเมธาภรณ์",
+		"statusflag": "A",
+		"code": "931"
+	},
+	{
+		"valuedescription": "พระวรวงศ์เธอ",
+		"statusflag": "A",
+		"code": "117"
+	},
+	{
+		"valuedescription": "พระวรวงศ์เธอพระองค์เจ้า",
+		"statusflag": "A",
+		"code": "128"
+	},
+	{
+		"valuedescription": "พระวิริวัฒน์วิสุทธิ์",
+		"statusflag": "A",
+		"code": "846"
+	},
+	{
+		"valuedescription": "พระศรีปริยัติธาดา",
+		"statusflag": "A",
+		"code": "842"
+	},
+	{
+		"valuedescription": "พระศรีปริยัติบัณฑิต",
+		"statusflag": "A",
+		"code": "897"
+	},
+	{
+		"valuedescription": "พระศรีปริยัติโมลี",
+		"statusflag": "A",
+		"code": "868"
+	},
+	{
+		"valuedescription": "พระศรีวชิราภรณ์",
+		"statusflag": "A",
+		"code": "861"
+	},
+	{
+		"valuedescription": "พระสมุห์",
+		"statusflag": "A",
+		"code": "816"
+	},
+	{
+		"valuedescription": "พระสรภาณโกศล",
+		"statusflag": "A",
+		"code": "893"
+	},
+	{
+		"valuedescription": "พระสังฆราช",
+		"statusflag": "A",
+		"code": "836"
+	},
+	{
+		"valuedescription": "พระสัญญาบัตร",
+		"statusflag": "A",
+		"code": "807"
+	},
+	{
+		"valuedescription": "พระสาสนโสภณ",
+		"statusflag": "A",
+		"code": "850"
+	},
+	{
+		"valuedescription": "พระสุธีวัชโรดม",
+		"statusflag": "A",
+		"code": "858"
+	},
+	{
+		"valuedescription": "พระหิรัญยบัฏ",
+		"statusflag": "A",
+		"code": "806"
+	},
+	{
+		"valuedescription": "พระองค์เจ้า",
+		"statusflag": "A",
+		"code": "119"
+	},
+	{
+		"valuedescription": "พระอธิการ",
+		"statusflag": "A",
+		"code": "830"
+	},
+	{
+		"valuedescription": "พระอธิธรรม",
+		"statusflag": "A",
+		"code": "856"
+	},
+	{
+		"valuedescription": "พระอัครสังฆราช",
+		"statusflag": "A",
+		"code": "848"
+	},
+	{
+		"valuedescription": "พระเจ้าบรมวงศ์เธอ",
+		"statusflag": "A",
+		"code": "113"
+	},
+	{
+		"valuedescription": "พระเจ้าวรวงศ์เธอ",
+		"statusflag": "A",
+		"code": "114"
+	},
+	{
+		"valuedescription": "พระเจ้าวรวงศ์เธอ พระองค์เจ้า",
+		"statusflag": "A",
+		"code": "106"
+	},
+	{
+		"valuedescription": "พระเจ้าวรวงศ์เธอพระองค์หญิง",
+		"statusflag": "A",
+		"code": "105"
+	},
+	{
+		"valuedescription": "พระเจ้าหลานยาเธอ",
+		"statusflag": "A",
+		"code": "116"
+	},
+	{
+		"valuedescription": "พระเจ้าหลานเธอ",
+		"statusflag": "A",
+		"code": "115"
+	},
+	{
+		"valuedescription": "พระเจ้าหลานเธอ พระองค์เจ้า",
+		"statusflag": "A",
+		"code": "099"
+	},
+	{
+		"valuedescription": "พระเทพ",
+		"statusflag": "A",
+		"code": "809"
+	},
+	{
+		"valuedescription": "พระเทพชลธารมุนี ศรีชลบุราจารย์",
+		"statusflag": "A",
+		"code": "929"
+	},
+	{
+		"valuedescription": "พระเทพญาณกวี",
+		"statusflag": "A",
+		"code": "954"
+	},
+	{
+		"valuedescription": "พระเปรียญธรรม",
+		"statusflag": "A",
+		"code": "805"
+	},
+	{
+		"valuedescription": "พระโสภณธรรมาภรณ์",
+		"statusflag": "A",
+		"code": "845"
+	},
+	{
+		"valuedescription": "พระโสภณปริยัติธรรม",
+		"statusflag": "A",
+		"code": "866"
+	},
+	{
+		"valuedescription": "พล.จ.",
+		"statusflag": "A",
+		"code": "229"
+	},
+	{
+		"valuedescription": "พล.จ.หลวง",
+		"statusflag": "A",
+		"code": "284"
+	},
+	{
+		"valuedescription": "พล.ต.",
+		"statusflag": "A",
+		"code": "204"
+	},
+	{
+		"valuedescription": "พล.ต.จ.",
+		"statusflag": "A",
+		"code": "657"
+	},
+	{
+		"valuedescription": "พล.ต.ต.",
+		"statusflag": "A",
+		"code": "655"
+	},
+	{
+		"valuedescription": "พล.ต.ต.ม.ร.ว.",
+		"statusflag": "A",
+		"code": "706"
+	},
+	{
+		"valuedescription": "พล.ต.ต.ม.ล.",
+		"statusflag": "A",
+		"code": "730"
+	},
+	{
+		"valuedescription": "พล.ต.ท.",
+		"statusflag": "A",
+		"code": "653"
+	},
+	{
+		"valuedescription": "พล.ต.น.พ.",
+		"statusflag": "A",
+		"code": "270"
+	},
+	{
+		"valuedescription": "พล.ต.ม.ร.ว.",
+		"statusflag": "A",
+		"code": "285"
+	},
+	{
+		"valuedescription": "พล.ต.ม.ล.",
+		"statusflag": "A",
+		"code": "254"
+	},
+	{
+		"valuedescription": "พล.ต.หญิง คุณหญิง",
+		"statusflag": "A",
+		"code": "731"
+	},
+	{
+		"valuedescription": "พล.ต.อ.",
+		"statusflag": "A",
+		"code": "651"
+	},
+	{
+		"valuedescription": "พล.ต.อ.ดร.",
+		"statusflag": "A",
+		"code": "733"
+	},
+	{
+		"valuedescription": "พล.ท.",
+		"statusflag": "A",
+		"code": "202"
+	},
+	{
+		"valuedescription": "พล.ท.ม.จ.",
+		"statusflag": "A",
+		"code": "232"
+	},
+	{
+		"valuedescription": "พล.ท.ม.ล.",
+		"statusflag": "A",
+		"code": "250"
+	},
+	{
+		"valuedescription": "พล.ท.หลวง",
+		"statusflag": "A",
+		"code": "277"
+	},
+	{
+		"valuedescription": "พล.ร.จ.",
+		"statusflag": "A",
+		"code": "380"
+	},
+	{
+		"valuedescription": "พล.ร.ต.",
+		"statusflag": "A",
+		"code": "355"
+	},
+	{
+		"valuedescription": "พล.ร.ต.ม.จ.",
+		"statusflag": "A",
+		"code": "393"
+	},
+	{
+		"valuedescription": "พล.ร.ต.ม.ร.ว.",
+		"statusflag": "A",
+		"code": "384"
+	},
+	{
+		"valuedescription": "พล.ร.ต.ม.ล.",
+		"statusflag": "A",
+		"code": "396"
+	},
+	{
+		"valuedescription": "พล.ร.ท.",
+		"statusflag": "A",
+		"code": "353"
+	},
+	{
+		"valuedescription": "พล.ร.อ.",
+		"statusflag": "A",
+		"code": "351"
+	},
+	{
+		"valuedescription": "พล.อ.",
+		"statusflag": "A",
+		"code": "200"
+	},
+	{
+		"valuedescription": "พล.อ.จ.",
+		"statusflag": "A",
+		"code": "538"
+	},
+	{
+		"valuedescription": "พล.อ.ต.",
+		"statusflag": "A",
+		"code": "504"
+	},
+	{
+		"valuedescription": "พล.อ.ต.ม.ร.ว.",
+		"statusflag": "A",
+		"code": "531"
+	},
+	{
+		"valuedescription": "พล.อ.ต.ม.ล.",
+		"statusflag": "A",
+		"code": "537"
+	},
+	{
+		"valuedescription": "พล.อ.ท.",
+		"statusflag": "A",
+		"code": "502"
+	},
+	{
+		"valuedescription": "พล.อ.ท.ม.ร.ว.",
+		"statusflag": "A",
+		"code": "539"
+	},
+	{
+		"valuedescription": "พล.อ.ท.ม.ล.",
+		"statusflag": "A",
+		"code": "532"
+	},
+	{
+		"valuedescription": "พล.อ.มล.",
+		"statusflag": "A",
+		"code": "291"
+	},
+	{
+		"valuedescription": "พล.อ.อ.",
+		"statusflag": "A",
+		"code": "500"
+	},
+	{
+		"valuedescription": "พล.อ.อ.ม.ร.ว.",
+		"statusflag": "A",
+		"code": "536"
+	},
+	{
+		"valuedescription": "พลตรีสมเด็จพระเทพรัตนราชสุดา",
+		"statusflag": "A",
+		"code": "104"
+	},
+	{
+		"valuedescription": "พลสารวัตร",
+		"statusflag": "A",
+		"code": "159"
+	},
+	{
+		"valuedescription": "พลฯ",
+		"statusflag": "A",
+		"code": "226"
+	},
+	{
+		"valuedescription": "พลฯ",
+		"statusflag": "A",
+		"code": "377"
+	},
+	{
+		"valuedescription": "พลฯ",
+		"statusflag": "A",
+		"code": "526"
+	},
+	{
+		"valuedescription": "พลฯ",
+		"statusflag": "A",
+		"code": "681"
+	},
+	{
+		"valuedescription": "พลฯ อาสา",
+		"statusflag": "A",
+		"code": "230"
+	},
+	{
+		"valuedescription": "พลฯพิเศษ",
+		"statusflag": "A",
+		"code": "682"
+	},
+	{
+		"valuedescription": "พลฯม.ล.",
+		"statusflag": "A",
+		"code": "247"
+	},
+	{
+		"valuedescription": "พลฯสมัคร",
+		"statusflag": "A",
+		"code": "686"
+	},
+	{
+		"valuedescription": "พลฯสำรอง",
+		"statusflag": "A",
+		"code": "684"
+	},
+	{
+		"valuedescription": "พลฯอาสา",
+		"statusflag": "A",
+		"code": "683"
+	},
+	{
+		"valuedescription": "พลโทสมเด็จพระบรมโอรสาธิราช",
+		"statusflag": "A",
+		"code": "103"
+	},
+	{
+		"valuedescription": "ภก.",
+		"statusflag": "A",
+		"code": "144"
+	},
+	{
+		"valuedescription": "ภญ.",
+		"statusflag": "A",
+		"code": "145"
+	},
+	{
+		"valuedescription": "ภาราดา",
+		"statusflag": "A",
+		"code": "841"
+	},
+	{
+		"valuedescription": "ม.จ.",
+		"statusflag": "A",
+		"code": "120"
+	},
+	{
+		"valuedescription": "ม.จ.หญิง",
+		"statusflag": "A",
+		"code": "163"
+	},
+	{
+		"valuedescription": "ม.ญ.",
+		"statusflag": "A",
+		"code": "695"
+	},
+	{
+		"valuedescription": "ม.ต.",
+		"statusflag": "A",
+		"code": "698"
+	},
+	{
+		"valuedescription": "ม.ท.",
+		"statusflag": "A",
+		"code": "697"
+	},
+	{
+		"valuedescription": "ม.ร.ว.",
+		"statusflag": "A",
+		"code": "121"
+	},
+	{
+		"valuedescription": "ม.ล.",
+		"statusflag": "A",
+		"code": "122"
+	},
+	{
+		"valuedescription": "ม.อ.",
+		"statusflag": "A",
+		"code": "696"
+	},
+	{
+		"valuedescription": "มว.ต.",
+		"statusflag": "A",
+		"code": "694"
+	},
+	{
+		"valuedescription": "มว.ท.",
+		"statusflag": "A",
+		"code": "693"
+	},
+	{
+		"valuedescription": "มว.อ.",
+		"statusflag": "A",
+		"code": "692"
+	},
+	{
+		"valuedescription": "ร.ต.",
+		"statusflag": "A",
+		"code": "218"
+	},
+	{
+		"valuedescription": "ร.ต.",
+		"statusflag": "A",
+		"code": "369"
+	},
+	{
+		"valuedescription": "ร.ต.",
+		"statusflag": "A",
+		"code": "518"
+	},
+	{
+		"valuedescription": "ร.ต.ดร.",
+		"statusflag": "A",
+		"code": "281"
+	},
+	{
+		"valuedescription": "ร.ต.ต.",
+		"statusflag": "A",
+		"code": "671"
+	},
+	{
+		"valuedescription": "ร.ต.ท.",
+		"statusflag": "A",
+		"code": "669"
+	},
+	{
+		"valuedescription": "ร.ต.ท.ดร.",
+		"statusflag": "A",
+		"code": "725"
+	},
+	{
+		"valuedescription": "ร.ต.ท.น.พ.",
+		"statusflag": "A",
+		"code": "720"
+	},
+	{
+		"valuedescription": "ร.ต.ท.ม.ล.",
+		"statusflag": "A",
+		"code": "715"
+	},
+	{
+		"valuedescription": "ร.ต.น.พ.",
+		"statusflag": "A",
+		"code": "268"
+	},
+	{
+		"valuedescription": "ร.ต.พ.ญ.",
+		"statusflag": "A",
+		"code": "290"
+	},
+	{
+		"valuedescription": "ร.ต.ม.จ.",
+		"statusflag": "A",
+		"code": "233"
+	},
+	{
+		"valuedescription": "ร.ต.ม.ร.ว.",
+		"statusflag": "A",
+		"code": "243"
+	},
+	{
+		"valuedescription": "ร.ต.ม.ล.",
+		"statusflag": "A",
+		"code": "252"
+	},
+	{
+		"valuedescription": "ร.ต.อ.",
+		"statusflag": "A",
+		"code": "667"
+	},
+	{
+		"valuedescription": "ร.ต.อ.น.พ.",
+		"statusflag": "A",
+		"code": "721"
+	},
+	{
+		"valuedescription": "ร.ต.อ.ม.ร.ว.",
+		"statusflag": "A",
+		"code": "710"
+	},
+	{
+		"valuedescription": "ร.ต.อ.ม.ล.",
+		"statusflag": "A",
+		"code": "727"
+	},
+	{
+		"valuedescription": "ร.ท.",
+		"statusflag": "A",
+		"code": "367"
+	},
+	{
+		"valuedescription": "ร.ท.",
+		"statusflag": "A",
+		"code": "516"
+	},
+	{
+		"valuedescription": "ร.ท.ขุน",
+		"statusflag": "A",
+		"code": "533"
+	},
+	{
+		"valuedescription": "ร.ท.ดร.",
+		"statusflag": "A",
+		"code": "278"
+	},
+	{
+		"valuedescription": "ร.ท.น.พ.",
+		"statusflag": "A",
+		"code": "264"
+	},
+	{
+		"valuedescription": "ร.ท.พ.ญ.",
+		"statusflag": "A",
+		"code": "269"
+	},
+	{
+		"valuedescription": "ร.ท.ม.จ.",
+		"statusflag": "A",
+		"code": "234"
+	},
+	{
+		"valuedescription": "ร.ท.ม.ร.ว.",
+		"statusflag": "A",
+		"code": "245"
+	},
+	{
+		"valuedescription": "ร.ท.ม.ล.",
+		"statusflag": "A",
+		"code": "251"
+	},
+	{
+		"valuedescription": "ร.อ.",
+		"statusflag": "A",
+		"code": "214"
+	},
+	{
+		"valuedescription": "ร.อ.",
+		"statusflag": "A",
+		"code": "365"
+	},
+	{
+		"valuedescription": "ร.อ.",
+		"statusflag": "A",
+		"code": "514"
+	},
+	{
+		"valuedescription": "ร.อ.ดร.",
+		"statusflag": "A",
+		"code": "279"
+	},
+	{
+		"valuedescription": "ร.อ.น.พ.",
+		"statusflag": "A",
+		"code": "262"
+	},
+	{
+		"valuedescription": "ร.อ.น.พ.",
+		"statusflag": "A",
+		"code": "535"
+	},
+	{
+		"valuedescription": "ร.อ.พ.ญ.",
+		"statusflag": "A",
+		"code": "263"
+	},
+	{
+		"valuedescription": "ร.อ.ม.จ.",
+		"statusflag": "A",
+		"code": "231"
+	},
+	{
+		"valuedescription": "ร.อ.ม.ร.ว.",
+		"statusflag": "A",
+		"code": "242"
+	},
+	{
+		"valuedescription": "ร.อ.ม.ล.",
+		"statusflag": "A",
+		"code": "248"
+	},
+	{
+		"valuedescription": "รศ.",
+		"statusflag": "A",
+		"code": "142"
+	},
+	{
+		"valuedescription": "รองสมเด็จพระราชาคณะ",
+		"statusflag": "A",
+		"code": "803"
+	},
+	{
+		"valuedescription": "รองอำมาตย์ตรี",
+		"statusflag": "A",
+		"code": "162"
+	},
+	{
+		"valuedescription": "รองอำมาตย์เอก",
+		"statusflag": "A",
+		"code": "147"
+	},
+	{
+		"valuedescription": "รองเจ้าอธิการ",
+		"statusflag": "A",
+		"code": "859"
+	},
+	{
+		"valuedescription": "รองเสวกตรี",
+		"statusflag": "A",
+		"code": "156"
+	},
+	{
+		"valuedescription": "ว่าที่ น.ต.",
+		"statusflag": "A",
+		"code": "364"
+	},
+	{
+		"valuedescription": "ว่าที่ น.ต.",
+		"statusflag": "A",
+		"code": "513"
+	},
+	{
+		"valuedescription": "ว่าที่ น.ท.",
+		"statusflag": "A",
+		"code": "362"
+	},
+	{
+		"valuedescription": "ว่าที่ น.ท.",
+		"statusflag": "A",
+		"code": "511"
+	},
+	{
+		"valuedescription": "ว่าที่ น.อ.",
+		"statusflag": "A",
+		"code": "360"
+	},
+	{
+		"valuedescription": "ว่าที่ น.อ.",
+		"statusflag": "A",
+		"code": "509"
+	},
+	{
+		"valuedescription": "ว่าที่ น.อ.พิเศษ",
+		"statusflag": "A",
+		"code": "358"
+	},
+	{
+		"valuedescription": "ว่าที่ น.อ.พิเศษ",
+		"statusflag": "A",
+		"code": "507"
+	},
+	{
+		"valuedescription": "ว่าที่ พ.ต.",
+		"statusflag": "A",
+		"code": "213"
+	},
+	{
+		"valuedescription": "ว่าที่ พ.ต.ต.",
+		"statusflag": "A",
+		"code": "666"
+	},
+	{
+		"valuedescription": "ว่าที่ พ.ต.ท.",
+		"statusflag": "A",
+		"code": "664"
+	},
+	{
+		"valuedescription": "ว่าที่ พ.ต.อ.",
+		"statusflag": "A",
+		"code": "662"
+	},
+	{
+		"valuedescription": "ว่าที่ พ.ต.อ.พิเศษ",
+		"statusflag": "A",
+		"code": "660"
+	},
+	{
+		"valuedescription": "ว่าที่ พ.ท.",
+		"statusflag": "A",
+		"code": "211"
+	},
+	{
+		"valuedescription": "ว่าที่ พ.อ.",
+		"statusflag": "A",
+		"code": "209"
+	},
+	{
+		"valuedescription": "ว่าที่ พ.อ.(พิเศษ)",
+		"statusflag": "A",
+		"code": "207"
+	},
+	{
+		"valuedescription": "ว่าที่ พล.ต.",
+		"statusflag": "A",
+		"code": "205"
+	},
+	{
+		"valuedescription": "ว่าที่ พล.ต.ต.",
+		"statusflag": "A",
+		"code": "656"
+	},
+	{
+		"valuedescription": "ว่าที่ พล.ต.ท.",
+		"statusflag": "A",
+		"code": "654"
+	},
+	{
+		"valuedescription": "ว่าที่ พล.ต.อ.",
+		"statusflag": "A",
+		"code": "652"
+	},
+	{
+		"valuedescription": "ว่าที่ พล.ร.ต.",
+		"statusflag": "A",
+		"code": "356"
+	},
+	{
+		"valuedescription": "ว่าที่ พล.ร.ท.",
+		"statusflag": "A",
+		"code": "354"
+	},
+	{
+		"valuedescription": "ว่าที่ พล.ร.อ.",
+		"statusflag": "A",
+		"code": "352"
+	},
+	{
+		"valuedescription": "ว่าที่ พล.อ.",
+		"statusflag": "A",
+		"code": "201"
+	},
+	{
+		"valuedescription": "ว่าที่ พล.อ.ต.",
+		"statusflag": "A",
+		"code": "505"
+	},
+	{
+		"valuedescription": "ว่าที่ พล.อ.ท.",
+		"statusflag": "A",
+		"code": "503"
+	},
+	{
+		"valuedescription": "ว่าที่ พล.อ.อ.",
+		"statusflag": "A",
+		"code": "501"
+	},
+	{
+		"valuedescription": "ว่าที่ ร.ต.",
+		"statusflag": "A",
+		"code": "219"
+	},
+	{
+		"valuedescription": "ว่าที่ ร.ต.",
+		"statusflag": "A",
+		"code": "370"
+	},
+	{
+		"valuedescription": "ว่าที่ ร.ต.",
+		"statusflag": "A",
+		"code": "519"
+	},
+	{
+		"valuedescription": "ว่าที่ ร.ต.ต.",
+		"statusflag": "A",
+		"code": "672"
+	},
+	{
+		"valuedescription": "ว่าที่ ร.ต.ท.",
+		"statusflag": "A",
+		"code": "670"
+	},
+	{
+		"valuedescription": "ว่าที่ ร.ต.ม.ร.ว.",
+		"statusflag": "A",
+		"code": "292"
+	},
+	{
+		"valuedescription": "ว่าที่ ร.ต.อ.",
+		"statusflag": "A",
+		"code": "668"
+	},
+	{
+		"valuedescription": "ว่าที่ ร.ท.",
+		"statusflag": "A",
+		"code": "217"
+	},
+	{
+		"valuedescription": "ว่าที่ ร.ท.",
+		"statusflag": "A",
+		"code": "368"
+	},
+	{
+		"valuedescription": "ว่าที่ ร.ท.",
+		"statusflag": "A",
+		"code": "517"
+	},
+	{
+		"valuedescription": "ว่าที่ ร.ท.น.พ.",
+		"statusflag": "A",
+		"code": "266"
+	},
+	{
+		"valuedescription": "ว่าที่ ร.อ.",
+		"statusflag": "A",
+		"code": "215"
+	},
+	{
+		"valuedescription": "ว่าที่ ร.อ.",
+		"statusflag": "A",
+		"code": "366"
+	},
+	{
+		"valuedescription": "ว่าที่ ร.อ.",
+		"statusflag": "A",
+		"code": "515"
+	},
+	{
+		"valuedescription": "ว่าที่ ส.อ.",
+		"statusflag": "A",
+		"code": "732"
+	},
+	{
+		"valuedescription": "ว่าที่พล.ต.จ.",
+		"statusflag": "A",
+		"code": "658"
+	},
+	{
+		"valuedescription": "ว่าที่ร.ต.ม.ล.",
+		"statusflag": "A",
+		"code": "260"
+	},
+	{
+		"valuedescription": "ศ.ดร.",
+		"statusflag": "A",
+		"code": "165"
+	},
+	{
+		"valuedescription": "ศจ.",
+		"statusflag": "A",
+		"code": "143"
+	},
+	{
+		"valuedescription": "ศจ.คุณหญิง",
+		"statusflag": "A",
+		"code": "152"
+	},
+	{
+		"valuedescription": "ศจ.น.พ.",
+		"statusflag": "A",
+		"code": "132"
+	},
+	{
+		"valuedescription": "ศจ.น.พ.พ.ต.อ.",
+		"statusflag": "A",
+		"code": "718"
+	},
+	{
+		"valuedescription": "ศจ.พ.อ.",
+		"statusflag": "A",
+		"code": "275"
+	},
+	{
+		"valuedescription": "ศจ.ร.อ.",
+		"statusflag": "A",
+		"code": "288"
+	},
+	{
+		"valuedescription": "ส.ณ.",
+		"statusflag": "A",
+		"code": "832"
+	},
+	{
+		"valuedescription": "ส.ต.",
+		"statusflag": "A",
+		"code": "225"
+	},
+	{
+		"valuedescription": "ส.ต.ต.",
+		"statusflag": "A",
+		"code": "677"
+	},
+	{
+		"valuedescription": "ส.ต.ท.",
+		"statusflag": "A",
+		"code": "676"
+	},
+	{
+		"valuedescription": "ส.ต.ม.ร.ว.",
+		"statusflag": "A",
+		"code": "239"
+	},
+	{
+		"valuedescription": "ส.ต.อ.",
+		"statusflag": "A",
+		"code": "675"
+	},
+	{
+		"valuedescription": "ส.ต.อ.ม.ล.",
+		"statusflag": "A",
+		"code": "711"
+	},
+	{
+		"valuedescription": "ส.ท.",
+		"statusflag": "A",
+		"code": "224"
+	},
+	{
+		"valuedescription": "ส.ท.ม.ล.",
+		"statusflag": "A",
+		"code": "249"
+	},
+	{
+		"valuedescription": "ส.ห.",
+		"statusflag": "A",
+		"code": "280"
+	},
+	{
+		"valuedescription": "ส.อ.",
+		"statusflag": "A",
+		"code": "223"
+	},
+	{
+		"valuedescription": "ส.อ.ม.ร.ว.",
+		"statusflag": "A",
+		"code": "244"
+	},
+	{
+		"valuedescription": "ส.อ.ม.ล.",
+		"statusflag": "A",
+		"code": "253"
+	},
+	{
+		"valuedescription": "สญ.",
+		"statusflag": "A",
+		"code": "139"
+	},
+	{
+		"valuedescription": "สพ.",
+		"statusflag": "A",
+		"code": "138"
+	},
+	{
+		"valuedescription": "สมาชิกตรี",
+		"statusflag": "A",
+		"code": "701"
+	},
+	{
+		"valuedescription": "สมาชิกเอก",
+		"statusflag": "A",
+		"code": "699"
+	},
+	{
+		"valuedescription": "สมาชิกโท",
+		"statusflag": "A",
+		"code": "700"
+	},
+	{
+		"valuedescription": "สมเด็จพระ",
+		"statusflag": "A",
+		"code": "109"
+	},
+	{
+		"valuedescription": "สมเด็จพระนางเจ้า",
+		"statusflag": "A",
+		"code": "101"
+	},
+	{
+		"valuedescription": "สมเด็จพระมหาวีรวงศ์",
+		"statusflag": "A",
+		"code": "844"
+	},
+	{
+		"valuedescription": "สมเด็จพระราชชนนี",
+		"statusflag": "A",
+		"code": "107"
+	},
+	{
+		"valuedescription": "สมเด็จพระราชาคณะ",
+		"statusflag": "A",
+		"code": "802"
+	},
+	{
+		"valuedescription": "สมเด็จพระศรีนครินทราบรมราชชนนี",
+		"statusflag": "A",
+		"code": "102"
+	},
+	{
+		"valuedescription": "สมเด็จพระสังฆราช",
+		"statusflag": "A",
+		"code": "801"
+	},
+	{
+		"valuedescription": "สมเด็จพระสังฆราชเจ้า",
+		"statusflag": "A",
+		"code": "800"
+	},
+	{
+		"valuedescription": "สมเด็จพระอริยวงศาคตญาณ",
+		"statusflag": "A",
+		"code": "834"
+	},
+	{
+		"valuedescription": "สมเด็จพระเจ้าพี่นางเธอเจ้าฟ้า",
+		"statusflag": "A",
+		"code": "108"
+	},
+	{
+		"valuedescription": "สมเด็จพระเจ้าภคินีเธอ",
+		"statusflag": "A",
+		"code": "118"
+	},
+	{
+		"valuedescription": "สมเด็จพระเจ้าลูกยาเธอ",
+		"statusflag": "A",
+		"code": "111"
+	},
+	{
+		"valuedescription": "สมเด็จพระเจ้าลูกเธอ",
+		"statusflag": "A",
+		"code": "110"
+	},
+	{
+		"valuedescription": "สมเด็จเจ้า",
+		"statusflag": "A",
+		"code": "160"
+	},
+	{
+		"valuedescription": "สมเด็จเจ้าฟ้า",
+		"statusflag": "A",
+		"code": "112"
+	},
+	{
+		"valuedescription": "หมื่น",
+		"statusflag": "A",
+		"code": "126"
+	},
+	{
+		"valuedescription": "หม่อม",
+		"statusflag": "A",
+		"code": "146"
+	},
+	{
+		"valuedescription": "หลวง",
+		"statusflag": "A",
+		"code": "124"
+	},
+	{
+		"valuedescription": "องสุตบทบวร",
+		"statusflag": "A",
+		"code": "921"
+	},
+	{
+		"valuedescription": "อส.",
+		"statusflag": "A",
+		"code": "687"
+	},
+	{
+		"valuedescription": "อส.ทพ.",
+		"statusflag": "A",
+		"code": "702"
+	},
+	{
+		"valuedescription": "เจ้า",
+		"statusflag": "A",
+		"code": "149"
+	},
+	{
+		"valuedescription": "เจ้าคุณ",
+		"statusflag": "A",
+		"code": "127"
+	},
+	{
+		"valuedescription": "เจ้าชาย",
+		"statusflag": "A",
+		"code": "154"
+	},
+	{
+		"valuedescription": "เจ้านาง",
+		"statusflag": "A",
+		"code": "166"
+	},
+	{
+		"valuedescription": "เจ้าฟ้า",
+		"statusflag": "A",
+		"code": "161"
+	},
+	{
+		"valuedescription": "เจ้าหญิง",
+		"statusflag": "A",
+		"code": "155"
+	},
+	{
+		"valuedescription": "เจ้าอธิการ",
+		"statusflag": "A",
+		"code": "829"
+	},
+	{
+		"valuedescription": "เสด็จเจ้า",
+		"statusflag": "A",
+		"code": "157"
+	},
+	{
+		"valuedescription": "เอกอัครราชฑูต",
+		"statusflag": "A",
+		"code": "158"
+	},
+	{
+		"valuedescription": "แม่ชี",
+		"statusflag": "A",
+		"code": "863"
+	}
+]
