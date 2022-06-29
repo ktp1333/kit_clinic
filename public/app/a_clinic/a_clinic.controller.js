@@ -360,7 +360,7 @@ app.controller('a_clinicController', function ($scope, $location, $http, $timeou
                 // console.log($scope.selecttitle[0]);
                 $http.post('/local/savedata2local', {
                     "mfile": "patient",
-                    "title": vm.resulttitle,
+                    "title": vm.keytitle,
                     "name": name,
                     "surname": surname,
                     "gender": gender,
