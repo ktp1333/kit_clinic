@@ -54,43 +54,7 @@ exports.writejson = function (req, res) {
         }
     });
 }
-exports.deletejson = function (req, res) {
-    mfile = req.body.mfile;
-    const fs = require('fs');
 
-    fs.readFile(dbpath_local + mfile, 'utf8', function readFileCallback(err, data) {
-        if (err) {
-            console.log(err);
-        } else {
-            // console.log(67, req.body.idx);
-
-            // obj = JSON.parse(data); //now it an object
-            // console.log(70, obj);
-            // // obj.splice(req.body.idx, 1);
-            // obj.replace(req.body.idx, '');
-
-            // console.log(72, obj);
-            const array = JSON.parse(data);
-            const itemtoremove =req.body.idx;
-            console.log(array);
-            console.log(itemtoremove);
-            const filteredItems = array.filter(function(item) {
-                return JSON.stringify(item) !== JSON.stringify(itemtoremove)
-                })
-            console.log(filteredItems);
-
-            var strNotes = JSON.stringify(filteredItems, null, 2);
-            fs.writeFile(dbpath_local + mfile, strNotes, function (err) {
-                if (err) return console.log(err);
-                console.log('Note added');
-                res.status(200).json({
-                    data: filteredItems
-                });
-            });
-
-        }
-    });
-}
 exports.editjson = function (req, res) {
     mfile = req.body.mfile;
     indata = req.body.indata;
@@ -154,6 +118,209 @@ exports.deletetemplatejson = function (req, res) {
                 console.log('Note added');
                 res.status(200).json({
                     data: obj
+                });
+            });
+
+        }
+    });
+}
+// exports.edit_UOM = function (req, res) {
+//     mfile = req.body.mfile;
+//     // indata = req.body.indata;
+//     const fs = require('fs');
+
+//     fs.readFile(dbpath_local + mfile, 'utf8', function readFileCallback(err, data) {
+//         if (err) {
+//             console.log(err);
+//         } else {
+//             console.log(req.body.idx);
+
+//             obj = JSON.parse(data); //now it an object
+//             console.log(obj);
+//             obj.splice(req.body.idx, 1);
+//             console.log(obj);
+//             obj.push({
+//                 'valuedescription': req.body.valuedescription,
+//                 'locallanguagedesc':req.body.locallanguagedesc,
+//                 'statusflag': "C",
+//             });
+//             console.log(obj);
+//             var strNotes = JSON.stringify(obj, null, 2);
+//             fs.writeFile(dbpath_local + mfile, strNotes, function (err) {
+//                 if (err) return console.log(err);
+//                 console.log('Note added');
+//                 res.status(200).json({
+//                     data: obj
+//                 });
+//             });
+
+//         }
+//     });
+// }
+exports.write_UOM = function (req, res) {
+    mfile = req.body.mfile;
+
+    const fs = require('fs');
+
+    fs.readFile(dbpath_local + mfile, 'utf8', function readFileCallback(err, data) {
+        if (err) {
+            console.log(err);
+        } else {
+            console.log(mfile);
+            obj = JSON.parse(data); //now it an object
+            obj.push({
+                'valuedescription': req.body.valuedescription,
+                'locallanguagedesc':req.body.locallanguagedesc,
+                'statusflag': "A",
+            });
+            var strNotes = JSON.stringify(obj, null, 2);
+            fs.writeFile(dbpath_local + mfile, strNotes, function (err) {
+                if (err) return console.log(err);
+                console.log('Note added');
+                res.status(200).json({
+                    data: obj
+                });
+            });
+
+        }
+    });
+}
+exports.delete_UOM = function (req, res) {
+    mfile = req.body.mfile;
+    const fs = require('fs');
+
+    fs.readFile(dbpath_local + mfile, 'utf8', function readFileCallback(err, data) {
+        if (err) {
+            console.log(err);
+        } else {
+            const array = JSON.parse(data);
+            const itemtoremove =req.body.locallanguagedesc;
+            console.log(array);
+            console.log(itemtoremove);
+            const filteredItems = array.filter(function(item) {
+                return JSON.stringify(item.locallanguagedesc) !== JSON.stringify(itemtoremove)
+                })
+            console.log(filteredItems);
+
+            var strNotes = JSON.stringify(filteredItems, null, 2);
+            fs.writeFile(dbpath_local + mfile, strNotes, function (err) {
+                if (err) return console.log(err);
+                console.log('Note added');
+                res.status(200).json({
+                    data: filteredItems
+                });
+            });
+
+        }
+    });
+}
+exports.write_form = function (req, res) {
+    mfile = req.body.mfile;
+
+    const fs = require('fs');
+
+    fs.readFile(dbpath_local + mfile, 'utf8', function readFileCallback(err, data) {
+        if (err) {
+            console.log(err);
+        } else {
+            console.log(mfile);
+            obj = JSON.parse(data); //now it an object
+            obj.push({
+                'valuedescription': req.body.valuedescription,
+                'statusflag': "A",
+            });
+            var strNotes = JSON.stringify(obj, null, 2);
+            fs.writeFile(dbpath_local + mfile, strNotes, function (err) {
+                if (err) return console.log(err);
+                console.log('Note added');
+                res.status(200).json({
+                    data: obj
+                });
+            });
+
+        }
+    });
+}
+exports.delete_form = function (req, res) {
+    mfile = req.body.mfile;
+    const fs = require('fs');
+
+    fs.readFile(dbpath_local + mfile, 'utf8', function readFileCallback(err, data) {
+        if (err) {
+            console.log(err);
+        } else {
+            const array = JSON.parse(data);
+            const itemtoremove =req.body.valuedescription;
+            console.log(array);
+            console.log(itemtoremove);
+            const filteredItems = array.filter(function(item) {
+                return JSON.stringify(item.valuedescription) !== JSON.stringify(itemtoremove)
+                })
+            console.log(filteredItems);
+
+            var strNotes = JSON.stringify(filteredItems, null, 2);
+            fs.writeFile(dbpath_local + mfile, strNotes, function (err) {
+                if (err) return console.log(err);
+                console.log('Note added');
+                res.status(200).json({
+                    data: filteredItems
+                });
+            });
+
+        }
+    });
+}
+exports.write_frequency = function (req, res) {
+    mfile = req.body.mfile;
+
+    const fs = require('fs');
+
+    fs.readFile(dbpath_local + mfile, 'utf8', function readFileCallback(err, data) {
+        if (err) {
+            console.log(err);
+        } else {
+            console.log(mfile);
+            obj = JSON.parse(data); //now it an object
+            obj.push({
+                'description': req.body.description,
+                'locallangdesc':req.body.locallangdesc,
+                'statusflag': "A",
+            });
+            var strNotes = JSON.stringify(obj, null, 2);
+            fs.writeFile(dbpath_local + mfile, strNotes, function (err) {
+                if (err) return console.log(err);
+                console.log('Note added');
+                res.status(200).json({
+                    data: obj
+                });
+            });
+
+        }
+    });
+}
+exports.delete_frequency = function (req, res) {
+    mfile = req.body.mfile;
+    const fs = require('fs');
+
+    fs.readFile(dbpath_local + mfile, 'utf8', function readFileCallback(err, data) {
+        if (err) {
+            console.log(err);
+        } else {
+            const array = JSON.parse(data);
+            const itemtoremove =req.body.locallangdesc;
+            console.log(array);
+            console.log(itemtoremove);
+            const filteredItems = array.filter(function(item) {
+                return JSON.stringify(item.locallangdesc) !== JSON.stringify(itemtoremove)
+                })
+            console.log(filteredItems);
+
+            var strNotes = JSON.stringify(filteredItems, null, 2);
+            fs.writeFile(dbpath_local + mfile, strNotes, function (err) {
+                if (err) return console.log(err);
+                console.log('Note added');
+                res.status(200).json({
+                    data: filteredItems
                 });
             });
 

@@ -22,21 +22,34 @@ app.controller('a_clinicController', function ($scope, $location, $http, $timeou
     // $scope.recc = false;
     // $scope.show_searchright = false;
     // // $scope.initdata = initdata;
-    // $scope.closeall = closeall;
-    // $scope.showr1 = showr1;
-    // $scope.showr2 = showr2;
-    // $scope.estimate = estimate;
-    // $scope.DateThai = DateThai;
-    // $scope.getAge = getAge;
-    // $scope.showbycat = showbycat;
-    // // $scope.openwindow = openwindow;
-    // $scope.PrintMe = PrintMe;
-    // $scope.getORcase = getORcase;
-    // $scope.openORpage = openORpage;
-    // $scope.calculate = calculate;
-    // $scope.tocalculate = tocalculate;
-    // //-------------------------------------------
+    $scope.clear_UOM = clear_UOM;
+    $scope.uomtxt="";
+    $scope.delete_UOM = delete_UOM;
+    $scope.save_UOM = save_UOM;
+    $scope.clear_form = clear_form;
+    $scope.formtxt="";
+    $scope.delete_form = delete_form;
+    $scope.save_form = save_form;
+    $scope.clear_frequency = clear_frequency;
+    $scope.frequencytxt="";
+    $scope.deletefrequency = deletefrequency;
+    $scope.save_frequency = save_frequency;
+    $scope.find_frequencies = find_frequencies;
+    $scope.find_form = find_form;
+    $scope.find_UOM = find_UOM;
+
+    $scope.show_listalldrug = false;
     $scope.show_searchright = false;
+    $scope.show_setup_newdrug = false;
+    $scope.show_setup_UOM = false;
+    $scope.show_setup_form = false;
+    $scope.show_setup_frequency = false;
+    $scope.setup_UOM = setup_UOM;
+    $scope.setup_form = setup_form;
+    $scope.setup_frequency = setup_frequency;
+    $scope.list_drug = list_drug;
+    $scope.save_newdrug = save_newdrug;
+    $scope.setup_newdrug = setup_newdrug;
     $scope.searchHN = searchHN;
     $scope.save_dr = save_dr;
     $scope.save_user = save_user;
@@ -44,11 +57,12 @@ app.controller('a_clinicController', function ($scope, $location, $http, $timeou
     $scope.selectitle = selectitle;
     $scope.new_p1 = new_p1;
     $scope.show_p1 = true;
+    $scope.show_p4 = true;
     $scope.lbl_note = '';
     $scope.show_btnsave = true;
     $scope.save_data = save_data;
     $scope.clearaddress = clearaddress;
-
+    $scope.PrintMe = PrintMe;
     vm.district = '';
     vm.amphoe = '';
     vm.province = '';
@@ -67,7 +81,7 @@ app.controller('a_clinicController', function ($scope, $location, $http, $timeou
     // $scope.JSONToCSVConvertor = JSONToCSVConvertor;
     // $scope.Printdetail=Printdetail;
     $scope.getOrguid = getOrguid;
-    // $scope.txt_show='';
+    $scope.ptname_show = false;
     //---------------------------------------
 
 
@@ -206,7 +220,7 @@ app.controller('a_clinicController', function ($scope, $location, $http, $timeou
                 address.amphoe.match(regex) ||
                 address.amphoeEng.match(regex) ||
                 address.province.match(regex) ||
-                address.provinceEng.match(regex) 
+                address.provinceEng.match(regex)
             );
         });
         if (searchText.length === 0) {
@@ -273,7 +287,7 @@ app.controller('a_clinicController', function ($scope, $location, $http, $timeou
 
         stitle.innerHTML = $scope.selecttitle;
         // inputtitle.innerHTML = $scope.selecttitle;
-        vm.keytitle = $scope.selecttitle ;
+        vm.keytitle = $scope.selecttitle;
     }
     function outputHtml(matchItems) {
         if (matchItems.length > 0) {
@@ -313,8 +327,36 @@ app.controller('a_clinicController', function ($scope, $location, $http, $timeou
     function clearaddress() {
         vm.road = '';
         vm.keyaddress = '';
-        matchList.innerHTML ='';
-        saddress.innerHTML ='';
+        matchList.innerHTML = '';
+        saddress.innerHTML = '';
+    }
+    function searchHN(params) {
+        let mhn = params.replace("-", "");
+        var m1 = mhn.substring(0, 2);
+        var m2 = mhn.substring(2, 8);
+        var hn = m1 + '-' + m2;
+        console.log(hn);
+        $scope.findpt = [];
+        $http.post('/local/search_existHN', {
+            "mfile": 'patient',
+            "hn": hn,
+            "orguid": $scope.orguid,
+            // "fromdate": moment($scope.todaydate).startOf('day').format(),
+            // "todate": moment($scope.todaydate).endOf('day').format()
+        }).success(function (data) {
+            if (data.data && data.data.length > 0) {
+                $scope.findpt = data.data[0];
+                $scope.show_searchright = true;
+                $scope.ptname_show = true;
+            } else {
+                $scope.findpt = [];
+                $scope.show_searchright = false;
+                $scope.ptname_show = false;
+            }
+            console.log('findpt', $scope.findpt);
+
+        });
+
     }
     function save_data(name, surname, gender, address, email, nationalID) {
         async.waterfall([
@@ -389,6 +431,235 @@ app.controller('a_clinicController', function ($scope, $location, $http, $timeou
 
 
     }
+    function PrintMe(params) {
+        var disp_setting = "toolbar=yes,location=no,";
+        disp_setting += "directories=yes,menubar=yes,";
+        disp_setting += "scrollbars=yes,width=650, height=600, left=100, top=25";
+        var content_vlue = document.getElementById(params).innerHTML;
+        var docprint = window.open("", "", disp_setting);
+        docprint.document.open();
+        docprint.document.write('<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"');
+        docprint.document.write('"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">');
+        docprint.document.write('<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">');
+        docprint.document.write('<head><title>My Title</title>');
+        docprint.document.write('<style type="text/css">body{ _margin:0px;');
+        docprint.document.write('font-family:verdana,Arial;color:#000;');
+        docprint.document.write('font-family:Verdana, Geneva, sans-serif; font-size:12px;}');
+        docprint.document.write('a{color:#000;text-decoration:none;} </style>');
+        docprint.document.write('</head><body onLoad="self.print()"><center>');
+        docprint.document.write(content_vlue);
+        docprint.document.write('</center></body></html>');
+        docprint.document.close();
+        docprint.focus();
+    }
+    //-------------drug
+    function closeallpage4(params) {
+        $scope.show_listalldrug = false;
+        $scope.show_setup_newdrug = false;
+        $scope.show_searchright = false;
+        $scope.show_setup_UOM = false;
+        $scope.show_setup_form = false;
+        $scope.show_setup_frequency = false;
+    }
+    function setup_newdrug() {
+        closeallpage4();
+        $scope.show_setup_newdrug = true;
+        find_UOM();
+        find_frequencies();
+        find_form();
+    }
+    function save_newdrug(tradename, genericname, default_dose, frequencies, UOM, form) {
+
+        $http.post('/local/savenewdrug', {
+            "mfile": "itemmaster",
+            "tradename": tradename,
+            "genericname": genericname,
+            "default_dose": default_dose,
+            "frequencies": frequencies,
+            "UOM": UOM,
+            "form": form,
+            "statusflag": 'A',
+
+        }).success(function (data) {
+            $scope.lbl_note = 'save data ready';
+            $scope.show_setup_newdrug = false;
+            $scope.show_p4 = false;
+        });
+    }
+    function list_drug() {
+        $http.post('/local/list_alldrug', {
+            "mfile": 'itemmaster',
+        }).success(function (data) {
+            if (data.data && data.data.length > 0) {
+                $scope.alldrug = data.data;
+                closeallpage4();
+                $scope.show_listalldrug = true;
+            } else {
+                $scope.alldrug = [];
+                // $scope.show_listalldrug = false;
+            }
+            console.log('alldrug', $scope.alldrug);
+
+        });
+    }
+    function setup_UOM() {
+        find_UOM();
+        closeallpage4();
+        $scope.show_setup_UOM = true;
+    }
+    function find_UOM() {
+        $http
+            .post("/local_json/readjson", {
+                mfile: 'UOM.json',
+            })
+            .success(function (data) {
+                if (data) {
+
+                    $scope.UOMall = data.data;
+                    $scope.UOM = $scope.UOMall.filter(function (choose) { return choose.statusflag == 'A' });
+                    console.log($scope.UOM);
+                }
+            });
+    }
+    function find_frequencies() {
+        $http
+            .post("/local_json/readjson", {
+                mfile: 'frequencies.json',
+            })
+            .success(function (data) {
+                if (data) {
+                    $scope.frequenciesall = data.data;
+                    $scope.frequencies = $scope.frequenciesall.filter(function (choose) { return choose.statusflag == 'A' });
+                    console.log($scope.frequencies);
+                }
+            });
+    }
+    function find_form() {
+        $http
+            .post("/local_json/readjson", {
+                mfile: 'form.json',
+            })
+            .success(function (data) {
+                if (data) {
+                    $scope.formall = data.data;
+                    $scope.form = $scope.formall.filter(function (choose) { return choose.statusflag == 'A' });
+                    console.log($scope.form);
+                }
+            });
+    }
+    function save_UOM(valuedescription, locallanguagedesc) {
+        console.log(valuedescription);
+        console.log(locallanguagedesc);
+        $http
+            .post("/local_json/write_UOM", {
+                mfile: 'UOM.json',
+                valuedescription: valuedescription,
+                locallanguagedesc: locallanguagedesc
+            })
+            .success(function (data) {
+                find_UOM();
+                $scope.uomtxt="บันทึกรายการเรียบร้อย";
+                clear_UOM();
+            });
+    }
+    function delete_UOM(valuedescription, locallanguagedesc, idx) {
+        console.log(valuedescription);
+        console.log(locallanguagedesc);
+        console.log(idx);
+        $http
+            .post("/local_json/deletejson", {
+                mfile: 'UOM.json',
+                idx: idx,
+                valuedescription: valuedescription,
+                locallanguagedesc: locallanguagedesc
+            })
+            .success(function (data) {
+                find_UOM();
+                $scope.uomtxt="ยกเลิกรายการเรียบร้อย";
+            });
+    }
+    function clear_UOM() {
+        vm.valuedescription='';
+        vm.locallanguagedesc='';
+    }
+    function setup_form() {
+        find_form();
+        closeallpage4();
+        $scope.show_setup_form = true;
+    }
+    function save_form(valuedescription) {
+        console.log(valuedescription);
+
+        $http
+            .post("/local_json/write_form", {
+                mfile: 'form.json',
+                valuedescription: valuedescription,
+            })
+            .success(function (data) {
+                find_form();
+                $scope.formtxt="บันทึกรายการเรียบร้อย";
+                clear_form();
+            });
+    }
+    function delete_form(valuedescription, idx) {
+        console.log(valuedescription);
+        console.log(idx);
+        $http
+            .post("/local_json/delete_form", {
+                mfile: 'form.json',
+                idx: idx,
+                valuedescription: valuedescription,
+            })
+            .success(function (data) {
+                find_form();
+                $scope.formtxt="ยกเลิกรายการเรียบร้อย";
+            });
+    }
+    function clear_form() {
+        vm.valuedescription='';
+    }
+
+    function setup_frequency() {
+        find_frequencies();
+        closeallpage4();
+        $scope.show_setup_frequency = true;
+    }
+    function save_frequency(description,locallangdesc) {
+        console.log(description);
+        console.log(locallangdesc);
+        $http
+            .post("/local_json/write_frequency", {
+                mfile: 'frequencies.json',
+                description: description,
+                locallangdesc: locallangdesc,
+            })
+            .success(function (data) {
+                find_frequencies();
+                $scope.frequencytxt="บันทึกรายการเรียบร้อย";
+                clear_frequency();
+            });
+    }
+    function deletefrequency(description,locallangdesc, idx) {
+        console.log(description);
+        console.log(locallangdesc);
+        console.log(idx);
+        $http
+            .post("/local_json/delete_frequency", {
+                mfile: 'frequencies.json',
+                idx: idx,
+                locallangdesc: locallangdesc,
+                description: description,
+            })
+            .success(function (data) {
+                find_frequencies();
+                $scope.frequencytxt="ยกเลิกรายการเรียบร้อย";
+            });
+    }
+    function clear_frequency() {
+        vm.description='';
+        vm.locallangdesc='';
+    }
+    //-------------------------------
     function new_p1() {
         $scope.lbl_note = '';
         $scope.show_btnsave = true;
@@ -600,34 +871,7 @@ app.controller('a_clinicController', function ($scope, $location, $http, $timeou
 
         //this trick will generat
     }
-    function searchHN(params) {
-        let mhn = params.replace("-", "");
-        var m1 = mhn.substring(0, 2);
-        var m2 = mhn.substring(2, 8);
-        var hn = m1 + '-' + m2;
-        console.log(hn);
-        $scope.findpt = [];
-        $http.post('/local/search_existHN', {
-            "mfile": 'patient',
-            "hn": hn,
-            "orguid": $scope.orguid,
-            // "fromdate": moment($scope.todaydate).startOf('day').format(),
-            // "todate": moment($scope.todaydate).endOf('day').format()
-        }).success(function (data) {
-            if (data.data && data.data.length > 0) {
-                $scope.findpt = data.data[0];
-                $scope.show_searchright = true;
-                // $scope.HN = mhn;
-                // vm.mHN = mhn;
-            } else {
-                $scope.findpt = [];
-                $scope.show_searchright = false;
-            }
-            console.log('findpt',$scope.findpt);
-            // vm.HN = '';
-        });
 
-    }
 
     //--------report
     function report() {
@@ -705,27 +949,7 @@ app.controller('a_clinicController', function ($scope, $location, $http, $timeou
         var mage = years + ' Y /' + months + ' M /' + days + 'D';
         return mage;
     }
-    function PrintMe() {
-        var disp_setting = "toolbar=yes,location=no,";
-        disp_setting += "directories=yes,menubar=yes,";
-        disp_setting += "scrollbars=yes,width=650, height=600, left=100, top=25";
-        var content_vlue = document.getElementById('printableArea').innerHTML;
-        var docprint = window.open("", "", disp_setting);
-        docprint.document.open();
-        docprint.document.write('<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"');
-        docprint.document.write('"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">');
-        docprint.document.write('<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">');
-        docprint.document.write('<head><title>My Title</title>');
-        docprint.document.write('<style type="text/css">body{ _margin:0px;');
-        docprint.document.write('font-family:verdana,Arial;color:#000;');
-        docprint.document.write('font-family:Verdana, Geneva, sans-serif; font-size:12px;}');
-        docprint.document.write('a{color:#000;text-decoration:none;} </style>');
-        docprint.document.write('</head><body onLoad="self.print()"><center>');
-        docprint.document.write(content_vlue);
-        docprint.document.write('</center></body></html>');
-        docprint.document.close();
-        docprint.focus();
-    }
+
 
     function DateThai(myDate) {
         // var dateOfBirth = moment(myDate);

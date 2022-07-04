@@ -24,13 +24,19 @@ module.exports = function (app) {
     app.post('/local/finddata', local.finddata);
     app.post('/local/findlastHN', local.findlastHN);
     app.post('/local/search_existHN', local.search_existHN);
-    // app.post('/local/finddata', local.finddata);
-    // app.post('/local/findlastHN', local.findlastHN);
+    app.post('/local/savenewdrug', local.savenewdrug);
+    app.post('/local/list_alldrug', local.list_alldrug);
     var local_json = require('./local_json.route.js');
     app.post('/local_json/readjson', local_json.readjson);
     app.post('/local_json/writejson', local_json.writejson);
-    app.post('/local_json/deletejson', local_json.deletejson);
+    // app.post('/local_json/deletejson', local_json.deletejson);
     app.post('/local_json/editjson', local_json.editjson);
     app.post('/local_json/deletetemplatejson', local_json.deletetemplatejson);
-   
+    app.post('/local_json/delete_UOM', local_json.delete_UOM);
+    app.post('/local_json/write_UOM', local_json.write_UOM);
+    app.post('/local_json/delete_form', local_json.delete_form);
+    app.post('/local_json/write_form', local_json.write_form);
+    app.post('/local_json/delete_frequency', local_json.delete_frequency);
+    app.post('/local_json/write_frequency', local_json.write_frequency);
+    
 }

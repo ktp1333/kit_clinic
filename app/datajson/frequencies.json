@@ -1,0 +1,1512 @@
+[
+  {
+    "statusflag": "A",
+    "locallangdesc": "หลังอาหารเช้า และรับประทาน ครึ่ง เม็ด หลังอาหารเย็น",
+    "description": "Before breakfast and take 1 tablet before dinner"
+  },
+  {
+    "statusflag": "A",
+    "locallangdesc": "วันละ 3 มื้อ",
+    "description": "3 Meals per Day"
+  },
+  {
+    "statusflag": "A",
+    "locallangdesc": "วันละ 5 ครั้ง 6.00 10.00 14.00 18.00 22.00",
+    "description": "5 Times A Day 6AM. 10AM. 2PM. 6PM. 10PM."
+  },
+  {
+    "statusflag": "A",
+    "locallangdesc": "วันละ 5 ครั้ง 6.00 10.00 14.00 18.00 22.00 น.",
+    "description": "Every 4 hr at  6.00 10.00 14.00 18.00 22.00"
+  },
+  {
+    "statusflag": "A",
+    "locallangdesc": "วันละ 2 ครั้ง เวลา 8.00 น. และ เวลา 20.00 น.",
+    "description": "Twice Daily  at  8.00 AM. and 8.00 PM."
+  },
+  {
+    "statusflag": "A",
+    "locallangdesc": "วันเว้นวัน ก่อนนอน",
+    "description": "Every Other Day At Bed Time"
+  },
+  {
+    "statusflag": "A",
+    "locallangdesc": "หลังอาหารเช้า วันเว้นวัน",
+    "description": "Every Other Day After Breakfast"
+  },
+  {
+    "statusflag": "A",
+    "locallangdesc": "วันเว้นวัน หลังอาหารเย็น",
+    "description": "Every Other Day After Dinner"
+  },
+  {
+    "statusflag": "A",
+    "locallangdesc": "วันเว้นวัน",
+    "description": "Every Other Day"
+  },
+  {
+    "statusflag": "A",
+    "locallangdesc": "ตามแพทย์สั่ง",
+    "description": "As Directed"
+  },
+  {
+    "statusflag": "A",
+    "locallangdesc": "เวลา 8.00 และ 20.00 น.",
+    "description": "AT 8 AM, 8 PM"
+  },
+  {
+    "statusflag": "A",
+    "locallangdesc": "วันละ 2 ครั้ง เช้า เย็น",
+    "description": "Twice Daily Morning and Evening"
+  },
+  {
+    "statusflag": "A",
+    "locallangdesc": "วันละ 2 ครั้ง ก่อนอาหาร เช้า เย็น",
+    "description": "Twice Daily Before Breakfast and Dinner"
+  },
+  {
+    "statusflag": "A",
+    "locallangdesc": "วันละ 2 ครั้ง ก่อนอาหาร เช้า กลางวัน",
+    "description": "Twice Daily Before Breakfast and Lunch"
+  },
+  {
+    "statusflag": "A",
+    "locallangdesc": "วันละ 2 ครั้ง ก่อนอาหาร เช้า ก่อนนอน",
+    "description": "Twice Daily Before Breakfast and Bedtime"
+  },
+  {
+    "statusflag": "A",
+    "locallangdesc": "วันละ 2 ครั้ง เช้า ก่อนนอน",
+    "description": "Twice Daily Morning and Bedtime"
+  },
+  {
+    "statusflag": "A",
+    "locallangdesc": "วันละ 2 ครั้ง เช้า ก่อนนอนหรือ เวลามีอาการ………",
+    "description": "Twice Daily Morning and Bedtime"
+  },
+  {
+    "statusflag": "A",
+    "locallangdesc": "วันละ 2 ครั้ง พร้อมอาหาร เช้า ก่อนนอน",
+    "description": "Twice Daily With Breakfast and Bedtime"
+  },
+  {
+    "statusflag": "A",
+    "locallangdesc": "วันละ 2 ครั้ง พร้อมอาหาร เช้า กลางวัน",
+    "description": "Twice Daily With Breakfast and Lunch"
+  },
+  {
+    "statusflag": "A",
+    "locallangdesc": "วันละ 2 ครั้ง พร้อมอาหาร เช้า เย็น",
+    "description": "Twice Daily With Breakfast and Dinner"
+  },
+  {
+    "statusflag": "A",
+    "locallangdesc": "วันละ 2 ครั้ง หลังอาหาร เช้า เย็น",
+    "description": "Twice Daily After Breakfast and Dinner"
+  },
+  {
+    "statusflag": "A",
+    "locallangdesc": "วันละ 2 ครั้ง หลังอาหาร เช้า ก่อนนอน",
+    "description": "Twice Daily After Breakfast and Bedtime"
+  },
+  {
+    "statusflag": "A",
+    "locallangdesc": "วันละ 2 ครั้ง หลังอาหาร เช้า กลางวัน",
+    "description": "Twice Daily After Breakfast and Lunch"
+  },
+  {
+    "statusflag": "A",
+    "locallangdesc": "วันละ 2 ครั้ง หลังอาหาร กลางวัน ก่อนนอน",
+    "description": "Twice Daily After Lunch and Bedtime"
+  },
+  {
+    "statusflag": "A",
+    "locallangdesc": "วันละ 2 ครั้ง เช้า เย็น",
+    "description": "Twice Daily Morning and Evening"
+  },
+  {
+    "statusflag": "A",
+    "locallangdesc": "วันละ 2 ครั้ง เช้า ก่อนนอน",
+    "description": "Two Times Daily at Morning and Bedtime"
+  },
+  {
+    "statusflag": "A",
+    "locallangdesc": "สัปดาห์ละ 2 ครั้ง",
+    "description": "Twice A Week"
+  },
+  {
+    "statusflag": "A",
+    "locallangdesc": "สัปดาห์ละ 2 ครั้ง เฉพาะวันจันทร์ และ พฤหัส",
+    "description": "Twice A Week on Monday and Thrusday"
+  },
+  {
+    "statusflag": "A",
+    "locallangdesc": "สัปดาห์ละ 2 ครั้ง เฉพาะวันอังคาร และ พฤหัส",
+    "description": "Twice A Week on Tuesday  And Thrusday"
+  },
+  {
+    "statusflag": "A",
+    "locallangdesc": "มื้อเช้า",
+    "description": "Breakfast"
+  },
+  {
+    "statusflag": "A",
+    "locallangdesc": "ระหว่างมื้อ",
+    "description": "Brunch"
+  },
+  {
+    "statusflag": "A",
+    "locallangdesc": "วันเว้นวัน",
+    "description": "Day other day"
+  },
+  {
+    "statusflag": "A",
+    "locallangdesc": "มื้อเย็น",
+    "description": "Dinner"
+  },
+  {
+    "statusflag": "A",
+    "locallangdesc": "ทุกวันคู่ วันละ 1 ครั้ง ก่อนอาหารเช้า",
+    "description": "Every Even Day Before Breakfast"
+  },
+  {
+    "statusflag": "A",
+    "locallangdesc": "ทุกวันคู่ วันละ 1 ครั้ง ก่อนนอน",
+    "description": "Every Even Day At Bedtime"
+  },
+  {
+    "statusflag": "A",
+    "locallangdesc": "ทุกวันคู่ วันละ 1 ครั้ง หลังอาหารเช้า",
+    "description": "Every Even Day After Breakfast"
+  },
+  {
+    "statusflag": "A",
+    "locallangdesc": "วันละ 1 ครั้ง 21:00 ก่อนนอน",
+    "description": "Once Daily Before Bedtime at 21:00"
+  },
+  {
+    "statusflag": "A",
+    "description": "hs laxative|วันละ 1 ครั้ง ก่อนนอน เวลา ท้องผูกหรือไม่ถ่าย",
+    "locallangdesc": "วันละ 1 ครั้ง ก่อนนอน เวลา ท้องผูกหรือไม่ถ่าย"
+  },
+  {
+    "statusflag": "A",
+    "locallangdesc": "วันละ 1 ครั้ง ก่อนนอน เวลา นอนไม่หลับ",
+    "description": "Once Daily At Bed Time For Insomnia"
+  },
+  {
+    "statusflag": "A",
+    "locallangdesc": "วันละ 1 ครั้ง ก่อนนอน เวลา คัน",
+    "description": "Once Daily At Bed Time For Itching"
+  },
+  {
+    "statusflag": "A",
+    "locallangdesc": "วันละ 1 ครั้ง ก่อนนอน เวลา ท้องผูกหรือไม่ถ่าย",
+    "description": "Once Daily At Bed Time For Constipation"
+  },
+  {
+    "statusflag": "A",
+    "locallangdesc": "มื้อกลางวัน",
+    "description": "Lunch"
+  },
+  {
+    "statusflag": "A",
+    "locallangdesc": "วันละ 1 ครั้ง",
+    "description": "Once Daily"
+  },
+  {
+    "statusflag": "A",
+    "locallangdesc": "วันละ 1 ครั้ง เวลา 8.00 น.",
+    "description": "Once Daily At 8.00 A.M."
+  },
+  {
+    "statusflag": "A",
+    "locallangdesc": "วันละ 1 ครั้ง ก่อนอาหารเช้า",
+    "description": "Once Daily Before Breakfast"
+  },
+  {
+    "statusflag": "A",
+    "locallangdesc": "วันละ 1 ครั้ง ก่อนอาหารเย็น",
+    "description": "Once Daily Before Dinner"
+  },
+  {
+    "statusflag": "A",
+    "locallangdesc": "วันละ 1 ครั้ง ก่อนอาหารกลางวัน",
+    "description": "Once Daily Before Lunch"
+  },
+  {
+    "statusflag": "A",
+    "locallangdesc": "วันละ 1 ครั้ง ตอนเช้า",
+    "description": "Once Daily in the Morning"
+  },
+  {
+    "statusflag": "A",
+    "locallangdesc": "วันละ 1 ครั้ง หลังอาหารเช้า",
+    "description": "Once Daily After Breakfast"
+  },
+  {
+    "statusflag": "A",
+    "locallangdesc": "วันละ 1 ครั้ง หลังอาหารเย็น",
+    "description": "Once Daily After Dinner"
+  },
+  {
+    "statusflag": "A",
+    "locallangdesc": "วันละ 1 ครั้ง หลังอาหารกลางวัน",
+    "description": "Once Daily After Lunch"
+  },
+  {
+    "statusflag": "A",
+    "locallangdesc": "วันละ 1 ครั้ง ตอนเย็น",
+    "description": "Once Daily in the Evening"
+  },
+  {
+    "statusflag": "A",
+    "locallangdesc": "วันละ 1 ครั้ง พร้อมอาหารเช้า",
+    "description": "Once Daily With Breakfast"
+  },
+  {
+    "statusflag": "A",
+    "locallangdesc": "วันละ 1 ครั้ง พร้อมอาหารเย็น",
+    "description": "Once Daily With Dinner"
+  },
+  {
+    "statusflag": "A",
+    "locallangdesc": "วันละ 1 ครั้ง พร้อมอาหารกลางวัน",
+    "description": "Once Daily With Lunch"
+  },
+  {
+    "statusflag": "A",
+    "locallangdesc": "ทุกวันคี่ วันละ 1 ครั้ง ก่อนอาหารเช้า",
+    "description": "Every Odd Day Before Breakfast"
+  },
+  {
+    "statusflag": "A",
+    "locallangdesc": "ทุกวันคี่ วันละ 1 ครั้ง ก่อนนอน",
+    "description": "Every Odd Day At Bedtime"
+  },
+  {
+    "statusflag": "A",
+    "locallangdesc": "ทุกวันคี่ วันละ 1 ครั้ง หลังอาหารเช้า",
+    "description": "Every Odd Day After Breakfast"
+  },
+  {
+    "statusflag": "A",
+    "locallangdesc": "ดื่มบ่อยๆ แทนน้ำ",
+    "description": "Drink Instead of Water"
+  },
+  {
+    "statusflag": "A",
+    "locallangdesc": "เวลามีอาการเจ็บคอ ระคายคอ",
+    "description": "For sore throat"
+  },
+  {
+    "statusflag": "A",
+    "locallangdesc": "เวลามีอาการปวดศีรษะ ถ้าไม่ดีขึ้นซ้ำได้อีก 1 เม็ดใน 1 ชั่วโมง",
+    "description": "For Early Headache can repeat in An Hour If not better."
+  },
+  {
+    "statusflag": "A",
+    "locallangdesc": "ทุก 4 ชั่วโมง เวลามีอาการ…………………",
+    "description": "Every 4 Hours When have Symptom"
+  },
+  {
+    "statusflag": "A",
+    "locallangdesc": "ทุก 6 ชั่วโมง เวลามีอาการปวด",
+    "description": "Every 6 Hours for Break Through Pain"
+  },
+  {
+    "statusflag": "A",
+    "locallangdesc": "ทุก 6 ชั่วโมง เวลามีอาการ………………..",
+    "description": "Every 6 Hours When have Symptom"
+  },
+  {
+    "statusflag": "A",
+    "locallangdesc": "ทุก 8 ชั่วโมง เวลามีอาการ………………..",
+    "description": "Every 8 Hours When have Symptom"
+  },
+  {
+    "statusflag": "A",
+    "locallangdesc": "ทุก 1 เดือน",
+    "description": "Every 1 Month"
+  },
+  {
+    "statusflag": "A",
+    "locallangdesc": "ทุก 1 สัปดาห์",
+    "description": "Every 1 Week"
+  },
+  {
+    "statusflag": "A",
+    "locallangdesc": "ทุก ครึ่ง ชั่วโมง",
+    "description": "Every Half An Hour"
+  },
+  {
+    "statusflag": "A",
+    "locallangdesc": "ทุก 12 ชั่วโมง เวลามีไข้สูง (มากกว่า 38.5 องศา)",
+    "description": "Every 12 hous for high fever"
+  },
+  {
+    "statusflag": "A",
+    "locallangdesc": "ทุก 12 ชัวโมง เมื่อมีอาการ",
+    "description": "Every 12 hour for pain"
+  },
+  {
+    "statusflag": "A",
+    "locallangdesc": "ทุก 2 ชั่วโมง จนถึงเวลานอน",
+    "description": "Every 2 hours until bedtime"
+  },
+  {
+    "statusflag": "A",
+    "locallangdesc": "ทุก 2 สัปดาห์",
+    "description": "Every 2 Weeks"
+  },
+  {
+    "statusflag": "A",
+    "locallangdesc": "ทุก 3 วัน",
+    "description": "Every 3 Days"
+  },
+  {
+    "statusflag": "A",
+    "locallangdesc": "ทุก 3 ชั่วโมง เวลามีอาการหอบเหนื่อย",
+    "description": "Every 3 hous for asthma"
+  },
+  {
+    "statusflag": "A",
+    "locallangdesc": "ทุก 3 เดือน",
+    "description": "Every 3 Months"
+  },
+  {
+    "statusflag": "A",
+    "locallangdesc": "ทุก 3 สัปดาห์",
+    "description": "Every 3 Weeks"
+  },
+  {
+    "statusflag": "A",
+    "locallangdesc": "ทุก 4 ชั่วโมงเวลามีอาการเจ็บคอ ระคายคอ",
+    "description": "Every 4 hous for sore throat"
+  },
+  {
+    "statusflag": "A",
+    "locallangdesc": "ทุก 6 ชั่วโมง เวลามีอาการหอบเหนื่อย",
+    "description": "Every 6 hous for asthma"
+  },
+  {
+    "statusflag": "A",
+    "locallangdesc": "ทุก 6 ชั่วโมงเวลามีอาการชัก",
+    "description": "Every 6 hous for seizure"
+  },
+  {
+    "statusflag": "A",
+    "locallangdesc": "ทุก 6 ชั่วโมงเวลามีอาการเจ็บคอ ระคายคอ",
+    "description": "Every 6 hous for sore throat"
+  },
+  {
+    "statusflag": "A",
+    "locallangdesc": "ทุก 8 ชั่วโมง เวลามีอาการหอบเหนื่อย",
+    "description": "Every 8 hours for asthma"
+  },
+  {
+    "statusflag": "A",
+    "locallangdesc": "ทุก 8 ชั่วโมงเวลาท้องเสีย",
+    "description": "Every 8 hours  for Diarrhea"
+  },
+  {
+    "statusflag": "A",
+    "locallangdesc": "ทุก 1 ชั่วโมง",
+    "description": "Every 1 Hour"
+  },
+  {
+    "statusflag": "A",
+    "locallangdesc": "ทุก 12 ชั่วโมง",
+    "description": "Every 12 Hours"
+  },
+  {
+    "statusflag": "A",
+    "locallangdesc": "ทุก 12 ชั่วโมง",
+    "description": "Every 12 Hours"
+  },
+  {
+    "statusflag": "A",
+    "locallangdesc": "ทุก 12 ชั่วโมง",
+    "description": "Every 12 Hours"
+  },
+  {
+    "statusflag": "A",
+    "locallangdesc": "ทุก 12 ชั่วโมง",
+    "description": "Every 12 Hours"
+  },
+  {
+    "statusflag": "A",
+    "locallangdesc": "ทุก 12 ชั่วโมง",
+    "description": "Every 12 Hours"
+  },
+  {
+    "statusflag": "A",
+    "locallangdesc": "ทุก 12 ชั่วโมง เวลามีอาการ",
+    "description": "Every 12 Hours"
+  },
+  {
+    "statusflag": "A",
+    "locallangdesc": "ทุก 2 ชั่วโมง",
+    "description": "Every 2 Hours"
+  },
+  {
+    "statusflag": "A",
+    "locallangdesc": "ทุกๆ 24 ชั่วโมง",
+    "description": "Every 24 Hours"
+  },
+  {
+    "statusflag": "A",
+    "locallangdesc": "ทุกๆ 24 ชั่วโมง",
+    "description": "Every 24 Hours"
+  },
+  {
+    "statusflag": "A",
+    "locallangdesc": "ทุกๆ 24 ชั่วโมง",
+    "description": "Every 24 Hours"
+  },
+  {
+    "statusflag": "A",
+    "locallangdesc": "ทุกๆ 24 ชั่วโมง",
+    "description": "Every 24 Hours"
+  },
+  {
+    "statusflag": "A",
+    "locallangdesc": "ทุกๆ 24 ชั่วโมง",
+    "description": "Every 24 Hours"
+  },
+  {
+    "statusflag": "A",
+    "locallangdesc": "ทุกๆ 24 ชั่วโมง",
+    "description": "Every 24 Hours"
+  },
+  {
+    "statusflag": "A",
+    "locallangdesc": "ทุกๆ 24 ชั่วโมง",
+    "description": "Every 24 Hours"
+  },
+  {
+    "statusflag": "A",
+    "locallangdesc": "ทุกๆ 24 ชั่วโมง",
+    "description": "Every 24 Hours"
+  },
+  {
+    "statusflag": "A",
+    "locallangdesc": "ทุก 3 ชั่วโมง",
+    "description": "Every 3 Hours"
+  },
+  {
+    "statusflag": "A",
+    "locallangdesc": "ทุก 3 ชั่วโมงเวลามีอาการ",
+    "description": "as needed every 3 hours"
+  },
+  {
+    "statusflag": "A",
+    "locallangdesc": "ทุก 4 ชั่วโมง",
+    "description": "Every 4 Hours"
+  },
+  {
+    "statusflag": "A",
+    "locallangdesc": "ทุก 4 ชั่วโมง เวลามีอาการหอบเหนื่อย",
+    "description": "Every 4 hours for asthma"
+  },
+  {
+    "statusflag": "A",
+    "locallangdesc": "ทุก 4 ชั่วโมงเวลาท้องเสีย",
+    "description": "every 4 hours  for Diarrhea"
+  },
+  {
+    "statusflag": "A",
+    "locallangdesc": "ทุก 4 ชั่วโมงเวลามีไข้",
+    "description": "Every 4 hours  for fever"
+  },
+  {
+    "statusflag": "A",
+    "locallangdesc": "ทุก 4 ชั่วโมงเวลาปวด",
+    "description": "Every 4 hours for pain"
+  },
+  {
+    "statusflag": "A",
+    "locallangdesc": "ทุก 4 ชั่วโมง เวลามีอาการ……………",
+    "description": "Every 4 Hours If Needed"
+  },
+  {
+    "statusflag": "A",
+    "description": "Every 4 Hours For High Fever > 38.5 C",
+    "locallangdesc": "ทุก 4 ชั่วโมงเมื่อมีไข้สูงมากกว่า 38.5 องศา"
+  },
+  {
+    "statusflag": "A",
+    "locallangdesc": "ทุก 4 ชั่วโมง",
+    "description": "Every 4 Hours"
+  },
+  {
+    "statusflag": "A",
+    "locallangdesc": "ทุก 48 ชั่วโมง",
+    "description": "Every 48 Hours"
+  },
+  {
+    "statusflag": "A",
+    "locallangdesc": "ทุก 6 ชั่วโมง เวลามีอาการไอ",
+    "description": "Every 6 hours for cough"
+  },
+  {
+    "statusflag": "A",
+    "locallangdesc": "ทุก 6 ชั่วโมง เวลาคัน",
+    "description": "Every 6 Hours For Itching"
+  },
+  {
+    "statusflag": "A",
+    "locallangdesc": "ทุก 6 ชั่วโมง",
+    "description": "Every 6 Hours"
+  },
+  {
+    "statusflag": "A",
+    "locallangdesc": "ทุก 6 ชั่วโมง เวลามีอาการ……………",
+    "description": "Every 6 Hours If Needed"
+  },
+  {
+    "statusflag": "A",
+    "locallangdesc": "ทุก 6 ชั่วโมง",
+    "description": "Every 6 Hours"
+  },
+  {
+    "statusflag": "A",
+    "locallangdesc": "ทุก 6 ชั่วโมง",
+    "description": "Every 6 Hours"
+  },
+  {
+    "statusflag": "A",
+    "locallangdesc": "ทุก 6 ชั่วโมง",
+    "description": "Every 6 Hours"
+  },
+  {
+    "statusflag": "A",
+    "locallangdesc": "ทุก 6 ชั่วโมง เวลาปวดท้อง",
+    "description": "Every 6 Hours For Abdominal Pain"
+  },
+  {
+    "statusflag": "A",
+    "locallangdesc": "ทุก 6 ชั่วโมง เวลามึน หรือ เวียนศีรษะ",
+    "description": "Every 6 Hours For Dizziness"
+  },
+  {
+    "statusflag": "A",
+    "locallangdesc": "ทุก 6 ชั่วโมง เวลามีไข้",
+    "description": "Every 6 Hours For Fever"
+  },
+  {
+    "statusflag": "A",
+    "locallangdesc": "ทุก 6 ชั่วโมง เวลาปวดศีรษะ",
+    "description": "Every 6 Hours For Headache"
+  },
+  {
+    "statusflag": "A",
+    "locallangdesc": "ทุก 6 ชั่วโมง เวลามีไข้สูงมากกว่า 38.5 องศา",
+    "description": "Every 6 Hours For High Fever > 38.5 C"
+  },
+  {
+    "statusflag": "A",
+    "locallangdesc": "ทุก 6 ชั่วโมง เวลามีอาการคัดจมูก",
+    "description": "Every 6 Hours For Nasal Congestant"
+  },
+  {
+    "statusflag": "A",
+    "locallangdesc": "ทุก 6 ชั่วโมง เวลาปวด",
+    "description": "Every 6 Hours For Pain"
+  },
+  {
+    "statusflag": "A",
+    "locallangdesc": "ทุก 6 ชั่วโมง เวลาคลื่นไส้ อาเจียน",
+    "description": "Every 6 Hours For Nausia or Vomiting"
+  },
+  {
+    "statusflag": "A",
+    "locallangdesc": "ทุก 72 ชั่วโมง",
+    "description": "Every 72 Hours"
+  },
+  {
+    "statusflag": "A",
+    "locallangdesc": "ทุก 8 ชั่วโมง เวลาปวด",
+    "description": "Every 8 Hours For Pain"
+  },
+  {
+    "statusflag": "A",
+    "locallangdesc": "ทุก 8 ชั่วโมง",
+    "description": "Every 8 Hours"
+  },
+  {
+    "statusflag": "A",
+    "locallangdesc": "ทุก 8 ชั่วโมง",
+    "description": "Every 8 Hours"
+  },
+  {
+    "statusflag": "A",
+    "locallangdesc": "ทุก 8 ชั่วโมง",
+    "description": "Every 8 Hours"
+  },
+  {
+    "statusflag": "A",
+    "locallangdesc": "ทุก 8 ชั่วโมง",
+    "description": "Every 8 Hours"
+  },
+  {
+    "statusflag": "A",
+    "locallangdesc": "ทุก 8 ชั่วโมง เวลามีไข้",
+    "description": "Every 8 hours for Fever"
+  },
+  {
+    "statusflag": "A",
+    "locallangdesc": "วันละ 4 ครั้ง เช้า กลางวัน เย็น และ ก่อนนอน",
+    "description": "4 Times A Day Morning Noon Evening and Bedtime"
+  },
+  {
+    "statusflag": "A",
+    "locallangdesc": "วันละ 4 ครั้ง ก่อนอาหารเช้า กลางวัน เย็น และ ก่อนนอน",
+    "description": "4 Times Daily Before Breakfast Lunch Dinner and  Bedtime"
+  },
+  {
+    "statusflag": "A",
+    "locallangdesc": "วันละ 4 ครั้ง พร้อมอาหารเช้า กลางวัน เย็น และ ก่อนนอน",
+    "description": "4 Times Daily With Breakfast Lunch Dinner and  Bedtime"
+  },
+  {
+    "statusflag": "A",
+    "locallangdesc": "วันละ 4 ครั้ง หลังอาหารเช้า กลางวัน เย็น และ ก่อนนอน",
+    "description": "4 Times Daily After Breakfast Lunch Dinner and  Bedtime"
+  },
+  {
+    "statusflag": "A",
+    "locallangdesc": "วันละ 4 ครั้ง เช้า กลางวัน เย็น เเละ ก่อนนอน",
+    "description": "4 Time A Day Morning Noon Evening and Bedtime"
+  },
+  {
+    "statusflag": "A",
+    "locallangdesc": "rate 100 ml/hr.",
+    "description": "rate 100 ml/hr."
+  },
+  {
+    "statusflag": "A",
+    "locallangdesc": "rate 110 ml/hr.",
+    "description": "rate 110 ml/hr."
+  },
+  {
+    "statusflag": "A",
+    "locallangdesc": "rate 120 ml/hr.",
+    "description": "rate 120 ml/hr."
+  },
+  {
+    "statusflag": "A",
+    "locallangdesc": "rate 20 ml/hr.",
+    "description": "rate 20 ml/hr."
+  },
+  {
+    "statusflag": "A",
+    "locallangdesc": "rate 25 ml/hr.",
+    "description": "rate 25 ml/hr."
+  },
+  {
+    "statusflag": "A",
+    "locallangdesc": "rate 30 ml/hr.",
+    "description": "rate 30 ml/hr."
+  },
+  {
+    "statusflag": "A",
+    "locallangdesc": "rate 35 ml/hr.",
+    "description": "rate 35 ml/hr."
+  },
+  {
+    "statusflag": "A",
+    "locallangdesc": "rate 40 ml/hr.",
+    "description": "rate 40 ml/hr."
+  },
+  {
+    "statusflag": "A",
+    "locallangdesc": "rate 45 ml/hr.",
+    "description": "rate 45 ml/hr."
+  },
+  {
+    "statusflag": "A",
+    "locallangdesc": "rate 50 ml/hr.",
+    "description": "rate 50 ml/hr."
+  },
+  {
+    "statusflag": "A",
+    "locallangdesc": "rate 55 ml/hr.",
+    "description": "rate 55 ml/hr."
+  },
+  {
+    "statusflag": "A",
+    "locallangdesc": "rate 60 ml/hr.",
+    "description": "rate 60 ml/hr."
+  },
+  {
+    "statusflag": "A",
+    "locallangdesc": "rate 65 ml/hr.",
+    "description": "rate 65 ml/hr."
+  },
+  {
+    "statusflag": "A",
+    "locallangdesc": "rate 70 ml/hr.",
+    "description": "rate 70 ml/hr."
+  },
+  {
+    "statusflag": "A",
+    "locallangdesc": "rate 75 ml/hr.",
+    "description": "rate 75 ml/hr."
+  },
+  {
+    "statusflag": "A",
+    "locallangdesc": "rate 80 ml/hr.",
+    "description": "rate 80 ml/hr."
+  },
+  {
+    "statusflag": "A",
+    "locallangdesc": "rate 85 ml/hr.",
+    "description": "rate 85 ml/hr."
+  },
+  {
+    "statusflag": "A",
+    "locallangdesc": "ซ้ำได้ทุก 5 นาที ถ้าอม 3 เม็ดแล้วไม่ดีขึ้น ให้รีบมาโรงพยาบาล",
+    "description": "Repeat Every 5 Minutes"
+  },
+  {
+    "statusflag": "A",
+    "locallangdesc": "ทันที",
+    "description": "STAT"
+  },
+  {
+    "statusflag": "A",
+    "locallangdesc": "วันละ 3 ครั้ง เช้า กลางวัน เย็น",
+    "description": "3 Times Daily  Morning Noon Evening"
+  },
+  {
+    "statusflag": "A",
+    "locallangdesc": "วันละ 3 ครั้ง ก่อนอาหาร เช้า กลางวัน เย็น",
+    "description": "3 Times Daily Before Breakfast Lunch and Dinner"
+  },
+  {
+    "statusflag": "A",
+    "locallangdesc": "วันละ 3 ครั้ง ก่อนอาหาร เช้า กลางวัน ก่อนนอน",
+    "description": "3 Times Daily Before Breakfast Lunch and Bedtime"
+  },
+  {
+    "statusflag": "A",
+    "locallangdesc": "วันละ 3 ครั้ง ก่อนอาหาร เช้า เย็น ก่อนนอน",
+    "description": "3 Times Daily Before Breakfast Dinner and Bedtime"
+  },
+  {
+    "statusflag": "A",
+    "locallangdesc": "วันละ 3 ครั้ง พร้อมอาหาร เช้า เย็น ก่อนนอน",
+    "description": "3 Times Daily With Breakfast Dinner and Bedtime"
+  },
+  {
+    "statusflag": "A",
+    "locallangdesc": "วันละ 3 ครั้ง พร้อมอาหาร เช้า กลางวัน เย็น",
+    "description": "3 Times Daily With Breakfast Lunch and Dinner"
+  },
+  {
+    "statusflag": "A",
+    "locallangdesc": "วันละ 3 ครั้ง เช้า เย็น ก่อนนอน",
+    "description": "3 Times Daily Morning Evening and Bedtime"
+  },
+  {
+    "statusflag": "A",
+    "locallangdesc": "วันละ 3 ครั้ง หลังอาหาร เช้า กลางวัน เย็น",
+    "description": "3 Times Daily After Breakfast Lunch and Dinner"
+  },
+  {
+    "statusflag": "A",
+    "locallangdesc": "วันละ 3 ครั้ง หลังอาหาร เช้า กลางวัน ก่อนนอน",
+    "description": "3 Times Daily After Breakfast Lunch and Bedtime"
+  },
+  {
+    "statusflag": "A",
+    "locallangdesc": "วันละ 3 ครั้ง หลังอาหาร เช้า เย็น ก่อนนอน",
+    "description": "3 Times Daily After Breakfast Dinner and Bedtime"
+  },
+  {
+    "statusflag": "A",
+    "locallangdesc": "สัปดาห์ละ 3 ครั้ง เฉพาะวันจันทร์, พุธ, ศุกร์",
+    "description": "3 Times Weekly On Monday  Wednesday and Friday"
+  },
+  {
+    "statusflag": "A",
+    "locallangdesc": "สัปดาห์ละ 3 ครั้ง เฉพาะวันอังคาร, พฤหัส, เสาร์",
+    "description": "3 Times Weekly On Tuesday, Thursday and Saturday"
+  },
+  {
+    "statusflag": "A",
+    "locallangdesc": "สัปดาห์ละ 3 ครั้ง หลังอาหารเช้า เฉพาะ วันจันทร์, พุธ, ศุกร์",
+    "description": "3 Times Weekly After Breakfast  on Monday Wednesday Friday"
+  },
+  {
+    "statusflag": "A",
+    "locallangdesc": "สัปดาห์ละ 3 ครั้ง หลังอาหารเย็น เฉพาะ วันจันทร์, พุธ, ศุกร์",
+    "description": "3 Times Weekly After Dinner on Monday Wednesday Friday"
+  },
+  {
+    "statusflag": "A",
+    "locallangdesc": "สัปดาห์ละ 1 ครั้ง",
+    "description": "Once A Week"
+  },
+  {
+    "statusflag": "A",
+    "locallangdesc": "สัปดาห์ละ 1 ครั้ง ทุกวันจันทร์",
+    "description": "Once a week, on Monday|สัปดาห์ละ 1 ครั้ง ทุกวันจันทร์"
+  },
+  {
+    "statusflag": "A",
+    "description": "Weekly Tuesday| สัปดาห์ละ 1 ครั้ง ทุกวันอังคาร",
+    "locallangdesc": "สัปดาห์ละ 1 ครั้ง ทุกวันอังคาร"
+  },
+  {
+    "statusflag": "A",
+    "locallangdesc": "เมื่อมีอาการ",
+    "description": "As needed"
+  },
+  {
+    "statusflag": "A",
+    "locallangdesc": "ผสมน้ำ 9 ml",
+    "description": "dilute in water 9 ml"
+  },
+  {
+    "statusflag": "A",
+    "locallangdesc": "เมื่อมีอาการคลื่นไส้ อาเจียน",
+    "description": ""
+  },
+  {
+    "description": "2 tab breakfast and 1 tab dinner before meal",
+    "locallangdesc": "2เม็ด ก่อนอาหารเช้า และ 1 เม็ด ก่อนอาหารเย็น",
+    "statusflag": "A"
+  },
+  {
+    "description": "rate 150 ml/hr.",
+    "locallangdesc": "rate 150 ml/hr.",
+    "statusflag": "A"
+  },
+  {
+    "description": "rate 10 ml/hr.",
+    "locallangdesc": "rate 10 ml/hr.",
+    "statusflag": "A"
+  },
+  {
+    "description": "rate 15 ml/hr.",
+    "locallangdesc": "rate 15 ml/hr.",
+    "statusflag": "A"
+  },
+  {
+    "description": "rate 5 ml/hr.",
+    "locallangdesc": "rate 5 ml/hr.",
+    "statusflag": "A"
+  },
+  {
+    "description": "Once Daily At 9.00 PM",
+    "locallangdesc": "วันละ 1 ครั้ง เวลา 21.00 น.",
+    "statusflag": "A"
+  },
+  {
+    "description": "Twice daily after lunch and dinner",
+    "locallangdesc": "วันละ 2 ครั้ง หลังอาหาร กลางวัน เย็น",
+    "statusflag": "A"
+  },
+  {
+    "description": "Every 2 hrs for Early Headache",
+    "locallangdesc": "เวลามีอาการปวดศีรษะ ถ้าไม่ดีขึ้นซ้ำได้อีก 1 เม็ด ใน 2 ชั่วโมง",
+    "statusflag": "A"
+  },
+  {
+    "description": "3 Times Daily at 8.00 14.00 20.00",
+    "locallangdesc": "วันละ 3 ครั้ง เวลา 8.00 14.00 20.00",
+    "statusflag": "A"
+  },
+  {
+    "description": "3 Times Daily at 6.00 12.00 20.00",
+    "locallangdesc": "วันละ 3 ครั้ง เวลา 6.00 12.00 20.00",
+    "statusflag": "A"
+  },
+  {
+    "description": "AT 10 AM, 8 PM",
+    "statusflag": "A",
+    "locallangdesc": "วันละ 2 ครั้ง เวลา 10.00 20.00"
+  },
+  {
+    "description": "3 Times Daily at 6.00 12.00 18.00",
+    "locallangdesc": "วันละ 3 ครั้ง เวลา 6.00 12.00 18.00",
+    "statusflag": "A"
+  },
+  {
+    "description": "4 times daily (Q 6 hrs) วันละ 4 ครั้ง 6.00 12.00 18.00 24.00",
+    "locallangdesc": "4 times daily (Q 6 hrs) วันละ 4 ครั้ง 6.00 12.00 18.00 24.00",
+    "statusflag": "A"
+  },
+  {
+    "description": "6 times daily (Q 4 hrs) วันละ 6 ครั้ง 2.00 6.00 10.00 14.00 18.00 22.00",
+    "locallangdesc": "6 times daily (Q 4 hrs) วันละ 6 ครั้ง 2.00 6.00 10.00 14.00 18.00 22.00",
+    "statusflag": "A"
+  },
+  {
+    "description": "rate 200 ml/hr.",
+    "locallangdesc": "rate 200 ml/hr.",
+    "statusflag": "A"
+  },
+  {
+    "description": "Once Daily Before Bedtime at 20:00",
+    "locallangdesc": "วันละ 1 ครั้ง 20:00 ก่อนนอน",
+    "statusflag": "A"
+  },
+  {
+    "description": "Once Daily Before Bedtime at 22:00",
+    "locallangdesc": "วันละ 1 ครั้ง 22:00 ก่อนนอน",
+    "statusflag": "A"
+  },
+  {
+    "description": "Every 4 hours for abdominal pain",
+    "locallangdesc": "ทุก 4 ชั่วโมง เวลาปวดท้อง",
+    "statusflag": "A"
+  },
+  {
+    "description": "Every 8 hours for abdominal pain",
+    "locallangdesc": "ทุก 8 ชั่วโมง เวลาปวดท้อง",
+    "statusflag": "A"
+  },
+  {
+    "description": "Twice Daily Before Breakfast and Dinner (Feed)",
+    "statusflag": "A",
+    "locallangdesc": "วันละ 2 ครั้ง (กรณี Feed) ก่อนอาหาร เช้า เย็น"
+  },
+  {
+    "description": "1 capsule dissolve in water 5 ML. Take 4 ML 2 times a day after breakfast and dinner",
+    "locallangdesc": "1 เม็ด ละลายน้ำ 5 ซีซี  รับประทานครั้งละ 4 ซีซี วันละ 2 ครั้ง หลังอาหารเช้า เย็น",
+    "statusflag": "A"
+  },
+  {
+    "description": "1 capsule dissolve in water 5 ML. Take 3 ML 2 times a day after breakfast and dinner",
+    "statusflag": "A",
+    "locallangdesc": "1 เม็ด ละลายน้ำ 5 ซีซี  รับประทานครั้งละ 3 ซีซี วันละ 2 ครั้ง หลังอาหารเช้า เย็น"
+  },
+  {
+    "description": "1 capsule dissolve in water 5 ML. Take 2 ML 2 times a day after breakfast and dinner",
+    "statusflag": "A",
+    "locallangdesc": "1 เม็ด ละลายน้ำ 5 ซีซี รับประทานครั้งละ 2 ซีซี วันละ 2 ครั้ง หลังอาหารเช้า เย็น"
+  },
+  {
+    "description": "1 capsule dissolve in water 5 ML. Take 1 ML 2 times a day after breakfast and dinner",
+    "statusflag": "A",
+    "locallangdesc": "1 เม็ด ละลายน้ำ 5 ซีซี รับประทานครั้งละ 1 ซีซี วันละ 2 ครั้ง หลังอาหารเช้า เย็น"
+  },
+  {
+    "description": "Every 6 hours  for fever",
+    "locallangdesc": "ทุก 6 ชั่วโมงเวลามีไข้",
+    "statusflag": "A"
+  },
+  {
+    "description": "จันทร์-ศุกร์",
+    "locallangdesc": "monday-friday",
+    "statusflag": "A"
+  },
+  {
+    "description": "Once daily at 2 PM",
+    "locallangdesc": "วันละ 1 ครั้งเวลา 14.00 น.",
+    "statusflag": "A"
+  },
+  {
+    "description": "Once daily at 1 PM",
+    "locallangdesc": "วันละ 1 ครั้งเวลา 13.00 น.",
+    "statusflag": "A"
+  },
+  {
+    "description": "Once Daily at 3 PM",
+    "locallangdesc": "วันละ 1 ครั้ง เวลา 15.00 น.",
+    "statusflag": "A"
+  },
+  {
+    "description": "Once Daily at 5 PM",
+    "locallangdesc": "วันละ 1 ครั้งเวลา 17.00 น.",
+    "statusflag": "A"
+  },
+  {
+    "description": "Every other day once daily at bedtime",
+    "locallangdesc": "วันเว้นวัน วันละ 1 ครั้ง ก่อนนอน",
+    "statusflag": "A"
+  },
+  {
+    "description": "Every even day once daily at bedtime",
+    "locallangdesc": "ทุกวันคู่ วันละ 1 ครั้ง ก่อนนอน",
+    "statusflag": "A"
+  },
+  {
+    "description": "Every odd day once daily at bedtime",
+    "locallangdesc": "ทุกวันคี่ วันละ 1 ครั้ง ก่อนนอน",
+    "statusflag": "A"
+  },
+  {
+    "description": "Once daily at bedtime",
+    "locallangdesc": "วันละ 1 ครั้ง ก่อนนอน",
+    "statusflag": "A"
+  },
+  {
+    "description": "Once daily at bedtime",
+    "locallangdesc": "วันละ 1 ครั้ง ก่อนนอน",
+    "statusflag": "A"
+  },
+  {
+    "description": "Once daily at bedtime as needed for insomnia",
+    "locallangdesc": "วันละ 1 ครั้ง ก่อนนอน เฉพาะเวลานอนไม่หลับ",
+    "statusflag": "A"
+  },
+  {
+    "description": "Once daily at bedtime as needed for constipation",
+    "locallangdesc": "วันละ 1 ครั้ง ก่อนนอน เฉพาะเวลาท้องผูก",
+    "statusflag": "A"
+  },
+  {
+    "description": "Once daily at bedtime as needed",
+    "locallangdesc": "วันละ 1 ครั้ง ก่อนนอน เฉพาะเวลามีอาการ",
+    "statusflag": "A"
+  },
+  {
+    "description": "Once daily at bedtime as needed for agitation",
+    "locallangdesc": "วันละ 1 ครั้ง ก่อนนอน เวลาวุ่นวาย",
+    "statusflag": "A"
+  },
+  {
+    "description": "Once daily at bedtime as needed for confuse",
+    "locallangdesc": "วันละ 1 ครั้ง ก่อนนอน เวลามีอาการสับสน",
+    "statusflag": "A"
+  },
+  {
+    "description": "Every even day twice before breakfast and lunch",
+    "locallangdesc": "ทุกวันคู่ วันละ 2 ครั้ง ก่อนอาหารเช้า และกลางวัน",
+    "statusflag": "A"
+  },
+  {
+    "description": "Every even day twice before lunch and dinner",
+    "locallangdesc": "ทุกวันคู่ วันละ 2 ครั้ง ก่อนอาหารกลางวัน และเย็น",
+    "statusflag": "A"
+  },
+  {
+    "description": "Every even day twice before dinner and at bedtime",
+    "locallangdesc": "ทุกวันคู่ วันละ 2 ครั้ง ก่อนอาหารเย็น และก่อนนอน",
+    "statusflag": "A"
+  },
+  {
+    "description": "Every even day twice before lunch and at bedtime",
+    "locallangdesc": "ทุกวันคู่ วันละ 2 ครั้ง ก่อนอาหารกลางวัน และก่อนนอน",
+    "statusflag": "A"
+  },
+  {
+    "description": "Every even day twice before dinner and at bedtime",
+    "locallangdesc": "ทุกวันคู่ วันละ 2 ครั้ง ก่อนอาหารเย็น และก่อนนอน",
+    "statusflag": "A"
+  },
+  {
+    "description": "Every even day twice in the morning and evening",
+    "locallangdesc": "ทุกวันคู่ วันละ 2 ครั้ง ตอนเช้า และเย็น",
+    "statusflag": "A"
+  },
+  {
+    "description": "Every even day twice in the morning and afternoon",
+    "locallangdesc": "ทุกวันคู่ วันละ 2 ครั้ง ตอนเช้า และกลางวัน",
+    "statusflag": "A"
+  },
+  {
+    "description": "Every even day twice in the morning and at bedtime",
+    "locallangdesc": "ทุกวันคู่ วันละ 2 ครั้ง ตอนเย็น และก่อนนอน",
+    "statusflag": "A"
+  },
+  {
+    "description": "Every even day twice in the afternoon and evening",
+    "locallangdesc": "ทุกวันคู่ วันละ 2 ครั้ง ตอนกลางวัน และเย็น",
+    "statusflag": "A"
+  },
+  {
+    "description": "Every even day twice in the afternoon and at bedtime",
+    "locallangdesc": "ทุกวันคู่ วันละ 2 ครั้ง ตอนกลางวัน และก่อนนอน",
+    "statusflag": "A"
+  },
+  {
+    "description": "Every even day twice in the evening and at bedtime",
+    "locallangdesc": "ทุกวันคู่ วันละ 2 ครั้ง ตอนเย็น และก่อนนอน",
+    "statusflag": "A"
+  },
+  {
+    "description": "Every even day twice after breakfast and lunch",
+    "locallangdesc": "ทุกวันคู่ วันละ 2 ครั้ง หลังอาหารเช้า และกลางวัน",
+    "statusflag": "A"
+  },
+  {
+    "description": "Every even day twice after lunch and dinner",
+    "locallangdesc": "ทุกวันคู่ วันละ 2 ครั้ง หลังอาหารกลางวัน และเย็น",
+    "statusflag": "A"
+  },
+  {
+    "description": "Every even day twice after dinner and at bedtime",
+    "locallangdesc": "ทุกวันคู่ วันละ 2 ครั้ง หลังอาหารเย็น และก่อนนอน",
+    "statusflag": "A"
+  },
+  {
+    "description": "Every even day twice after lunch and at bedtime",
+    "locallangdesc": "ทุกวันคู่ วันละ 2 ครั้ง หลังอาหารกลางวัน และก่อนนอน",
+    "statusflag": "A"
+  },
+  {
+    "description": "Every even day twice after dinner and at bedtime",
+    "locallangdesc": "ทุกวันคู่ วันละ 2 ครั้ง หลังอาหารเย็น และก่อนนอน",
+    "statusflag": "A"
+  },
+  {
+    "description": "Every odd day twice in the morning and evening",
+    "locallangdesc": "ทุกวันคี่ วันละ 2 ครั้ง ตอนเช้า และเย็น",
+    "statusflag": "A"
+  },
+  {
+    "description": "Every odd day twice in the morning and afternoon",
+    "locallangdesc": "ทุกวันคี่ วันละ 2 ครั้ง ตอนเช้า และกลางวัน",
+    "statusflag": "A"
+  },
+  {
+    "description": "Every odd day twice in the morning and at bedtime",
+    "locallangdesc": "ทุกวันคี่ วันละ 2 ครั้ง ตอนเย็น และก่อนนอน",
+    "statusflag": "A"
+  },
+  {
+    "description": "Every odd day twice in the afternoon and evening",
+    "locallangdesc": "ทุกวันคี่ วันละ 2 ครั้ง ตอนกลางวัน และเย็น",
+    "statusflag": "A"
+  },
+  {
+    "description": "Every odd day twice in the afternoon and at bedtime",
+    "locallangdesc": "ทุกวันคี่ วันละ 2 ครั้ง ตอนกลางวัน และก่อนนอน",
+    "statusflag": "A"
+  },
+  {
+    "description": "Every odd day twice in the evening and at bedtime",
+    "locallangdesc": "ทุกวันคี่ วันละ 2 ครั้ง ตอนเย็น และก่อนนอน",
+    "statusflag": "A"
+  },
+  {
+    "description": "Every odd day twice after breakfast and lunch",
+    "locallangdesc": "ทุกวันคี่ วันละ 2 ครั้ง หลังอาหารเช้า และกลางวัน",
+    "statusflag": "A"
+  },
+  {
+    "description": "Every odd day twice after lunch and dinner",
+    "locallangdesc": "ทุกวันคี่ วันละ 2 ครั้ง หลังอาหารกลางวัน และเย็น",
+    "statusflag": "A"
+  },
+  {
+    "description": "Every odd day twice after dinner and at bedtime",
+    "locallangdesc": "ทุกวันคี่ วันละ 2 ครั้ง หลังอาหารเย็น และก่อนนอน",
+    "statusflag": "A"
+  },
+  {
+    "description": "Every odd day twice after lunch and at bedtime",
+    "locallangdesc": "ทุกวันคี่ วันละ 2 ครั้ง หลังอาหารกลางวัน และก่อนนอน",
+    "statusflag": "A"
+  },
+  {
+    "description": "Every odd day twice after dinner and at bedtime",
+    "locallangdesc": "ทุกวันคี่ วันละ 2 ครั้ง หลังอาหารเย็น และก่อนนอน",
+    "statusflag": "A"
+  },
+  {
+    "description": "Every odd day twice before breakfast and lunch",
+    "locallangdesc": "ทุกวันคี่ วันละ 2 ครั้ง ก่อนอาหารเช้า และกลางวัน",
+    "statusflag": "A"
+  },
+  {
+    "description": "Every odd day twice before lunch and dinner",
+    "locallangdesc": "ทุกวันคี่ วันละ 2 ครั้ง ก่อนอาหารกลางวัน และเย็น",
+    "statusflag": "A"
+  },
+  {
+    "description": "Every odd day twice before dinner and at bedtime",
+    "locallangdesc": "ทุกวันคี่ วันละ 2 ครั้ง ก่อนอาหารเย็น และก่อนนอน",
+    "statusflag": "A"
+  },
+  {
+    "description": "Every odd day twice before lunch and at bedtime",
+    "locallangdesc": "ทุกวันคี่ วันละ 2 ครั้ง ก่อนอาหารกลางวัน และก่อนนอน",
+    "statusflag": "A"
+  },
+  {
+    "description": "Every odd day twice before dinner and at bedtime",
+    "locallangdesc": "ทุกวันคี่ วันละ 2 ครั้ง ก่อนอาหารเย็น และก่อนนอน",
+    "statusflag": "A"
+  },
+  {
+    "description": "Every even day twice before breakfast and dinner",
+    "locallangdesc": "ทุกวันคู่ วันละ 2 ครั้ง ก่อนอาหารเช้า และเย็น",
+    "statusflag": "A"
+  },
+  {
+    "description": "Every even day twice after breakfast and dinner",
+    "locallangdesc": "ทุกวันคู่ วันละ 2 ครั้ง หลังอาหารเช้า และเย็น",
+    "statusflag": "A"
+  },
+  {
+    "description": "Every odd day twice before breakfast and dinner",
+    "locallangdesc": "ทุกวันคี่ วันละ 2 ครั้ง ก่อนอาหารเช้า และเย็น",
+    "statusflag": "A"
+  },
+  {
+    "description": "Every odd day twice after breakfast and dinner",
+    "locallangdesc": "ทุกวันคี่ วันละ 2 ครั้ง หลังอาหารเช้า และเย็น",
+    "statusflag": "A"
+  },
+  {
+    "description": "Twice daily in the morning and evening",
+    "locallangdesc": "วันละ 2 ครั้ง ตอนเช้า และเย็น",
+    "statusflag": "A"
+  },
+  {
+    "description": "Twice daily in the morning and afternoon",
+    "locallangdesc": "วันละ 2 ครั้ง ตอนเช้า และกลางวัน",
+    "statusflag": "A"
+  },
+  {
+    "description": "Twice daily in the morning and at bedtime",
+    "locallangdesc": "วันละ 2 ครั้ง ตอนเช้า และก่อนนอน",
+    "statusflag": "A"
+  },
+  {
+    "description": "Twice daily in the afternoon and evening",
+    "locallangdesc": "วันละ 2 ครั้ง ตอนกลางวัน และเย็น",
+    "statusflag": "A"
+  },
+  {
+    "description": "Twice daily in the afternoon and at bedtime",
+    "locallangdesc": "วันละ 2 ครั้ง ตอนกลางวัน และก่อนนอน",
+    "statusflag": "A"
+  },
+  {
+    "description": "Twice daily in the evening and at bedtime",
+    "locallangdesc": "วันละ 2 ครั้ง ตอนเย็น และก่อนนอน",
+    "statusflag": "A"
+  },
+  {
+    "description": "Twice daily after breakfast and lunch",
+    "locallangdesc": "วันละ 2 ครั้ง หลังอาหารเช้า และกลางวัน",
+    "statusflag": "A"
+  },
+  {
+    "description": "Twice daily after Breakfast and dinner",
+    "locallangdesc": "วันละ 2 ครั้ง หลังอาหารเช้า และเย็น",
+    "statusflag": "A"
+  },
+  {
+    "description": "Twice daily after breakfast and at bedtime",
+    "locallangdesc": "วันละ 2 ครั้ง หลังอาหารเช้า และก่อนนอน",
+    "statusflag": "A"
+  },
+  {
+    "description": "Twice daily after lunch and at bedtime",
+    "locallangdesc": "วันละ 2 ครั้ง หลังอาหารกลางวัน และก่อนนอน",
+    "statusflag": "A"
+  },
+  {
+    "description": "Twice daily after dinner and at bedtime",
+    "locallangdesc": "วันละ 2 ครั้ง หลังอาหารเย็น และก่อนนอน",
+    "statusflag": "A"
+  },
+  {
+    "description": "Twice daily before breakfast and lunch",
+    "locallangdesc": "วันละ 2 ครั้ง ก่อนอาหารเช้า และกลางวัน",
+    "statusflag": "A"
+  },
+  {
+    "description": "Twice daily before breakfast and dinner",
+    "locallangdesc": "วันละ 2 ครั้ง ก่อนอาหารเช้า และเย็น",
+    "statusflag": "A"
+  },
+  {
+    "description": "Twice daily before dinner and at bedtime",
+    "locallangdesc": "วันละ 2 ครั้ง ก่อนอาหารเช้า และก่อนนอน",
+    "statusflag": "A"
+  },
+  {
+    "description": "Twice daily before lunch and dinner",
+    "locallangdesc": "วันละ 2 ครั้ง ก่อนอาหารกลางวัน และเย็น",
+    "statusflag": "A"
+  },
+  {
+    "description": "Twice daily before lunch and at bedtime",
+    "locallangdesc": "วันละ 2 ครั้ง ก่อนอาหารกลางวัน และก่อนนอน",
+    "statusflag": "A"
+  },
+  {
+    "description": "Twice daily before dinner and at bedtime",
+    "locallangdesc": "วันละ 2 ครั้ง ก่อนอาหารเย็น และก่อนนอน",
+    "statusflag": "A"
+  },
+  {
+    "description": "Twice daily with breakfast and lunch",
+    "locallangdesc": "วันละ 2 ครั้ง พร้อมอาหารเช้า และกลางวัน",
+    "statusflag": "A"
+  },
+  {
+    "description": "Twice daily with breakfast and dinner",
+    "locallangdesc": "วันละ 2 ครั้ง พร้อมอาหารเช้า และเย็น",
+    "statusflag": "A"
+  },
+  {
+    "description": "Twice daily with dinner and at bedtime",
+    "locallangdesc": "วันละ 2 ครั้ง พร้อมอาหารเช้า และก่อนนอน",
+    "statusflag": "A"
+  },
+  {
+    "description": "Twice daily with lunch and dinner",
+    "locallangdesc": "วันละ 2 ครั้ง พร้อมอาหารกลางวัน และเย็น",
+    "statusflag": "A"
+  },
+  {
+    "description": "Twice daily with lunch and at bedtime",
+    "locallangdesc": "วันละ 2 ครั้ง พร้อมอาหารกลางวัน และก่อนนอน",
+    "statusflag": "A"
+  },
+  {
+    "description": "Twice daily with dinner and at bedtime",
+    "locallangdesc": "วันละ 2 ครั้ง พร้อมอาหารเย็น และก่อนนอน",
+    "statusflag": "A"
+  },
+  {
+    "description": "after breakfast and 1 tablet after dinner",
+    "locallangdesc": "หลังอาหารเช้า และ 1 เม็ด หลังอาหารเย็น",
+    "statusflag": "A"
+  },
+  {
+    "description": "after breakfast and half a tablet after dinner",
+    "locallangdesc": "หลังอาหารเช้า และ ครึ่ง เม็ด หลังอาหารเย็น",
+    "statusflag": "A"
+  },
+  {
+    "description": "after breakfast and 2 tablets after dinner",
+    "locallangdesc": "หลังอาหารเช้า และ 2 เม็ด หลังอาหารเย็น",
+    "statusflag": "A"
+  },
+  {
+    "description": "before breakfast and 1 tablet before dinner",
+    "locallangdesc": "ก่อนอาหารเช้า และ 1 เม็ด ก่อนอาหารเย็น",
+    "statusflag": "A"
+  },
+  {
+    "description": "before breakfast and half a tablet before dinner",
+    "locallangdesc": "ก่อนอาหารเช้า และ ครึ่ง เม็ด ก่อนอาหารเย็น",
+    "statusflag": "A"
+  },
+  {
+    "description": "before breakfast and 2 tablets before dinner",
+    "locallangdesc": "ก่อนอาหารเช้า และ 2 เม็ด ก่อนอาหารเย็น",
+    "statusflag": "A"
+  },
+  {
+    "description": "Twice daily after breakfast and dinner as needed",
+    "locallangdesc": "วันละ 2 ครั้ง หลังอาหารเช้า และเย็น เฉพาะเวลามีอาการ",
+    "statusflag": "A"
+  },
+  {
+    "description": "Twice daily before dinner and at bedtime as needed",
+    "locallangdesc": "วันละ 2 ครั้ง ก่อนอาหารเย็น และก่อนนอน เฉพาะเวลามีอาการ",
+    "statusflag": "A"
+  },
+  {
+    "description": "Twice daily before breakfast and lunch as needed",
+    "locallangdesc": "วันละ 2 ครั้ง ก่อนอาหารเช้า และกลางวัน เฉพาะเวลามีอาการ",
+    "statusflag": "A"
+  },
+  {
+    "description": "Twice daily with lunch and at bedtime as needed",
+    "locallangdesc": "วันละ 2 ครั้ง พร้อมอาหารกลางวัน และก่อนนอน เฉพาะเวลามีอาการ",
+    "statusflag": "A"
+  },
+  {
+    "description": "Twice daily with dinner and at bedtime as needed",
+    "locallangdesc": "วันละ 2 ครั้ง พร้อมอาหารเช้า และก่อนนอน เฉพาะเวลามีอาการ",
+    "statusflag": "A"
+  },
+  {
+    "description": "Twice daily after lunch and at bedtime as needed",
+    "locallangdesc": "วันละ 2 ครั้ง หลังอาหารกลางวัน และก่อนนอน เฉพาะเวลามีอาการ",
+    "statusflag": "A"
+  },
+  {
+    "description": "Twice daily before lunch and dinner as needed",
+    "locallangdesc": "วันละ 2 ครั้ง ก่อนอาหารกลางวัน และเย็น เฉพาะเวลามีอาการ",
+    "statusflag": "A"
+  },
+  {
+    "description": "Twice daily after dinner and at bedtime as needed",
+    "locallangdesc": "วันละ 2 ครั้ง หลังอาหารเช้า และก่อนนอน เฉพาะเวลามีอาการ",
+    "statusflag": "A"
+  },
+  {
+    "description": "Twice daily before breakfast and dinner as needed",
+    "locallangdesc": "วันละ 2 ครั้ง ก่อนอาหารเช้า และเย็น เฉพาะเวลามีอาการ",
+    "statusflag": "A"
+  },
+  {
+    "description": "Twice daily with breakfast and lunch as needed",
+    "locallangdesc": "วันละ 2 ครั้ง พร้อมอาหารเช้า และกลางวัน เฉพาะเวลามีอาการ",
+    "statusflag": "A"
+  },
+  {
+    "description": "Twice daily with dinner and at bedtime as needed",
+    "locallangdesc": "วันละ 2 ครั้ง พร้อมอาหารเย็น และก่อนนอน เฉพาะเวลามีอาการ",
+    "statusflag": "A"
+  },
+  {
+    "description": "Twice daily before lunch and at bedtime as needed",
+    "locallangdesc": "วันละ 2 ครั้ง ก่อนอาหารกลางวัน และก่อนนอน เฉพาะเวลามีอาการ",
+    "statusflag": "A"
+  },
+  {
+    "description": "Twice daily with lunch and dinner as needed",
+    "locallangdesc": "วันละ 2 ครั้ง พร้อมอาหารกลางวัน และเย็น เฉพาะเวลามีอาการ",
+    "statusflag": "A"
+  },
+  {
+    "description": "Twice daily after breakfast and lunch as needed",
+    "locallangdesc": "วันละ 2 ครั้ง หลังอาหารเช้า และกลางวัน เฉพาะเวลามีอาการ",
+    "statusflag": "A"
+  },
+  {
+    "description": "Twice daily after dinner and at bedtime as needed",
+    "locallangdesc": "วันละ 2 ครั้ง หลังอาหารเย็น และก่อนนอน เฉพาะเวลามีอาการ",
+    "statusflag": "A"
+  },
+  {
+    "description": "Twice daily after lunch and dinner as needed",
+    "locallangdesc": "วันละ 2 ครั้ง หลังอาหารกลางวัน และเย็น เฉพาะเวลามีอาการ",
+    "statusflag": "A"
+  },
+  {
+    "description": "Twice daily before dinner and at bedtime as needed",
+    "locallangdesc": "วันละ 2 ครั้ง ก่อนอาหารเช้า และก่อนนอน เฉพาะเวลามีอาการ",
+    "statusflag": "A"
+  },
+  {
+    "description": "Twice daily with breakfast and dinner as needed",
+    "locallangdesc": "วันละ 2 ครั้ง พร้อมอาหารเช้า และเย็น เฉพาะเวลามีอาการ",
+    "statusflag": "A"
+  },
+  {
+    "description": "Twice daily before breakfast and dinner as needed",
+    "locallangdesc": "วันละ 2 ครั้ง ก่อนอาหารเช้า และเย็น เฉพาะเวลามีอาการ",
+    "statusflag": "A"
+  },
+  {
+    "description": "Twice daily after breakfast and dinner as needed",
+    "locallangdesc": "วันละ 2 ครั้ง หลังอาหารเช้า และเย็น เฉพาะเวลามีอาการ",
+    "statusflag": "A"
+  },
+  {
+    "description": "Twice daily after Lunch and dinner",
+    "locallangdesc": "วันละ 2 ครั้ง หลังอาหารกลางวัน และเย็น",
+    "statusflag": "A"
+  },
+  {
+    "description": "q 2 hrs to 24 hr",
+    "locallangdesc": "ทุก 2 ชั่วโมงถึงเที่ยงคืน",
+    "statusflag": "A"
+  }
+]

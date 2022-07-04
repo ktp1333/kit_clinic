@@ -1,0 +1,298 @@
+[
+  {
+    "valuedescription": "Accuhaler",
+    "statusflag": "A"
+  },
+  {
+    "valuedescription": "Balm",
+    "statusflag": "A"
+  },
+  {
+    "valuedescription": "Capsule",
+    "statusflag": "A"
+  },
+  {
+    "valuedescription": "Cream",
+    "statusflag": "A"
+  },
+  {
+    "valuedescription": "Diskhaler",
+    "statusflag": "A"
+  },
+  {
+    "valuedescription": "Ear Drop",
+    "statusflag": "A"
+  },
+  {
+    "valuedescription": "Elixir",
+    "statusflag": "A"
+  },
+  {
+    "valuedescription": "Emulsion",
+    "statusflag": "A"
+  },
+  {
+    "valuedescription": "Enema",
+    "statusflag": "A"
+  },
+  {
+    "valuedescription": "Evohaler",
+    "statusflag": "A"
+  },
+  {
+    "valuedescription": "Eye Drop",
+    "statusflag": "A"
+  },
+  {
+    "valuedescription": "Eye gas",
+    "statusflag": "A"
+  },
+  {
+    "valuedescription": "Eye Gel",
+    "statusflag": "A"
+  },
+  {
+    "valuedescription": "Eye injection",
+    "statusflag": "A"
+  },
+  {
+    "valuedescription": "Eye Ointment",
+    "statusflag": "A"
+  },
+  {
+    "valuedescription": "Eye Solution",
+    "statusflag": "A"
+  },
+  {
+    "valuedescription": "Eye Wash",
+    "statusflag": "A"
+  },
+  {
+    "valuedescription": "Foam",
+    "statusflag": "A"
+  },
+  {
+    "valuedescription": "Gel",
+    "statusflag": "A"
+  },
+  {
+    "valuedescription": "Granule",
+    "statusflag": "A"
+  },
+  {
+    "valuedescription": "Hadihaler",
+    "statusflag": "A"
+  },
+  {
+    "valuedescription": "Implant",
+    "statusflag": "A"
+  },
+  {
+    "valuedescription": "Inhalation anesth.",
+    "statusflag": "A"
+  },
+  {
+    "valuedescription": "Inhalation capsules (refill)",
+    "statusflag": "A"
+  },
+  {
+    "valuedescription": "Inhalation Solution",
+    "statusflag": "A"
+  },
+  {
+    "valuedescription": "Injection",
+    "statusflag": "A"
+  },
+  {
+    "valuedescription": "Injection - Subcutaneous",
+    "statusflag": "A"
+  },
+  {
+    "valuedescription": "Intraarticular Injection",
+    "statusflag": "A"
+  },
+  {
+    "valuedescription": "Intradermal",
+    "statusflag": "A"
+  },
+  {
+    "valuedescription": "Intramuscular Injection",
+    "statusflag": "A"
+  },
+  {
+    "valuedescription": "Intratracheal Injection",
+    "statusflag": "A"
+  },
+  {
+    "valuedescription": "Intrauterine device",
+    "statusflag": "A"
+  },
+  {
+    "valuedescription": "Intravenous Injection",
+    "statusflag": "A"
+  },
+  {
+    "valuedescription": "Jelly",
+    "statusflag": "A"
+  },
+  {
+    "valuedescription": "Lotion",
+    "statusflag": "A"
+  },
+  {
+    "valuedescription": "Lozenges",
+    "statusflag": "A"
+  },
+  {
+    "valuedescription": "Mixture",
+    "statusflag": "A"
+  },
+  {
+    "valuedescription": "Mouth Wash",
+    "statusflag": "A"
+  },
+  {
+    "valuedescription": "Nasal Drop(s)",
+    "statusflag": "A"
+  },
+  {
+    "valuedescription": "Nasal Spray",
+    "statusflag": "A"
+  },
+  {
+    "valuedescription": "Oil",
+    "statusflag": "A"
+  },
+  {
+    "valuedescription": "Ointment",
+    "statusflag": "A"
+  },
+  {
+    "valuedescription": "Oral drop",
+    "statusflag": "A"
+  },
+  {
+    "valuedescription": "Others",
+    "statusflag": "A"
+  },
+  {
+    "valuedescription": "Paste",
+    "statusflag": "A"
+  },
+  {
+    "valuedescription": "Powder",
+    "statusflag": "A"
+  },
+  {
+    "valuedescription": "Prefilled Syringes",
+    "statusflag": "A"
+  },
+  {
+    "valuedescription": "Sachet",
+    "statusflag": "A"
+  },
+  {
+    "valuedescription": "Scrub",
+    "statusflag": "A"
+  },
+  {
+    "valuedescription": "Shampoo",
+    "statusflag": "A"
+  },
+  {
+    "valuedescription": "Soap",
+    "statusflag": "A"
+  },
+  {
+    "valuedescription": "Solution",
+    "statusflag": "A"
+  },
+  {
+    "valuedescription": "Spray",
+    "statusflag": "A"
+  },
+  {
+    "valuedescription": "Suppository - Rectal",
+    "statusflag": "A"
+  },
+  {
+    "valuedescription": "Suppository - Vaginal",
+    "statusflag": "A"
+  },
+  {
+    "valuedescription": "Suspension",
+    "statusflag": "A"
+  },
+  {
+    "valuedescription": "Syrup",
+    "statusflag": "A"
+  },
+  {
+    "valuedescription": "Tablet",
+    "statusflag": "A"
+  },
+  {
+    "valuedescription": "Tincture",
+    "statusflag": "A"
+  },
+  {
+    "valuedescription": "Transdermal",
+    "statusflag": "A"
+  },
+  {
+    "valuedescription": "Turbuhaler",
+    "statusflag": "A"
+  },
+  {
+    "valuedescription": "non-specify",
+    "statusflag": "A"
+  },
+  {
+    "statusflag": "A",
+    "valuedescription": "TABLET"
+  },
+  {
+    "statusflag": "A",
+    "valuedescription": "CAPSULE"
+  },
+  {
+    "statusflag": "A",
+    "valuedescription": "BOTTLE"
+  },
+  {
+    "statusflag": "A",
+    "valuedescription": "CREAM"
+  },
+  {
+    "statusflag": "A",
+    "valuedescription": "OINTMENT"
+  },
+  {
+    "statusflag": "A",
+    "valuedescription": "POWDER"
+  },
+  {
+    "statusflag": "A",
+    "valuedescription": "SYRUP"
+  },
+  {
+    "statusflag": "A",
+    "valuedescription": "AMPULE"
+  },
+  {
+    "statusflag": "A",
+    "valuedescription": "VIAL"
+  },
+  {
+    "statusflag": "A",
+    "valuedescription": "Nutritional Product"
+  },
+  {
+    "statusflag": "A",
+    "valuedescription": "Tablet/Capsule"
+  },
+  {
+    "statusflag": "A",
+    "valuedescription": "Tablet/Pack"
+  }
+]

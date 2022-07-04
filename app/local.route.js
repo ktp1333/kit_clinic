@@ -150,3 +150,50 @@ exports.search_existHN = function (req, res) {
         });
     });
 }
+exports.savenewdrug = function (req, res) {
+    if (req.body.tradename != undefined) {
+        MongoClient.connect(dbpath, (connectErr, db) => {
+            var dbo = db;
+            var newdata = {};
+            newdata.tradename = req.body.tradename;
+            newdata.genericname = req.body.genericname;
+            newdata.default_dose = req.body.default_dose;
+            newdata.frequencies = req.body.frequencies;
+            newdata.UOM = req.body.UOM;
+            newdata.form = req.body.form;
+            newdata.statusflag= "A";
+
+            dbo.collection(req.body.mfile).save(newdata, function (Innererr) {
+                if (!Innererr) {
+                    res.status(200).json({ data: newdata });
+
+                } else {
+                    res.status(500).json({ error: 'ERRORS.CREATEERROR' });
+                }
+            });
+
+
+
+        })
+    } else {
+
+    }
+
+}
+exports.list_alldrug = function (req, res) {
+
+    MongoClient.connect(dbpath, (connectErr, db) => {
+        var dbo = db;
+        dbo.collection(req.body.mfile).aggregate([{
+            $match: {
+                "statusflag": "A",
+            }
+        },]).toArray((err, docs) => {
+            console.log(docs);
+            res.status(200).json({
+                data: docs
+            });
+            db.close();
+        });
+    });
+}

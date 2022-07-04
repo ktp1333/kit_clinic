@@ -45,8 +45,8 @@
 
     <md-content>
       <md-tabs md-dynamic-height md-border-bottom>
-        <!-- page 2 -->
-        <md-tab label="Register">
+        <!-- page 1 -->
+        <md-tab label="ออกบัตร">
           <md-content class="md-padding" layout-xs="column" layout="row" style="height:90vH;">
             <!-- left -->
             <div flex-xs flex-gt-xs="35" layout="column">
@@ -79,7 +79,7 @@
               <!-- box right 2  show case -->
               <md-card>
                 <md-card-content>
-                  <div class="panel-heading  ">
+                  <div id="opdcard" class="panel-heading  ">
 
                     <div class="well well-lg fontbg9">
                       <H4>Name: {{findpt.title}} {{findpt.name}} {{findpt.surname}}</H4>
@@ -91,8 +91,8 @@
 
                   </div>
                   <div flex layout="row" style="justify-content: center;">
-                    <button type="text" class="btn btn-primary" ng-click="print()" data-placement="bottom" title="print"
-                      onmouseenter="$(this).tooltip('show')">
+                    <button type="text" class="btn btn-primary" ng-click="PrintMe('opdcard')" data-placement="bottom"
+                      title="print" onmouseenter="$(this).tooltip('show')">
                       <span class="glyphicon glyphicon-print"></span>
                     </button>
                   </div>
@@ -119,162 +119,8 @@
             </div>
           </md-content>
         </md-tab>
-        <!-- page 1 -->
-        <md-tab label="ลงทะเบียน ผู้ป่วยใหม่" ng-click="new_p1()">
-          <!-- <md-content class="md-padding" style="height:90vH;"> -->
-          <md-content class="md-padding" layout-xs="column" layout="row" style="height:90vH;">
-
-            <div flex-xs flex-gt-xs="100" layout="column">
-              <!-- input form -->
-              <md-card>
-
-                <md-card-content>
-                  <div ng-if="show_p1==false" class="align-c fontxxl fontr5"> {{lbl_note}}</div>
-                  <div ng-if="show_p1==true">
-                    <div class="fontl fontbg10 fontbold">ลงข้อมูลผู้ป่วยใหม่</div>
-                    <form>
-                      <div flex-xs flex-gt-xs="100" layout="row">
-                        <md-card flex-xs flex-gt-xs="50">
-                          <div flex layout="row" class="form-group">
-                            <div>
-                              <label for="inputtitle">คำนำหน้า</label>
-                            </div>
-                            <div>
-                              <input type="text" class="form-control width15vW" id="inputtitle" placeholder="title"
-                                ng-model="vm.keytitle" ng-change="find_title(vm.keytitle)">
-                            </div>
-                            <div id="matchItem"> </div>
-                            <div class="marginleft15" id="stitle"> </div>
-                          </div>
-                          <div flex layout="row">
-                            <div>
-                              <label for="inputpatientname">ชื่อ</label>
-                              <input type="text" class="form-control width20vW" id="inputpatientname"
-                                placeholder="patient name" ng-model="vm.patientname">
-                            </div>
-
-                            <div>
-                              <label for="inputsurname">นามสกุล</label>
-                              <input type="text" class="form-control width25vW" id="inputsurname" placeholder="Sur name"
-                                ng-model="vm.surname">
-                            </div>
-                          </div>
-                          <!-- <fieldset class="form-group"> -->
-                          <div flex layout="row">
-                            <div class="width10vW">เพศ</div>
-                            <div class="width15vW">
-                              <input style="height: 2em;width: 30%;" type="radio" name="gender" id="gender1"
-                                value="male" ng-model="vm.type" checked>
-                              <label style="font-size: 1.2em;">
-                                ชาย
-                              </label>
-                            </div>
-                            <div class=" width15vW">
-                              <input style="height: 2em;width: 30%;" type="radio" name="gender" id="gender2"
-                                value="female" ng-model="vm.type">
-                              <label style="font-size: 1.2em;">
-                                หญิง
-                              </label>
-                            </div>
-
-                          </div>
-                          <!-- </fieldset> -->
-                          <div flex layout="row" class="form-group ">
-                            <div class="width15vW">
-                              <label for="inputnationalID">เลขที่บัตรประชาชน</label>
-                              <input type="text" class="form-control" id="inputnationalID" placeholder="nationalID"
-                                ng-model="vm.nationalID">
-                            </div>
-                            <div class="width30vW">
-                              <label for="inputphone">เบอร์โทรศัพท์</label>
-                              <input type="text" class="form-control" id="inputphone" placeholder="phone"
-                                ng-model="vm.phone">
-                            </div>
-                          </div>
-                          <div class="form-group width45vW">
-                            <label for="inputEmail">Email</label>
-                            <input type="text" class="form-control" id="inputEmail" placeholder="Email"
-                              ng-model="vm.Email" ">
-                                  </div>
-                               </md-card>
-                                <md-card flex-xs flex-gt-xs=" 50">
-                            <div class="form-group">
-
-                              <div flex layout="row">
-                                <div>
-                                  <label for="inputaddress">บ้านเลขที่/ถนน</label>
-                                  <input type="text" class="form-control width15vW" id="inputaddress"
-                                    placeholder="บ้านเลขที่/ถนน" ng-model="vm.road">
-                                </div>
-                                <div>
-                                  <label for="inputaddress">ตำบล/อำเภอ/จังหวัด/รหัสไปรษณีย์</label>
-                                  <input type="text" class="form-control width20vW" id="inputaddress"
-                                    placeholder="พิมพ์เพื่อเลือกที่อยู่" ng-model="vm.keyaddress"
-                                    ng-change="find_address(vm.keyaddress)">
-                                </div>
-                                <div class="marginleft5w">
-                                  <button type="submit" class="btn btn-default width5vW "
-                                    ng-click="clearaddress()">clear</button>
-                                </div>
-                              </div>
-                              <div id="matchList"> </div>
-                              <div id="saddress"> </div>
-                            </div>
-                        </md-card>
-                      </div>
-                      <!-- <div flex layout="row">
-                        <div class="width75vW align-c">{{txt_show}}</div> -->
-                        <div style="float: right;">
-                          <button type=" submit" class="btn btn-primary width10vW"
-                            ng-click="save_data(vm.patientname,vm.surname,vm.type,vm.road,vm.Email,vm.nationalID)"
-                            ng-show="show_btnsave">บันทึก</button>
-                        </div>
-                      <!-- </div> -->
-                    </form>
-                  </div>
-                </md-card-content>
-              </md-card>
-            </div>
-            <!-- page 2 show_print -->
-            <div ng-if=" p23" flex-xs flex-gt-xs="100" layout="column">
-              <!-- box left 1 -->
-              <md-card>
-                <md-card-content>
-                  <div ID='printableArea'>
-                    <div>name: {{vm.name}}</div>
-                    <div>HN: {{vm.HN}}</div>
-                    <div>user name: {{username}}</div>
-                    <div>NB: {{vm.NB}}</div>
-                    <div>code:{{code}}</div>
-                    <div>procedure: {{procedure}}</div>
-                    <div>Med&supply: {{vm.mavgmed_sup}}</div>
-                    <div>LAB&radio: {{vm.mavglab_radio}}</div>
-                    <div>DF: {{vm.mavgdf}}</div>
-                    <div>Others: {{vm.mavgothers}}</div>
-                    <div>Room: {{vm.mavgroom}}</div>
-                    <div>Total: {{vm.mavgmed_sup+vm.mavglab_radio+vm.mavgdf+vm.mavgothers+vm.mavgroom}}</div>
-                  </div>
-                  <div flex layout="row">
-
-                    <button type="text" class="btn btn-success marginleft15" ng-click="PrintMe()"
-                      data-placement="bottom" title="Save data" onmouseenter="$(this).tooltip('show')">
-                      <span class="glyphicon glyphicon-print"></span>
-                    </button>
-                    <button type="text" class="btn btn-success marginleft15" ng-click="closeprint()"
-                      data-placement="bottom" title="Save data" onmouseenter="$(this).tooltip('show')">
-                      <span class="glyphicon glyphicon-backward"></span>
-                    </button>
-                  </div>
-                </md-card-content>
-
-
-              </md-card>
-
-            </div>
-          </md-content>
-        </md-tab>
-        <!-- page 2.2 -->
-        <md-tab label="ผู้ป่วยเก่า">
+        <!-- page 2 -->
+        <md-tab label="จ่ายยา">
           <!-- <md-content class="md-padding" style="height:90vH;"> -->
           <md-content class="md-padding" layout-xs="column" layout="row" style="height:90vH;">
             <!-- page 2.1 left -->
@@ -283,106 +129,35 @@
               <!-- box left 1 -->
               <md-card>
                 <md-card-content>
+                  <form>
+                    <div flex layout="row">
+                      <div>
+                        <label for="inputHN">HN : </label>
+                      </div>
+                      <div><input type="text" class="form-control " id="inputHN" placeholder="xx-xxxxxx"
+                          ng-model="vm.msearch">
+                      </div>
+                      <div><button type="submit" class="btn btn-primary" ng-click="searchHN(vm.msearch)">ค้นหา</button>
+                      </div>
+                    </div>
+                  </form>
+                  <div id="ptname" class="panel-heading  " ng-if="ptname_show">
 
+                    <div class="well well-lg fontbg9">
+                      <H4>Name: {{findpt.title}} {{findpt.name}} {{findpt.surname}}</H4>
+                    </div>
+                    <div class=" fontnm">Address: {{findpt.address}} {{findpt.district}} {{findpt.amphoe}}
+                      {{findpt.province}} {{findpt.zipcode}} </div>
+                    <div class=" fontnm">Email: {{findpt.email}} </div>
+                    <div class=" fontnm">NationalID: {{findpt.nationalID}} </div>
 
-                  <div flex layout="column" style="align-items: center;" class="form-group">
-                    <table class="table table-hover width85p ">
-                      <tr>
-                        <th class="fontgr7 align-c">Category</th>
-                        <th class="fontgr7 align-c">estimate cost</th>
-                        <th class="fontgr7 align-c"></th>
-                      </tr>
-
-                      <tr>
-                        <td>med & supply</td>
-                        <td>
-                          <input type="text" ID="medsup" class="form-control width10vW marginleft15 align-r"
-                            ng-model="vm.mavgmed_sup" value="" ng-readonly="edit_number1" />
-                        </td>
-                        <td>
-                          <div class="marginleft15 align-r">บาท</div>
-                        </td>
-
-                      </tr>
-                      <tr>
-                        <td>lab & radio</td>
-                        <td>
-                          <input type="text" ID="labradio" class="form-control width10vW marginleft15 align-r"
-                            ng-model="vm.mavglab_radio" value="" ng-readonly="edit_number2" />
-                        </td>
-                        <td>
-                          <div class="marginleft15 align-r">บาท</div>
-                        </td>
-
-                      </tr>
-                      <tr>
-                        <td>others</td>
-                        <td>
-                          <input type="text" ID="others" class="form-control width10vW marginleft15 align-r"
-                            ng-model="vm.mavgothers" value="" ng-readonly="edit_number4" />
-                        </td>
-                        <td>
-                          <div class="marginleft15 align-r">บาท</div>
-                        </td>
-
-                      </tr>
-                      <tr>
-                        <td>room</td>
-                        <td>
-                          <input type="text" ID="room" class="form-control width10vW marginleft15 align-r"
-                            ng-model="vm.mavgroom" value="" ng-readonly="edit_number5" />
-
-
-
-                        </td>
-                        <td>
-                          <div class="marginleft15 align-r">บาท</div>
-                        </td>
-
-                      </tr>
-                      <tr>
-                        <td>df</td>
-                        <td>
-                          <input type="text" ID="df" class="form-control width10vW marginleft15 align-r"
-                            ng-model="vm.mavgdf" value="" ng-readonly="edit_number3" />
-
-                        </td>
-                        <td>
-                          <div class="marginleft15 align-r">บาท</div>
-                        </td>
-
-                      </tr>
-                      <tr class=" fontbg12">
-                        <td>Total</td>
-                        <td>
-                          <input type="text" ID="total"
-                            class="form-control width10vW marginleft15 align-r fontnm fontr8" ng-model="mtotal" value=""
-                            ng-readonly="edit_number0" />
-                        </td>
-                        <td>
-                          <div class="marginleft15 align-r"> บาท</div>
-                        </td>
-
-                      </tr>
-                      <tr class=" fontbg12">
-                        <td>+/- {{diff_ratep}} %</td>
-                        <td>
-                          <div class="marginleft15 align-r">({{mtotal1}} - {{mtotal2}})</div>
-                        </td>
-                        <td>
-                          <div class="marginleft15 align-r"> บาท</div>
-                        </td>
-
-                      </tr>
-                    </table>
                   </div>
-
                 </md-card-content>
 
 
               </md-card>
-
             </div>
+
             <!-- page 2.2 right -->
 
             <div flex-xs flex-gt-xs="65" layout="column">
@@ -390,16 +165,16 @@
               <md-card>
                 <md-card-content>
                   <form>
-                    <div class="form-row">
-                      <div class="form-group col-md-6">
-                        <label for="inputHN">search HN</label>
-                        <input type="text" class="form-control " id="inputHN" placeholder="xx-xx-xxxxxx" ng-model="mhn">
+                    <div flex layout="row">
+                      <div>
+                        <label for="inputHN">drug name : </label>
                       </div>
-                      <div><Br><button type="submit" class="btn btn-primary" ng-click="search_byHN(mhn)">import</button>
+                      <div><input type="text" class="form-control " placeholder="" ng-model="vm.msearchdrug">
+                      </div>
+                      <div><button type="submit" class="btn btn-primary"
+                          ng-click="searchdrug(vm.msearchdrug)">ค้นหา</button>
                       </div>
                     </div>
-
-
                   </form>
 
                 </md-card-content>
@@ -631,16 +406,16 @@
 
                       <div class="form-group" ng-if="show_btnsave">
                         <button type="submit" class="btn btn-primary marginleft15 " ng-click="save_data(vm.relativename,vm.drname,vm.type,vm.loo,vm.los,vm.ICUlos,vm.ICUprice,vm.wardlos,vm.wardprice
-                    ,vm.item1,vm.itemprice1
-                    ,vm.item2,vm.itemprice2
-                    ,vm.item3,vm.itemprice3
-                    ,vm.item41,vm.itemprice41
-                    ,vm.item42,vm.itemprice42
-                    ,vm.item51,vm.itemprice51
-                    ,vm.item52,vm.itemprice52
-                    ,vm.item53,vm.itemprice53
-                    ,patientname,HN,gender,thaiDOB,age,vm.procedure,code,gtotal,ptuid
-                    )">
+                            ,vm.item1,vm.itemprice1
+                            ,vm.item2,vm.itemprice2
+                            ,vm.item3,vm.itemprice3
+                            ,vm.item41,vm.itemprice41
+                            ,vm.item42,vm.itemprice42
+                            ,vm.item51,vm.itemprice51
+                            ,vm.item52,vm.itemprice52
+                            ,vm.item53,vm.itemprice53
+                            ,patientname,HN,gender,thaiDOB,age,vm.procedure,code,gtotal,ptuid
+                            )">
                           save data</button>
                       </div>
 
@@ -688,90 +463,455 @@
             </div>
           </md-content>
         </md-tab>
-
-
-
-        <!-- page 7 -->
-        <md-tab label="Set up" ng-click="setup()">
+        <!-- page 3 -->
+        <md-tab label="ลงทะเบียน ผู้ป่วยใหม่" ng-click="new_p1()">
           <!-- <md-content class="md-padding" style="height:90vH;"> -->
           <md-content class="md-padding" layout-xs="column" layout="row" style="height:90vH;">
-            <!-- page 7 left -->
+
+            <div flex-xs flex-gt-xs="100" layout="column">
+              <!-- input form -->
+              <md-card>
+
+                <md-card-content>
+                  <div ng-if="show_p1==false" class="align-c fontxxl fontr5"> {{lbl_note}}</div>
+                  <div ng-if="show_p1==true">
+                    <div class="fontl fontbg10 fontbold">ลงข้อมูลผู้ป่วยใหม่</div>
+                    <form>
+                      <div flex-xs flex-gt-xs="100" layout="row">
+                        <md-card flex-xs flex-gt-xs="50">
+                          <div flex layout="row" class="form-group">
+                            <div>
+                              <label for="inputtitle">คำนำหน้า</label>
+                            </div>
+                            <div>
+                              <input type="text" class="form-control width15vW" id="inputtitle" placeholder="title"
+                                ng-model="vm.keytitle" ng-change="find_title(vm.keytitle)">
+                            </div>
+                            <div id="matchItem"> </div>
+                            <div class="marginleft15" id="stitle"> </div>
+                          </div>
+                          <div flex layout="row">
+                            <div>
+                              <label for="inputpatientname">ชื่อ</label>
+                              <input type="text" class="form-control width20vW" id="inputpatientname"
+                                placeholder="patient name" ng-model="vm.patientname">
+                            </div>
+
+                            <div>
+                              <label for="inputsurname">นามสกุล</label>
+                              <input type="text" class="form-control width25vW" id="inputsurname" placeholder="Sur name"
+                                ng-model="vm.surname">
+                            </div>
+                          </div>
+                          <!-- <fieldset class="form-group"> -->
+                          <div flex layout="row">
+                            <div class="width10vW">เพศ</div>
+                            <div class="width15vW">
+                              <input style="height: 2em;width: 30%;" type="radio" name="gender" id="gender1"
+                                value="male" ng-model="vm.type" checked>
+                              <label style="font-size: 1.2em;">
+                                ชาย
+                              </label>
+                            </div>
+                            <div class=" width15vW">
+                              <input style="height: 2em;width: 30%;" type="radio" name="gender" id="gender2"
+                                value="female" ng-model="vm.type">
+                              <label style="font-size: 1.2em;">
+                                หญิง
+                              </label>
+                            </div>
+
+                          </div>
+                          <!-- </fieldset> -->
+                          <div flex layout="row" class="form-group ">
+                            <div class="width15vW">
+                              <label for="inputnationalID">เลขที่บัตรประชาชน</label>
+                              <input type="text" class="form-control" id="inputnationalID" placeholder="nationalID"
+                                ng-model="vm.nationalID">
+                            </div>
+                            <div class="width30vW">
+                              <label for="inputphone">เบอร์โทรศัพท์</label>
+                              <input type="text" class="form-control" id="inputphone" placeholder="phone"
+                                ng-model="vm.phone">
+                            </div>
+                          </div>
+                          <div class="form-group width45vW">
+                            <label for="inputEmail">Email</label>
+                            <input type="text" class="form-control" id="inputEmail" placeholder="Email"
+                              ng-model="vm.Email" ">
+                                  </div>
+                               </md-card>
+                                <md-card flex-xs flex-gt-xs=" 50">
+                            <div class="form-group">
+
+                              <div flex layout="row">
+                                <div>
+                                  <label for="inputaddress">บ้านเลขที่/ถนน</label>
+                                  <input type="text" class="form-control width15vW" id="inputaddress"
+                                    placeholder="บ้านเลขที่/ถนน" ng-model="vm.road">
+                                </div>
+                                <div>
+                                  <label for="inputaddress">ตำบล/อำเภอ/จังหวัด/รหัสไปรษณีย์</label>
+                                  <input type="text" class="form-control width20vW" id="inputaddress"
+                                    placeholder="พิมพ์เพื่อเลือกที่อยู่" ng-model="vm.keyaddress"
+                                    ng-change="find_address(vm.keyaddress)">
+                                </div>
+                                <div class="marginleft5w">
+                                  <button type="submit" class="btn btn-default width5vW "
+                                    ng-click="clearaddress()">clear</button>
+                                </div>
+                              </div>
+                              <div id="matchList"> </div>
+                              <div id="saddress"> </div>
+                            </div>
+                        </md-card>
+                      </div>
+                      <!-- <div flex layout="row">
+                        <div class="width75vW align-c">{{txt_show}}</div> -->
+                      <div style="float: right;">
+                        <button type=" submit" class="btn btn-primary width10vW"
+                          ng-click="save_data(vm.patientname,vm.surname,vm.type,vm.road,vm.Email,vm.nationalID)"
+                          ng-show="show_btnsave">บันทึก</button>
+                      </div>
+                      <!-- </div> -->
+                    </form>
+                  </div>
+                </md-card-content>
+              </md-card>
+            </div>
+            <!-- page 3 show_print -->
+            <div ng-if=" " flex-xs flex-gt-xs="100" layout="column">
+              <!-- box left 1 -->
+              <md-card>
+                <md-card-content>
+                  <div ID='printableArea'>
+                    <div>name: {{vm.name}}</div>
+                    <div>HN: {{vm.HN}}</div>
+                    <div>user name: {{username}}</div>
+                    <div>NB: {{vm.NB}}</div>
+                    <div>code:{{code}}</div>
+                    <div>procedure: {{procedure}}</div>
+                    <div>Med&supply: {{vm.mavgmed_sup}}</div>
+                    <div>LAB&radio: {{vm.mavglab_radio}}</div>
+                    <div>DF: {{vm.mavgdf}}</div>
+                    <div>Others: {{vm.mavgothers}}</div>
+                    <div>Room: {{vm.mavgroom}}</div>
+                    <div>Total: {{vm.mavgmed_sup+vm.mavglab_radio+vm.mavgdf+vm.mavgothers+vm.mavgroom}}</div>
+                  </div>
+                  <div flex layout="row">
+
+                    <button type="text" class="btn btn-success marginleft15" ng-click="PrintMe()"
+                      data-placement="bottom" title="Save data" onmouseenter="$(this).tooltip('show')">
+                      <span class="glyphicon glyphicon-print"></span>
+                    </button>
+                    <button type="text" class="btn btn-success marginleft15" ng-click="closeprint()"
+                      data-placement="bottom" title="Save data" onmouseenter="$(this).tooltip('show')">
+                      <span class="glyphicon glyphicon-backward"></span>
+                    </button>
+                  </div>
+                </md-card-content>
+
+
+              </md-card>
+
+            </div>
+          </md-content>
+        </md-tab>
+        <!-- page 4 -->
+        <md-tab label="รายการยา" ng-click="">
+          <!-- <md-content class="md-padding" style="height:90vH;"> -->
+          <md-content class="md-padding" layout-xs="column" layout="row" style="height:90vH;">
+            <!-- page 4 left -->
             <div flex-xs flex-gt-xs="20" layout="column">
-              <!-- box left 1 calendar-->
               <md-card>
                 <md-card-content>
                   <div class="pad0">
-                    <button class="btn btn-basic width15vW" ng-click="setup_user=true" title="">
-                      user
+                    <button class="btn btn-basic width15vW" ng-click="setup_newdrug()" title="">
+                      เพิ่มชื่อยาใหม่
+                    </button>
+                  </div>
+                  <div class="pad0">
+                    <button class="btn btn-basic width15vW" ng-click="list_drug()" title="">
+                      รายการยาทั้งหมด
+                    </button>
+                  </div>
+                  <div class="pad0">
+                    <button class="btn btn-basic width15vW" ng-click="setup_UOM()" title="">
+                      setup UOM
                       <!-- <span class="glyphicon glyphicon-save"></span> -->
                     </button>
                   </div>
                   <div class="pad0">
-                    <button class="btn btn-basic width15vW" ng-click="setup_dr=true" title="">
-                      แพทย์
-                      <!-- <span class="glyphicon glyphicon-save"></span> -->
+                    <button class="btn btn-basic width15vW" ng-click="setup_form()" title="">
+                      setup form
+                    </button>
+                  </div>
+                  <div class="pad0">
+                    <button class="btn btn-basic width15vW" ng-click="setup_frequency()" title="">
+                      setup frequency
                     </button>
                   </div>
                 </md-card-content>
               </md-card>
             </div>
-            <!-- page 7 right -->
+            <!-- page 4 right -->
             <div flex-xs flex-gt-xs="80" layout="column">
-              <!-- box left 1 -->
+
               <md-card>
-                <div ng-if="show_savedata" class="align-c fontxxl fontr5"> {{lbl_savedata}}</div>
+                <div ng-if="" class="align-c fontxxl fontr5"> {{lbl_savedata}}</div>
 
                 <md-card-content>
-                  <div ng-if="setup_user">
+                  <div ng-if="show_p4==false" class="align-c fontxxl fontr5"> {{lbl_note}}</div>
+                  <div ng-if="show_setup_newdrug">
                     <div flex layout="column" class="form-group">
                       <div class="padtop3 fontbg4">
-                        <label>setup user</label>
+                        <label>เพิ่มชื่อยาใหม่</label>
                       </div>
                       <div class="padleft">
-                        <input type="text" name="i1" class="form-control width40vW" placeholder="ชื่อ"
-                          ng-model="vm.name" value="vm.name" />
-                      </div>
-                      <Br>
-                      <div class="padleft">
-                        <input type="text" name="i1" class="form-control width40vW" placeholder="password"
-                          ng-model="vm.password" value="vm.password" />
+                        <input type="text" name="i1" class="form-control width40vW" placeholder="trade name"
+                          ng-model="vm.tradename" value="vm.tradename" />
                       </div>
                       <Br>
                       <div class="padleft">
-                        <button class="btn btn-basic width10vW" ng-click="save_user(vm.name,vm.password)" title="">
+                        <input type="text" name="i2" class="form-control width40vW" placeholder="generic name"
+                          ng-model="vm.genericname" value="vm.genericname" />
+                      </div>
+                      <Br>
+                      <div flex layout="row">
+                        <div class="padleft">
+                          <input type="text" name="i3" class="form-control width10vW" placeholder="default dose"
+                            ng-model="vm.default_dose" value="vm.default_dose" />
+                        </div>
+                        <div class="marginleft15">
+                          หน่วย : </div>
+                        <select name="repeatSelect" class="form-control width20vW" id="repeatSelect"
+                          ng-model="x.locallanguagedesc">
+                          <option ng-repeat="x in UOM | orderBy:[ 'locallanguagedesc' ] "
+                            value="{{x.locallanguagedesc}}">
+                            {{x.locallanguagedesc}}</option>
+                        </select>
+
+
+                      </div>
+                      <Br>
+
+
+                      <md-content flex layout-padding>
+                        Frequency :
+                        <select name="repeatSelect" class="form-control width60vW" id="repeatSelect"
+                          ng-model="y.locallangdesc">
+                          <option ng-repeat="y in frequencies | orderBy:[ 'locallangdesc' ] "
+                            value="{{y.locallangdesc}}">
+                            {{y.locallangdesc}}</option>
+                        </select>
+                      </md-content>
+                      <Br>
+
+                      <md-content flex layout-padding>
+                        Form :
+                        <select name="repeatSelect" class="form-control width30vW" id="repeatSelect"
+                          ng-model="z.valuedescription">
+                          <option ng-repeat="z in form | orderBy:[ 'valuedescription' ] "
+                            value="{{z.valuedescription}}">
+                            {{z.valuedescription}}</option>
+                        </select>
+                      </md-content>
+
+                      <Br>
+                      <div class="padleft">
+                        <button class="btn btn-basic width10vW"
+                          ng-click="save_newdrug(vm.tradename,vm.genericname,vm.default_dose,y.locallangdesc,x.locallanguagedesc,z.valuedescription)"
+                          title="">
                           บันทึก
                           <!-- <span class="glyphicon glyphicon-save"></span> -->
                         </button>
                       </div>
                     </div>
                   </div>
-                  <div ng-if="setup_dr">
-                    <div flex layout="column">
-                      <div class="padtop3 fontbg4">
-                        <label>setup user</label>
+                  <div ng-if="show_listalldrug">
+                    <div style="min-height: 70vH;max-height:70vH;overflow-y:scroll;">
+                      <table class="table">
+                        <tr ng-repeat="detail in alldrug | orderBy : 'tradename'">
+                          <td class="text3">{{ $index + 1 }}</td>
+                          <td class="align-l">{{detail.tradename}}</td>
+                          <td class="align-l">{{detail.genericname}}</td>
+                          <td class="align-l">{{detail.default_dose}}</td>
+                          <td class="align-l">{{detail.UOM}}</td>
+                          <td class="align-l">{{detail.form}}</td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                  <div ng-if="show_setup_UOM">
+                    <div flex layout="column" class="form-group">
+                      <div flex layout="row">
+                        <div class="padtop3 fontbg4">
+                          <label>UOM</label>
+                        </div>
+                        <div class="padleft">
+                          <input type="text" name="i1" class="form-control width20vW marginleft15" placeholder="Eng"
+                            ng-model="vm.valuedescription" value="vm.valuedescription" />
+                        </div>
+
+                        <div class="padleft">
+                          <input type="text" name="i2" class="form-control width20vW marginleft15" placeholder="ไทย"
+                            ng-model="vm.locallanguagedesc" value="vm.locallanguagedesc" />
+                        </div>
+                        <div class="padleft">
+                          <button class="btn btn-basic width10vW marginleft15"
+                            ng-click="save_UOM(vm.valuedescription,vm.locallanguagedesc)" title="">
+                            บันทึก
+                            <!-- <span class="glyphicon glyphicon-save"></span> -->
+                          </button>
+                        </div>
+                        <div class="padleft">
+                          <button class="btn btn-basic width10vW marginleft15"
+                            ng-click="clear_UOM()" title="">
+                            clear
+                            <!-- <span class="glyphicon glyphicon-save"></span> -->
+                          </button>
+                        </div>
                       </div>
-                      <div class="padleft">
-                        <input type="text" name="i1" class="form-control width40vW" placeholder="ชื่อ"
-                          ng-model="vm.name" value="vm.name" />
+                      <div class=" fontr5">{{uomtxt}}</div>
+                      <Br>
+
+                      <!-- <div flex layout="row">
+                        <div class="width10vW">status</div>
+                        <div class="width15vW">
+                          <input style="height: 2em;width: 30%;" type="radio" name="active" id="active" value="male"
+                            ng-model="vm.statusflag" checked>
+                          <label style="font-size: 1.2em;">
+                            active
+                          </label>
+                        </div>
+                        <div class=" width15vW">
+                          <input style="height: 2em;width: 30%;" type="radio" name="cancel" id="cancel" value="female"
+                            ng-model="vm.statusflag">
+                          <label style="font-size: 1.2em;">
+                            cancel
+                          </label>
+                        </div>
+                      </div> -->
+
+
+                    </div>
+                    <div style="min-height: 70vH;max-height:70vH;overflow-y:scroll;">
+                      <table class="table">
+                        <tr ng-repeat="detail in UOM ">
+                          <td class="text3">{{ $index + 1 }}</td>
+                          <td class="align-l">{{detail.locallanguagedesc}}</td>
+                          <td class="align-l">{{detail.valuedescription}}</td>
+                          <td class="align-l">
+                            <button class="btn btn-basic width10vW marginleft15"
+                            ng-click="delete_UOM(detail.valuedescription,detail.locallanguagedesc,$index)" title="">
+                            delete
+                          </button>
+                          </td>
+
+
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                  <div ng-if="show_setup_form">
+                    <div flex layout="column" class="form-group">
+                      <div flex layout="row">
+                        <div class="padtop3 fontbg4">
+                          <label>UOM</label>
+                        </div>
+                        <div class="padleft">
+                          <input type="text" name="i1" class="form-control width20vW marginleft15" placeholder="Eng"
+                            ng-model="vm.valuedescription" value="vm.valuedescription" />
+                        </div>
+
+
+                        <div class="padleft">
+                          <button class="btn btn-basic width10vW marginleft15"
+                            ng-click="save_form(vm.valuedescription)" title="">
+                            บันทึก
+                            <!-- <span class="glyphicon glyphicon-save"></span> -->
+                          </button>
+                        </div>
+                        <div class="padleft">
+                          <button class="btn btn-basic width10vW marginleft15"
+                            ng-click="clear_form()" title="">
+                            clear
+                            <!-- <span class="glyphicon glyphicon-save"></span> -->
+                          </button>
+                        </div>
+                      </div>
+                      <div class=" fontr5">{{formtxt}}</div>
+                      <Br>
+                    </div>
+                    <div style="min-height: 70vH;max-height:70vH;overflow-y:scroll;">
+                      <table class="table">
+                        <tr ng-repeat="detail in form ">
+                          <td class="text3">{{ $index + 1 }}</td>
+                          <td class="align-l">{{detail.valuedescription}}</td>
+                          <td class="align-l">
+                            <button class="btn btn-basic width10vW marginleft15"
+                            ng-click="delete_form(detail.valuedescription,$index)" title="">
+                            delete
+                          </button>
+                          </td>
+
+
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                  <div ng-if="show_setup_frequency">
+                    <div flex layout="column" class="form-group">
+                      <div flex layout="row">
+                        <div class="padtop3 fontbg4">
+                          <label>frequency</label>
+                        </div>
+                        <div class="padleft">
+                          <input type="text" name="i2" class="form-control width50vW marginleft15" placeholder="ไทย"
+                            ng-model="vm.locallangdesc" value="vm.locallangdesc" />
+                        </div>
+
                       </div>
                       <Br>
-                      <div class="padleft">
-                        <input type="text" name="i1" class="form-control width40vW" placeholder="password"
-                          ng-model="vm.password" value="vm.password" />
+                        <div flex layout="row">
+                          <div class="padleft">
+                            <input type="text" name="i1" class="form-control width50vW marginleft15" placeholder="Eng"
+                              ng-model="vm.description" value="vm.description" />
+                          </div>
+                        <div class="padleft">
+                          <button class="btn btn-basic width10vW marginleft15"
+                            ng-click="save_frequency(vm.description,vm.locallangdesc)" title="">
+                            บันทึก
+                            <!-- <span class="glyphicon glyphicon-save"></span> -->
+                          </button>
+                        </div>
+                        <div class="padleft">
+                          <button class="btn btn-basic width10vW marginleft15"
+                            ng-click="clear_frequency()" title="">
+                            clear
+                            <!-- <span class="glyphicon glyphicon-save"></span> -->
+                          </button>
+                        </div>
                       </div>
+                      <div class=" fontr5">{{frequencytxt}}</div>
                       <Br>
-                      <div class="padleft">
-                        <input type="text" name="i1" class="form-control width40vW" placeholder="ใบประกอบโรคศิลป์เลขที่"
-                          ng-model="vm.drid" value="vm.drid" />
-                      </div>
-                      <Br>
-                      <div class="padleft">
-                        <button class="btn btn-basic width10vW" ng-click="save_dr(vm.name,vm.password,vm.drid)"
-                          title="">
-                          บันทึก
-                          <!-- <span class="glyphicon glyphicon-save"></span> -->
-                        </button>
-                      </div>
+                    </div>
+                    <div style="min-height: 50vH;max-height:50vH;overflow-y:scroll;">
+                      <table class="table">
+                        <tr ng-repeat="detail in frequencies ">
+                          <td class="text3">{{ $index + 1 }}</td>
+                          <td class="align-l">{{detail.locallangdesc}}</td>
+                          <td class="align-l">{{detail.description}}</td>
+                          <td class="align-l">
+                            <button class="btn btn-basic width10vW marginleft15"
+                            ng-click="deletefrequency(detail.description,detail.locallangdesc,$index)" title="">
+                            delete
+                          </button>
+                          </td>
+
+
+                        </tr>
+                      </table>
                     </div>
                   </div>
                 </md-card-content>
@@ -781,7 +921,7 @@
             </div>
           </md-content>
         </md-tab>
-        <!-- page 3 -->
+        <!-- page 5 -->
         <md-tab label="xxxxReport" ng-click="report()">
           <!-- <md-content class="md-padding" style="height:90vH;"> -->
           <md-content class="md-padding" layout-xs="column" layout="row" style="height:90vH;">
@@ -857,202 +997,6 @@
                 </md-card>
 
             </div>
-          </md-content>
-        </md-tab>
-
-
-
-        <!-- page 8 -->
-        <md-tab label="xxxxDetail" ng-click="bill_detail()">
-          <!-- <md-content class="md-padding" style="height:90vH;"> -->
-          <md-content class="md-padding" layout-xs="column" layout="row" style="height:90vH;">
-            <!-- {{show_report}} -->
-            <!-- page  left -->
-            <div flex-xs flex-gt-xs="25" layout="column" style="height:75vH;">
-              <!-- box left 1 calendar-->
-              <md-card>
-
-                <div flex layout="row">
-                  <md-content flex layout-padding>
-                    <input type="text" name="hn" class="form-control " placeholder="hn" ng-model="mhn" value=" " />
-                  </md-content>
-                  <md-button class="md-raised md-warn md-hue-3" ng-click="searchptbyhn(mhn)" title="Show"
-                    style="width:80px;">
-                    search
-                  </md-button>
-
-                </div>
-                <!-- loading -->
-
-                <div flex layout="column" ng_if="show_loading">
-                  <div class="align-c">
-                    <img class="square" src="../app/image/loading.gif" style="width:100px">
-                    <div class="alert alert-warning">
-                      <strong> โปรดรอสักครู่</strong>
-                    </div>
-                  </div>
-
-                </div>
-                <div flex layout="column " ng-if="show_searchpt">
-                  <div class="align-l margin15 width20vW ">
-                    <div class="fonts fontgr9">HN : {{searchpt.mrn}} </div>
-                    <div class="fontn fontr8">Name:
-                      <font color="blue " class="fontn ">{{searchpt.firstname}} {{searchpt.lastname}}</font>
-                    </div>
-                    <div class="fonts fontgr8">DOB : {{searchpt.dateofbirth | date:'dd/MM/yyyy'}}</div>
-                    <div class="fonts fontgr7"> Age : {{getAge(searchpt.dateofbirth)}}</div>
-                  </div>
-                </div>
-
-                <md-input-container class="input-fields    marginleft2">
-                  <div style="min-height: 50vH;max-height:50vH;overflow-y:scroll;">
-                    <table class="table">
-                      <tr ng-repeat="detail in ptvisit | orderBy : '-startdate'">
-                        <!-- <td class="align-l">{{detail.catname}}</td> -->
-                        <td class="align-c">
-                          <button type="text" class="btn btn-primary width20vW" ng-click="showbilldetail(detail.ptvuid)"
-                            data-placement="bottom">
-                            {{detail.startdate | date:'dd/MM/yyyy'}}<Br>
-                            {{detail.visitid}}
-                          </button>
-                        </td>
-                      </tr>
-                    </table>
-                  </div>
-                </md-input-container>
-              </md-card>
-
-            </div>
-
-            <!-- page  right -->
-            <div flex-xs flex-gt-xs="75" layout="column">
-              <!-- box right 1 -->
-              <md-card ng-if="show_header" style="min-height: 14vH;max-height:14vH;">
-                <md-card-content>
-                  <!-- <md-input-container style="width: 100%;"> -->
-
-                  <!-- <div style="min-height: 10vH;max-height:10vH;overflow-y:scroll;"> -->
-                  <div flex layout="row ">
-                    <md-content flex layout-padding class="width15vW ">
-                      Date:
-                      <select name="repeatSelect1" class="form-control" id="repeatSelect1" ng-model="xx.chargedate"
-                        ng-change="billbydate(xx.chargedate)">
-                        <option ng-repeat="xx in bill2 | orderBy : '-cdate'" ng-value="xx.chargedate">
-                          {{xx.chargedate}}</option>
-                      </select>
-                      <input type="text" class="form-control" name="endate" placeholder="date" value="xx.endate"
-                        ng-hide="true" required />
-                    </md-content>
-                    <md-content flex layout-padding class=" width30vW">
-                      Orderitem name:
-                      <select name="repeatSelect2" class="form-control" id="repeatSelect2" ng-model="yy.orderitemname"
-                        ng-change="billbyitem(yy.orderitemname)">
-                        <option ng-repeat="yy in bill3  | orderBy : 'orderitemname'" ng-value="yy.orderitemname">
-                          {{yy.orderitemname}}</option>
-                      </select>
-                      <input type="text" class="form-control" name="orderitemname" placeholder="orderitemname"
-                        value="yy.orderitemname" ng-hide="true" required />
-                    </md-content>
-                    <div class="align-c margin5 ">
-                      <button class="btn btn-success width10vW" ng-click="billsum()" title="sum by date">
-                        sum by date
-                      </button>
-                    </div>
-                    <div class="align-c margin5 ">
-                      <button class="btn btn-success width10vW" ng-click="billall()" title="reset">
-                        show all
-                      </button>
-                    </div>
-                    <div class="align-c margin5 ">
-                      <button class="btn btn-info width10vW"
-                        ng-click="JSONToCSVConvertor(billshow, 'report chargecode', true)" title="reset">
-                        save2xls
-                      </button>
-                    </div>
-                    <div class="align-c margin5 ">
-                      <button class="btn btn-default width10vW" ng-click="Printdetail()" title="reset">
-                        print detail
-                      </button>
-                    </div>
-                  </div>
-                  <!-- </md-input-container> -->
-                </md-card-content>
-
-
-              </md-card>
-              <!-- box right 2 -->
-              <md-card ng-if="show_billdetail">
-                <md-card-content>
-                  <md-input-container style="width: 100%;">
-                    <div class="marginleft15"></div>
-                    <div style="min-height: 65vH;max-height:65vH;overflow-y:scroll;">
-                      <div ID='print_detail'>
-                        <table class="table table-striped table-condensed table-hover fontsn ">
-                          <tr>
-                            <th class="align-l">No.</th>
-                            <th class="align-l">date</th>
-                            <th class="align-l">order name</th>
-                            <th class="align-l">amount</th>
-                            <th class="align-r">unitprice</th>
-                            <th class="align-r">discount</th>
-                            <th class="align-r">net</th>
-
-                          </tr>
-                          <tr ng-repeat="detail in billshow | orderBy:[ '-cdate','orderitemname' ] ">
-                            <!-- | orderBy : 'chargecodes.modifiedat' -->
-                            <!-- <td class="align-l">{{detail.catname}}</td> -->
-                            <td class="align-l">{{ $index + 1 }}</td>
-                            <td class="align-l">{{detail.chargedate | date:'dd/MM/yyyy hh:mm'}}</td>
-                            <td class="align-l">{{detail.orderitemname}}</td>
-                            <td class="align-r">{{detail.quantity | number:2}}</td>
-                            <td class="align-r">{{detail.unitprice | number:2}}</td>
-                            <td class="align-r">{{detail.payordiscount | number:2}}</td>
-                            <td class="align-r">{{detail.netamount | number:2}}</td>
-                          </tr>
-                        </table>
-                      </div>
-                    </div>
-                  </md-input-container>
-                </md-card-content>
-
-
-              </md-card>
-              <md-card ng-if="show_billsum">
-                <md-card-content>
-                  <md-input-container style="width: 100%;">
-                    <div class="align-c margin5 ">
-                      <button class="btn btn-default width10vW" ng-click="Printsum()" title="reset">
-                        print sum of day
-                      </button>
-                    </div>
-
-                    <div style="min-height: 65vH;max-height:65vH;overflow-y:scroll;">
-                      <div ID='print_sum'>
-                        <table class="table table-striped table-condensed table-hover fontsn ">
-                          <tr>
-                            <th class="align-l">No.</th>
-                            <th class="align-l">date</th>
-
-                            <th class="align-r">total</th>
-
-                          </tr>
-                          <tr ng-repeat="detail in billsumbydate | orderBy : 'cdate'">
-
-                            <td class="align-l">{{ $index + 1 }}</td>
-                            <td class="align-l">{{detail.cdate | date:'dd/MM/yyyy'}}</td>
-
-                            <td class="align-r">{{detail.netamount | number:2}}</td>
-                          </tr>
-                        </table>
-                      </div>
-                    </div>
-                  </md-input-container>
-                </md-card-content>
-
-
-              </md-card>
-            </div>
-
           </md-content>
         </md-tab>
         <!-- page last -->

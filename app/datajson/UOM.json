@@ -1,0 +1,112 @@
+[
+  {
+    "valuedescription": "Litre",
+    "locallanguagedesc": "ลิตร",
+    "statusflag": "A"
+  },
+  {
+    "valuedescription": "Millilitre",
+    "locallanguagedesc": "มิลลิลิตร",
+    "statusflag": "A"
+  },
+  {
+    "valuedescription": "Piece",
+    "locallanguagedesc": "ชิ้น",
+    "statusflag": "A"
+  },
+  {
+    "valuedescription": "Roll",
+    "locallanguagedesc": "ม้วน",
+    "statusflag": "A"
+  },
+  {
+    "valuedescription": "Sachet",
+    "locallanguagedesc": "ซอง",
+    "statusflag": "A"
+  },
+  {
+    "valuedescription": "Set",
+    "locallanguagedesc": "ชุด",
+    "statusflag": "A"
+  },
+  {
+    "valuedescription": "Syringe",
+    "locallanguagedesc": "ไซริงค์",
+    "statusflag": "A"
+  },
+  {
+    "valuedescription": "Test",
+    "locallanguagedesc": "เทส",
+    "statusflag": "A"
+  },
+  {
+    "valuedescription": "Tablet",
+    "locallanguagedesc": "เม็ด",
+    "statusflag": "A"
+  },
+  {
+    "valuedescription": "Tin",
+    "locallanguagedesc": "กระป๋อง",
+    "statusflag": "A"
+  },
+  {
+    "valuedescription": "Tube",
+    "locallanguagedesc": "หลอด",
+    "statusflag": "A"
+  },
+  {
+    "valuedescription": "Unit",
+    "locallanguagedesc": "ยูนิต",
+    "statusflag": "A"
+  },
+  {
+    "valuedescription": "Vial",
+    "locallanguagedesc": "ไวอัล",
+    "statusflag": "A"
+  },
+  {
+    "valuedescription": "Yard",
+    "locallanguagedesc": "หลา",
+    "statusflag": "A"
+  },
+  {
+    "valuedescription": "Strip",
+    "locallanguagedesc": "Strip",
+    "statusflag": "A"
+  },
+  {
+    "valuedescription": "Foot",
+    "locallanguagedesc": "ฟุต",
+    "statusflag": "A"
+  },
+  {
+    "valuedescription": "Dozen",
+    "locallanguagedesc": "โหล",
+    "statusflag": "A"
+  },
+  {
+    "valuedescription": "Milligram",
+    "locallanguagedesc": "มิลลิกรัม",
+    "statusflag": "A"
+  },
+  {
+    "valuedescription": "Drop",
+    "locallanguagedesc": "หยด",
+    "statusflag": "A"
+  },
+  {
+    "valuedescription": "Puff",
+    "locallanguagedesc": "ที",
+    "statusflag": "A"
+  },
+  {
+    "valuedescription": "IU",
+    "locallanguagedesc": "IU",
+    "statusflag": "A"
+  },
+  {
+    "valuedescription": "MCG",
+    "locallanguagedesc": "ไมโครกรัม",
+    "statusflag": "A"
+  }
+]
