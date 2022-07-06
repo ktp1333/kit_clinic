@@ -15,29 +15,29 @@ app.controller('a_clinicController', function ($scope, $location, $http, $timeou
     // $scope.ippub = globalSetting.setting.ippub;
     // $scope.entypeuid = globalSetting.setting.entypeuid_opd;
     //-----------------------------------
-    // $location.url($location.path());
-    // $scope.right = false;
-    // $scope.left = false;
-    // $scope.showcaseOR = false;
-    // $scope.recc = false;
-    // $scope.show_searchright = false;
-    // // $scope.initdata = initdata;
+    $scope.lbl1 = 'ค้นหา';
+    $scope.change_select_fq = change_select_fq;
+    $scope.select_fq = select_fq;
+    $scope.show_select_fq = false;
+    $scope.setup_p2 = setup_p2;
+    $scope.select_drug = select_drug;
+    $scope.searchdrug = searchdrug;
     $scope.clear_UOM = clear_UOM;
-    $scope.uomtxt="";
+    $scope.uomtxt = "";
     $scope.delete_UOM = delete_UOM;
     $scope.save_UOM = save_UOM;
     $scope.clear_form = clear_form;
-    $scope.formtxt="";
+    $scope.formtxt = "";
     $scope.delete_form = delete_form;
     $scope.save_form = save_form;
     $scope.clear_frequency = clear_frequency;
-    $scope.frequencytxt="";
+    $scope.frequencytxt = "";
     $scope.deletefrequency = deletefrequency;
     $scope.save_frequency = save_frequency;
     $scope.find_frequencies = find_frequencies;
     $scope.find_form = find_form;
     $scope.find_UOM = find_UOM;
-
+    $scope.show_finddrug = false;
     $scope.show_listalldrug = false;
     $scope.show_searchright = false;
     $scope.show_setup_newdrug = false;
@@ -51,11 +51,8 @@ app.controller('a_clinicController', function ($scope, $location, $http, $timeou
     $scope.save_newdrug = save_newdrug;
     $scope.setup_newdrug = setup_newdrug;
     $scope.searchHN = searchHN;
-    $scope.save_dr = save_dr;
-    $scope.save_user = save_user;
     $scope.find_title = find_title;
     $scope.selectitle = selectitle;
-    $scope.new_p1 = new_p1;
     $scope.show_p1 = true;
     $scope.show_p4 = true;
     $scope.lbl_note = '';
@@ -78,14 +75,14 @@ app.controller('a_clinicController', function ($scope, $location, $http, $timeou
     $scope.renderTable = renderTable;
     $scope.rep_title = rep_title;
     vm.downloadSupports = ["csv", "xlsx", "pdf", "json"];
-    // $scope.JSONToCSVConvertor = JSONToCSVConvertor;
-    // $scope.Printdetail=Printdetail;
     $scope.getOrguid = getOrguid;
     $scope.ptname_show = false;
+    $scope.prescribe = prescribe;
+    $scope.show_searchdrug = false;
+    $scope.save_drugdispense = save_drugdispense;
+    $scope.clearsearchdrug = clearsearchdrug;
+    $scope.lbl_savedrug = '';
     //---------------------------------------
-
-
-
     var today = new Date();
     // $scope.ptnote = {};
     $scope.dtp = {
@@ -348,6 +345,19 @@ app.controller('a_clinicController', function ($scope, $location, $http, $timeou
                 $scope.findpt = data.data[0];
                 $scope.show_searchright = true;
                 $scope.ptname_show = true;
+                //find visit
+                $http.post('/local/findvisit', {
+                    "mfile": "visit",
+                    "HN": $scope.findpt.HN,
+                    "statusflag": 'A',
+                }).success(function (data) {
+                    $scope.existvisit = data.data;
+                    console.log('existvisit', $scope.existvisit);
+                    var params = moment(new Date()).format("DD/MM/YYYY")
+                    console.log(params);
+                    $scope.visit = $scope.existvisit.filter(function (item) { return moment(item.startdate).format("DD/MM/YYYY") == params; });
+                    console.log($scope.visit);
+                });
             } else {
                 $scope.findpt = [];
                 $scope.show_searchright = false;
@@ -558,7 +568,7 @@ app.controller('a_clinicController', function ($scope, $location, $http, $timeou
             })
             .success(function (data) {
                 find_UOM();
-                $scope.uomtxt="บันทึกรายการเรียบร้อย";
+                $scope.uomtxt = "บันทึกรายการเรียบร้อย";
                 clear_UOM();
             });
     }
@@ -575,12 +585,12 @@ app.controller('a_clinicController', function ($scope, $location, $http, $timeou
             })
             .success(function (data) {
                 find_UOM();
-                $scope.uomtxt="ยกเลิกรายการเรียบร้อย";
+                $scope.uomtxt = "ยกเลิกรายการเรียบร้อย";
             });
     }
     function clear_UOM() {
-        vm.valuedescription='';
-        vm.locallanguagedesc='';
+        vm.valuedescription = '';
+        vm.locallanguagedesc = '';
     }
     function setup_form() {
         find_form();
@@ -597,7 +607,7 @@ app.controller('a_clinicController', function ($scope, $location, $http, $timeou
             })
             .success(function (data) {
                 find_form();
-                $scope.formtxt="บันทึกรายการเรียบร้อย";
+                $scope.formtxt = "บันทึกรายการเรียบร้อย";
                 clear_form();
             });
     }
@@ -612,19 +622,18 @@ app.controller('a_clinicController', function ($scope, $location, $http, $timeou
             })
             .success(function (data) {
                 find_form();
-                $scope.formtxt="ยกเลิกรายการเรียบร้อย";
+                $scope.formtxt = "ยกเลิกรายการเรียบร้อย";
             });
     }
     function clear_form() {
-        vm.valuedescription='';
+        vm.valuedescription = '';
     }
-
     function setup_frequency() {
         find_frequencies();
         closeallpage4();
         $scope.show_setup_frequency = true;
     }
-    function save_frequency(description,locallangdesc) {
+    function save_frequency(description, locallangdesc) {
         console.log(description);
         console.log(locallangdesc);
         $http
@@ -635,11 +644,11 @@ app.controller('a_clinicController', function ($scope, $location, $http, $timeou
             })
             .success(function (data) {
                 find_frequencies();
-                $scope.frequencytxt="บันทึกรายการเรียบร้อย";
+                $scope.frequencytxt = "บันทึกรายการเรียบร้อย";
                 clear_frequency();
             });
     }
-    function deletefrequency(description,locallangdesc, idx) {
+    function deletefrequency(description, locallangdesc, idx) {
         console.log(description);
         console.log(locallangdesc);
         console.log(idx);
@@ -652,249 +661,114 @@ app.controller('a_clinicController', function ($scope, $location, $http, $timeou
             })
             .success(function (data) {
                 find_frequencies();
-                $scope.frequencytxt="ยกเลิกรายการเรียบร้อย";
+                $scope.frequencytxt = "ยกเลิกรายการเรียบร้อย";
             });
     }
     function clear_frequency() {
-        vm.description='';
-        vm.locallangdesc='';
+        vm.description = '';
+        vm.locallangdesc = '';
     }
-    //-------------------------------
-    function new_p1() {
-        $scope.lbl_note = '';
-        $scope.show_btnsave = true;
-        $scope.show_p1 = true;
+    function setup_p2() {
+        find_frequencies();
     }
-    function save_user(name, pwd) {
-        console.log(name);
-        console.log(pwd);
-
-        $http.post('/local/savedata_user', {
-            "mfile": "user",
-            "name": name,
-            "password": pwd,
-
+    function searchdrug(params) {
+        $scope.lbl_savedrug = '';
+        $http.post('/local/search_drug', {
+            "mfile": 'itemmaster',
+            "name": params,
 
         }).success(function (data) {
-            console.log(data);
-            if (data.data == 1) {
-                $scope.lbl_savedata = 'บันทึกรายการเรียบร้อย';
+            if (data.data && data.data.length > 0) {
+                $scope.finddrug = data.data;
+                $scope.show_finddrug = true;
 
             } else {
-                $scope.lbl_savedata = 'มีชื่อนี้แล้ว';
+                $scope.finddrug = [];
+                $scope.show_finddrug = false;
+
             }
-            $scope.show_savedata = true;
-            $scope.setup_user = false;
+            console.log('finddrug', $scope.finddrug);
 
         });
     }
-    function save_dr(name, pwd, drid) {
-        console.log(name);
-        console.log(pwd);
-        console.log(drid);
-        $http.post('/local/savedata_dr', {
-            "mfile": "dr",
-            "name": name,
-            "password": pwd,
-            "drid": drid,
+    function select_drug(params) {
+        $scope.show_finddrug = false;
+        $scope.show_inputdrug = true;
 
-        }).success(function (data) {
-            console.log(data);
-            if (data.data == 1) {
-                $scope.lbl_savedata = 'บันทึกรายการเรียบร้อย';
-
-            } else {
-                $scope.lbl_savedata = 'มีชื่อนี้แล้ว';
-            }
-            $scope.show_savedata = true;
-            $scope.setup_dr = false;
-
-        });
+        console.log(params);
+        $scope.tradename = params.tradename;
+        $scope.defaultdose = params.default_dose + ' ' + params.UOM;
+        $scope.fq = params.frequencies;
     }
-    function downloadTypeChange(fileType) {
-        localStorage.setItem("DOWNLOAD_TYPE", fileType);
+    function select_fq(params) {
+        $scope.fq = params;
+        $scope.show_select_fq = false;
     }
-    function downloadFile(fileType) {
-        vm.headertxt = "Title";
-        if (fileType === "pdf") {
-            vm.table.download(fileType, vm.headertxt, {
-                autoTable: function (doc) {
-                    var doc = new jsPDF();
-                    doc.addFont("THSarabunNew", "bold");
-                    doc.setFont("THSarabunNew", "bold");
-                    doc.setFontSize(16);
-                    var header = function (data) {
-                        doc.setFontSize(18);
-                        doc.setTextColor(40);
-                        doc.setFont("THSarabunNew", "normal");
-                        doc.text("", data.settings.margin.left, 50);
-                    };
-                    return {
-                        styles: {
-                            font: "THSarabunNew",
-                            fontStyle: "bold",
-                            fontSize: 16,
-                        },
-                        headStyles: {
-                            fillColor: [0, 78, 82],
-                        },
-                        didDrawPage: header,
-                        margin: {
-                            top: 65,
-                        },
-                        theme: "grid",
-                    };
-                },
-            });
-        } else if (fileType === "xlsx") {
-            if (vm.table) {
-                vm.table.download(fileType, vm.headertxt + "." + fileType, {
-                    sheetName: "Report",
-                    documentProcessing: (workbook) => {
-                        var data = vm.table.getData();
-                        var ws = XLSX.utils.aoa_to_sheet([
-                            // [vm.headertxt + '  ' + vm.subtitletext],
-                            // [vm.datetitle]
-                        ]);
+    function change_select_fq() {
 
-                        if (data && data.length > 0) {
-                            var header = Object.keys(data[0]);
+        $scope.show_select_fq = true;
 
-                            // XLSX.utils.sheet_add_json(ws, data, { header: header, origin: "A3" });
-                            XLSX.utils.sheet_add_json(ws, data, {
-                                header: header,
-                                origin: "A1",
-                            });
-                            ws["!cols"] = header.map((h) => ({
-                                wch: 20,
-                            }));
-
-                            // var mergeCell = [XLSX.utils.decode_range('A1:G1'), XLSX.utils.decode_range('A2:G2')];
-                            // ws['!merges'] = mergeCell;
-                        }
-                        workbook.Sheets[workbook.SheetNames[0]] = ws;
-                        return workbook;
-                    },
-                });
-            }
-        } else if (fileType === "csv") {
-            var JSONData = vm.table.getData();
-            // var ReportTitle = vm.headertxt+ '.' + fileType;
-            JSONToCSVConvertor(JSONData, vm.headertxt, true);
+    }
+    function prescribe(HN) {
+        console.log($scope.visit);
+        $scope.show_searchdrug = true;
+        if ($scope.visit && $scope.visit.length > 0) {
+            console.log($scope.visit);
+            $scope.HN = $scope.visit[0].HN;
+            $scope.EN = $scope.visit[0].EN;
+            console.log($scope.HN);
+            console.log($scope.EN);
         } else {
-            vm.table.download(fileType, vm.headertxt + "." + fileType);
+            $http.post('/local/newvisit', {
+                "mfile": "visit",
+                "HN": HN,
+                "statusflag": 'A',
+            }).success(function (data) {
+                $scope.visit = data;
+                console.log($scope.visit);
+                // $scope.show_setup_newdrug = false;
+                $scope.HN = data.data.HN;
+                $scope.EN = data.data.EN;
+            });
         }
+
+
+
     }
-    function printFile() {
-        vm.table.print();
+    function clearsearchdrug() {
+        vm.msearchdrug = '';
+        $scope.defaultdose = '';
+        $scope.fq = '';
+        vm.amount = '';
+        document.getElementById("s_d").focus();
     }
-    function JSONToCSVConvertor(JSONData, ReportTitle, ShowLabel) {
-        console.log(JSONData);
-        console.log(ReportTitle);
-        console.log(ShowLabel);
-        //If JSONData is not an object then JSON.parse will parse the JSON string in an Object
-        var arrData =
-            typeof JSONData != "object" ? JSON.parse(JSONData) : JSONData;
+    function save_drugdispense(tradename, defaultdose, fq, amount, EN, HN) {
+        console.log(tradename, defaultdose, fq, amount, EN, HN);
 
-        var CSV = "";
-        //Set Report title in first row or line
-
-        CSV += ReportTitle + "\r\n\n";
-
-        //This condition will generate the Label/Header
-        if (ShowLabel) {
-            var row = "";
-
-            //This loop will extract the label from 1st index of on array
-            for (var index in arrData[0]) {
-                //Now convert each value to string and comma-seprated
-                row += index + ",";
-            }
-
-            row = row.slice(0, -1);
-
-            //append Label row with line break
-            CSV += row + "\r\n";
-        }
-
-        //1st loop is to extract each row
-        for (var i = 0; i < arrData.length; i++) {
-            var row = "";
-
-            //2nd loop will extract each column and convert it in string comma-seprated
-            for (var index in arrData[i]) {
-                row += '"' + arrData[i][index] + '",';
-            }
-
-            row.slice(0, row.length - 1);
-
-            //add a line break after each row
-            CSV += row + "\r\n";
-        }
-
-        if (CSV == "") {
-            alert("Invalid data");
-            return;
-        }
-
-        //Generate a file name
-        // var fileName = "MyReport_";
-        var fileName = "";
-        //this will remove the blank-spaces from the title and replace it with an underscore
-        fileName += ReportTitle.replace(/ /g, "_");
-        // fileName='kit';
-        //Initialize file format you want csv or xls
-        var uri = "data:text/xls;charset=utf-8," + escape(CSV);
-        // downloadFile('1.csv', 'data:text/csv;charset=UTF-8,' + '\uFEFF' + encodeURIComponent(CSV));
-        var uri =
-            "data:text/csv;charset=utf-8," + "\uFEFF" + encodeURIComponent(CSV);
-        // var uri = 'data:text/csv;charset=utf-8,' + escape(CSV);
-        // console.log('vm.table', vm.table);
-        // console.log('CSV', CSV);
-        // console.log('uri', uri);
-
-        //Download the file as CSV
-        var downloadLink = document.createElement("a");
-        var blob = new Blob(["\ufeff", CSV]);
-        var url = URL.createObjectURL(blob);
-        downloadLink.href = url;
-        downloadLink.download = ReportTitle; //Name the file here
-        document.body.appendChild(downloadLink);
-        downloadLink.click();
-        document.body.removeChild(downloadLink);
-        // CSV.download('csv', `${$rootScope.selectedRoute.title}.csv`);
-        // window.open(uri);
-        // Now the little tricky part.
-        // you can use either>> window.open(uri);
-        // but this will not work in some browsers
-        // or you will not get the correct file extension
-
-        //this trick will generat
-    }
-
-
-    //--------report
-    function report() {
-
-        $http.post('/local_host/q_user', {
-            "orguid": $scope.orguid,
-        }).success(function (response) {
-            if (response.data && response.data.length > 0) {
-                $scope.repusername = response.data;
-                console.log('$scope.repusername ');
-                console.log($scope.repusername);
-                $scope.show_report = true;
-            }
-
+        $scope.lbl_savedrug = 'save data ready';
+        clearsearchdrug();
+        $http.post("/local/save_order", {
+            mfile: 'visit',
+            tradename: tradename,
+            defaultdose: defaultdose,
+            fq: fq,
+            amount: amount,
+            EN: EN,
+            HN: HN,
+        }).success(function (data) {
+            // find_frequencies();
+            // $scope.frequencytxt="บันทึกรายการเรียบร้อย";
+            // clear_frequency();
         });
     }
+
+    //--------library
 
     function gohome() {
         // window.location = "/";
         window.location = "/chooseapp#?orguid=" + $scope.orguid + "&name=" + $scope.name + "&hospname=" + $scope.hospname;
 
     }
-
     function closeall() {
         // openwindow();
         $scope.R1 = false;
@@ -905,39 +779,6 @@ app.controller('a_clinicController', function ($scope, $location, $http, $timeou
         // $scope.R6 = false;
         // $scope.R7 = false;
     }
-
-
-
-
-
-    //------------------------
-    function estimate_form() {
-        $http.post('/local_host/q_estimateform', {
-            "orguid": $scope.orguid,
-        }).success(function (response) {
-            if (response.data && response.data.length > 0) {
-                $scope.repusername = response.data;
-                console.log('$scope.repusername ');
-                console.log($scope.repusername);
-                $scope.show_form = true;
-            }
-
-        });
-    }
-    //   function mongo2table(mfile) {
-    //     console.log(mfile);
-    //     vm.headertxt = mfile;
-    //     $http
-    //       .post("/centrix_migrate/list_dbdetail", {
-    //         mfile: mfile,
-    //         orguid: $scope.orguid,
-    //       })
-    //       .success(function (data) {
-    //         vm.results = data.data;
-    //         vm.renderTable("#table_mongo2table");
-    //       });
-    //   }
-    // ---------------------
     function getAge(myDate) {
         var currentDate = moment();
         var dateOfBirth = moment(myDate);
@@ -949,8 +790,6 @@ app.controller('a_clinicController', function ($scope, $location, $http, $timeou
         var mage = years + ' Y /' + months + ' M /' + days + 'D';
         return mage;
     }
-
-
     function DateThai(myDate) {
         // var dateOfBirth = moment(myDate);
         months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
@@ -1092,6 +931,83 @@ app.controller('a_clinicController', function ($scope, $location, $http, $timeou
         docprint.document.write('</center></body></html>');
         docprint.document.close();
         docprint.focus();
+    }
+    function downloadTypeChange(fileType) {
+        localStorage.setItem("DOWNLOAD_TYPE", fileType);
+    }
+    function downloadFile(fileType) {
+        vm.headertxt = "Title";
+        if (fileType === "pdf") {
+            vm.table.download(fileType, vm.headertxt, {
+                autoTable: function (doc) {
+                    var doc = new jsPDF();
+                    doc.addFont("THSarabunNew", "bold");
+                    doc.setFont("THSarabunNew", "bold");
+                    doc.setFontSize(16);
+                    var header = function (data) {
+                        doc.setFontSize(18);
+                        doc.setTextColor(40);
+                        doc.setFont("THSarabunNew", "normal");
+                        doc.text("", data.settings.margin.left, 50);
+                    };
+                    return {
+                        styles: {
+                            font: "THSarabunNew",
+                            fontStyle: "bold",
+                            fontSize: 16,
+                        },
+                        headStyles: {
+                            fillColor: [0, 78, 82],
+                        },
+                        didDrawPage: header,
+                        margin: {
+                            top: 65,
+                        },
+                        theme: "grid",
+                    };
+                },
+            });
+        } else if (fileType === "xlsx") {
+            if (vm.table) {
+                vm.table.download(fileType, vm.headertxt + "." + fileType, {
+                    sheetName: "Report",
+                    documentProcessing: (workbook) => {
+                        var data = vm.table.getData();
+                        var ws = XLSX.utils.aoa_to_sheet([
+                            // [vm.headertxt + '  ' + vm.subtitletext],
+                            // [vm.datetitle]
+                        ]);
+
+                        if (data && data.length > 0) {
+                            var header = Object.keys(data[0]);
+
+                            // XLSX.utils.sheet_add_json(ws, data, { header: header, origin: "A3" });
+                            XLSX.utils.sheet_add_json(ws, data, {
+                                header: header,
+                                origin: "A1",
+                            });
+                            ws["!cols"] = header.map((h) => ({
+                                wch: 20,
+                            }));
+
+                            // var mergeCell = [XLSX.utils.decode_range('A1:G1'), XLSX.utils.decode_range('A2:G2')];
+                            // ws['!merges'] = mergeCell;
+                        }
+                        workbook.Sheets[workbook.SheetNames[0]] = ws;
+                        return workbook;
+                    },
+                });
+            }
+        } else if (fileType === "csv") {
+            var JSONData = vm.table.getData();
+            // var ReportTitle = vm.headertxt+ '.' + fileType;
+            JSONToCSVConvertor(JSONData, vm.headertxt, true);
+        } else {
+            vm.table.download(fileType, vm.headertxt + "." + fileType);
+        }
+    }
+    function printFile() {
+        vm.table.print();
     }
 })
 

@@ -120,13 +120,10 @@
           </md-content>
         </md-tab>
         <!-- page 2 -->
-        <md-tab label="จ่ายยา">
-          <!-- <md-content class="md-padding" style="height:90vH;"> -->
+        <md-tab label="จ่ายยา" ng-click="setup_p2()">
           <md-content class="md-padding" layout-xs="column" layout="row" style="height:90vH;">
             <!-- page 2.1 left -->
-
             <div flex-xs flex-gt-xs="35" layout="column">
-              <!-- box left 1 -->
               <md-card>
                 <md-card-content>
                   <form>
@@ -150,280 +147,105 @@
                       {{findpt.province}} {{findpt.zipcode}} </div>
                     <div class=" fontnm">Email: {{findpt.email}} </div>
                     <div class=" fontnm">NationalID: {{findpt.nationalID}} </div>
-
+                    <div><button type="submit" class="btn btn-primary" ng-click="prescribe(vm.msearch)">จ่ายยา</button>
+                    </div>
                   </div>
+
                 </md-card-content>
-
-
               </md-card>
             </div>
-
             <!-- page 2.2 right -->
-
             <div flex-xs flex-gt-xs="65" layout="column">
-              <!-- box right searchHN-->
-              <md-card>
-                <md-card-content>
-                  <form>
+              <div ng-if="show_searchdrug">
+                <md-card>
+                  <div class="marginleft15 fontm fontr5">EN : {{EN}}</div>
+                  <md-card-content>
+                   
                     <div flex layout="row">
-                      <div>
-                        <label for="inputHN">drug name : </label>
-                      </div>
-                      <div><input type="text" class="form-control " placeholder="" ng-model="vm.msearchdrug">
+                     
+                      <div>drug name :</div>
+                      <div><input id="s_d" type="text" class="form-control width20vW" placeholder="" ng-model="vm.msearchdrug">
                       </div>
                       <div><button type="submit" class="btn btn-primary"
                           ng-click="searchdrug(vm.msearchdrug)">ค้นหา</button>
                       </div>
+                      <div><button type="submit" class="btn btn-primary"
+                        ng-click="clearsearchdrug()">clear</button></div>
                     </div>
-                  </form>
+                  
+                    <div ng-if="show_finddrug">
+                      <div style="min-height: 40vH;max-height:40vH;overflow-y:scroll;">
+                        <table class="table">
+                          <tr ng-repeat="detail in finddrug | orderBy : 'tradename'">
+                            <td class="text3">{{ $index + 1 }}</td>
+                            <td class="align-l">{{detail.tradename}}</td>
+                            <td class="align-c">
+                              <button type="submit" class="btn btn-primary"
+                                ng-click="select_drug(detail)">select</button>
+                            </td>
+                            <!-- <td class="align-l">{{detail.genericname}}</td>
+                            <td class="align-l">{{detail.default_dose}}</td>
+                            <td class="align-l">{{detail.UOM}}</td>
+                            <td class="align-l">{{detail.form}}</td> -->
+                          </tr>
+                        </table>
+                      </div>
+                    </div>
 
-                </md-card-content>
-
-              </md-card>
-              <!-- show/input HN banner -->
-              <md-card ng-if="show_importhn">
-                <md-card-content>
-                  <form>
-                    <div class="form-row">
-                      <div class="form-group col-md-6">
-                        <label for="inputname">name</label>
-                        <input type="text" class="form-control" id="inputname" placeholder="name"
-                          ng-model="patientname">
-                      </div>
-                      <div class="form-group col-md-6">
-                        <label for="inputgender">Gender</label>
-                        <input type="text" class="form-control" id="inputgender" placeholder="gender" ng-model="gender">
-                      </div>
-                    </div>
-                    <div class="form-row">
-                      <div class="form-group col-md-6">
-                        <label for="HN">HN</label>
-                        <input type="text" class="form-control" id="HN" placeholder="HN" ng-model="HN">
-                      </div>
-                      <div class="form-group col-md-6">
-                        <label for="inputdob">Date of Birth</label>
-                        <input type="text" class="form-control" id="inputdob" placeholder="Date of Birth"
-                          ng-model="thaiDOB">
-                      </div>
-
-                    </div>
-                  </form>
-                </md-card-content>
-              </md-card>
-              <!-- input form -->
-              <md-card>
-                <md-card-content>
-                  <div class="fontl fontbg10 fontbold">Input data to form</div>
-                  <form>
-                    <div class="form-group">
-                      <label for="inputpatientname">Patient name</label>
-                      <input type="text" class="form-control" id="inputpatientname" placeholder="patient name"
-                        ng-model="patientname">
-                    </div>
-                    <div class="form-group">
-                      <label for="inputrelativename">Relative name</label>
-                      <input type="text" class="form-control" id="inputrelativename" placeholder="Relative name"
-                        ng-model="vm.relativename">
-                    </div>
-                    <div class="form-group">
-                      <label for="inputdrname">Doctor name</label>
-                      <input type="text" class="form-control" id="inputdrname" placeholder="Doctor name"
-                        ng-model="vm.drname">
-                    </div>
-                    <div class="form-group">
-                      <label for="inputprocedure">Procedure</label>
-                      <input type="text" class="form-control" id="inputprocedure" placeholder="Procedure"
-                        ng-model="vm.procedure">
-                    </div>
-                    <fieldset class="form-group">
-                      <div class="row">
-                        <legend class="col-form-label col-sm-2 pt-0">Type</legend>
-                        <div class="col-sm-10">
-                          <div class="form-check">
-                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1"
-                              value="Elective" ng-model="vm.type" checked>
-                            <label class="form-check-label" for="gridRadios1">
-                              Elective
-                            </label>
+                    <div ng-if="show_inputdrug">
+                      <div flex layout="column" class="form-group">
+                        {{tradename}}
+                        <Br>
+                        <div flex layout="column">
+                          <div class="padleft">
+                            <input type="text" class="form-control width10vW" placeholder="default dose"
+                              ng-model="defaultdose" value="defaultdose" />
+                          </div> <Br>
+                          <div flex layout="row">
+                            <div class="padleft">
+                              <input type="text" class="form-control width50vW" placeholder="frequency" ng-model="fq"
+                                value="fq" />
+                            </div>
+                            <div><button type="submit" class="btn btn-primary"
+                                ng-click="change_select_fq()">ค้นหา</button>
+                            </div>
                           </div>
-                          <div class="form-check">
-                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2"
-                              value="Emergency" ng-model="vm.type">
-                            <label class="form-check-label" for="gridRadios2">
-                              Emergency
-                            </label>
-                          </div>
-
+                          <Br>
+                          <md-content flex layout-padding ng-if="show_select_fq">
+                            เลือกวิธีใช้ :
+                            <select name="repeatSelect" class="form-control width50vW" id="repeatSelect"
+                              ng-model="y.locallangdesc">
+                              <option ng-repeat="y in frequencies | orderBy:[ 'locallangdesc' ] "
+                                value="{{y.locallangdesc}}">
+                                {{y.locallangdesc}}</option>
+                            </select>
+                            <div><button type="submit" class="btn btn-primary"
+                                ng-click="select_fq(y.locallangdesc)">เลือก</button>
+                          </md-content>
                         </div>
                       </div>
-                    </fieldset>
-                    <div class="form-group col-md-6">
-                      <label for="inputloo">length of operation</label>
-                      <input type="text" class="form-control" id="inputloo" placeholder="length of operation (hours)"
-                        ng-model="vm.loo">
-                    </div>
-                    <div class="form-group col-md-6">
-                      <label for="inputlos">length of stay</label>
-                      <input type="text" class="form-control" id="inputlos" placeholder="length of stay (days)"
-                        ng-model="vm.los">
-                    </div>
-                    <div class="form-row">
-                      <div class="form-group col-md-6">
-                        <label for="inputICU">ICU/Semi ICU</label>
-                        <input type="text" class="form-control" id="inputICU" placeholder="days" ng-model="vm.ICUlos"
-                          ng-change="setitem41(vm.ICUlos,vm.ICUprice)">
-                      </div>
-                      <div class="form-group col-md-6">
-                        <label for="inputICUprice">ICU price</label>
-                        <input type="text" class="form-control" id="inputICUprice" placeholder="ICU price"
-                          ng-model="vm.ICUprice" ng-change="setitem41(vm.ICUlos,vm.ICUprice)">
-                      </div>
-                    </div>
-                    <div class="form-row">
-                      <div class="form-group col-md-6">
-                        <label for="inputward">Ward</label>
-                        <input type="text" class="form-control" id="inputward" placeholder="days" ng-model="vm.wardlos"
-                          ng-change="setitem42(vm.wardlos,vm.wardprice)">
-                      </div>
-                      <div class="form-group col-md-6">
-                        <label for="inputwardprice">Ward price</label>
-                        <input type="text" class="form-control" id="inputwardprice" placeholder="ward price"
-                          ng-model="vm.wardprice" ng-change="setitem42(vm.wardlos,vm.wardprice)">
-                      </div>
-                    </div>
-                    <div class="fontl fontbg10 fontbold">estimate cost of operation</div>
-                    <div class="form-row">
-                      <div class="col col-md-8">
-                        <input type="text" class="form-control" placeholder="item" ng-model="vm.item1">
-                      </div>
-                      <div class="col col-md-3  ">
-                        <input type="text" class="form-control align-r" placeholder="Baht" ng-model="vm.itemprice1">
-                      </div>
-                      <div class="col col-md-1">
-                        <button type="submit" class="btn btn-primary" ng-click="clear_vm(1)">clear</button>
-                      </div>
-                    </div>
-                    <div class="form-row">
-                      <div class="col col-md-8">
-                        <input type="text" class="form-control" placeholder="item" ng-model="vm.item2">
-                      </div>
-                      <div class="col col-md-3">
-                        <input type="text" class="form-control align-r" placeholder="Baht" ng-model="vm.itemprice2">
-                      </div>
-                      <div class="col col-md-1">
-                        <button type="submit" class="btn btn-primary" ng-click="clear_vm(2)">clear</button>
-                      </div>
-                    </div>
-                    <div class="form-row">
-                      <div class="col col-md-8">
-                        <input type="text" class="form-control" placeholder="item" ng-model="vm.item3">
-                      </div>
-                      <div class="col col-md-3">
-                        <input type="text" class="form-control align-r" placeholder="Baht" ng-model="vm.itemprice3">
-                      </div>
-                      <div class="col col-md-1">
-                        <button type="submit" class="btn btn-primary" ng-click="clear_vm(3)">clear</button>
-                      </div>
-                    </div>
-                    <div class="form-row">
-                      <div class="col col-md-8">
-                        <input type="text" class="form-control" placeholder="ICU" ng-model="vm.item41">
-                      </div>
-                      <div class="col col-md-3">
-                        <input type="text" class="form-control align-r" placeholder="Baht" ng-model="vm.itemprice41">
-                      </div>
-                      <div class="col col-md-1">
-                        <button type="submit" class="btn btn-primary" ng-click="clear_vm(41)">clear</button>
-                      </div>
-                    </div>
-                    <div class="form-row">
-                      <div class="col col-md-8">
-                        <input type="text" class="form-control" placeholder="ward" ng-model="vm.item42">
-                      </div>
-                      <div class="col col-md-3">
-                        <input type="text" class="form-control align-r" placeholder="Baht" ng-model="vm.itemprice42">
-                      </div>
-                      <div class="col col-md-1">
-                        <button type="submit" class="btn btn-primary" ng-click="clear_vm(42)">clear</button>
-                      </div>
-                    </div>
-                    <div class="form-row">
-                      <div class="col col-md-8">
-                        <input type="text" class="form-control" placeholder="item" ng-model="vm.item51">
-                      </div>
-                      <div class="col col-md-3">
-                        <input type="text" class="form-control align-r" placeholder="Baht" ng-model="vm.itemprice51">
-                      </div>
-                      <div class="col col-md-1">
-                        <button type="submit" class="btn btn-primary" ng-click="clear_vm(51)">clear</button>
-                      </div>
-                    </div>
-                    <div class="form-row">
-                      <div class="col col-md-8">
-                        <input type="text" class="form-control" placeholder="item" ng-model="vm.item52">
-                      </div>
-                      <div class="col col-md-3">
-                        <input type="text" class="form-control align-r" placeholder="Baht" ng-model="vm.itemprice52">
-                      </div>
-                      <div class="col col-md-1">
-                        <button type="submit" class="btn btn-primary" ng-click="clear_vm(52)">clear</button>
-                      </div>
-                    </div>
-                    <div class="form-row">
-                      <div class="col col-md-8">
-                        <input type="text" class="form-control" placeholder="item" ng-model="vm.item53">
-                      </div>
-                      <div class="col col-md-3">
-                        <input type="text" class="form-control align-r" placeholder="Baht" ng-model="vm.itemprice53">
-                      </div>
-                      <div class="col col-md-1">
-                        <button type="submit" class="btn btn-primary" ng-click="clear_vm(53)">clear</button>
-                      </div>
-                    </div>
-
-                    <Br>
-
-                    <div class="form-group marginleft15">
-                      <button type="submit" class="btn btn-primary"
-                        ng-click="caltotal(vm.itemprice1,vm.itemprice2,vm.itemprice3,vm.itemprice41,vm.itemprice42,vm.itemprice51,vm.itemprice52,vm.itemprice53)">
-                        calculate</button>
-                    </div>
-                    <div ng-if="show_save">
-                      <div class="form-row">
-                        <div class="col col-md-8">
-                          <input type="text" class="form-control" placeholder="Total">
+                      <Br>
+                      <div flex layout="row">
+                        <div>
+                          จำนวน:
                         </div>
-                        <div class="col col-md-4">
-                          <input type="text" class="form-control align-r" placeholder="Baht" ng-model="gtotal">
+                        <div><input type="text" class="form-control width20vW" placeholder="" ng-model="vm.amount">
                         </div>
-
                       </div>
-
-                      <div class="col col-md-12">
-                        +/- {{diff_ratep}} % = {{gtotal1 | number:0}} - {{gtotal2 | number:0}}
+                      <Br>
+                      <div class="padleft">
+                        <button class="btn btn-basic width10vW"
+                          ng-click="save_drugdispense(tradename,defaultdose,fq,vm.amount,EN,HN)"
+                          title="">
+                          บันทึก
+                          <!-- <span class="glyphicon glyphicon-save"></span> -->
+                        </button>
                       </div>
-
-
-                      <div class="form-group" ng-if="show_btnsave">
-                        <button type="submit" class="btn btn-primary marginleft15 " ng-click="save_data(vm.relativename,vm.drname,vm.type,vm.loo,vm.los,vm.ICUlos,vm.ICUprice,vm.wardlos,vm.wardprice
-                            ,vm.item1,vm.itemprice1
-                            ,vm.item2,vm.itemprice2
-                            ,vm.item3,vm.itemprice3
-                            ,vm.item41,vm.itemprice41
-                            ,vm.item42,vm.itemprice42
-                            ,vm.item51,vm.itemprice51
-                            ,vm.item52,vm.itemprice52
-                            ,vm.item53,vm.itemprice53
-                            ,patientname,HN,gender,thaiDOB,age,vm.procedure,code,gtotal,ptuid
-                            )">
-                          save data</button>
-                      </div>
-
+                      <div class="marginleft15 fontm fontr5">{{lbl_savedrug}}</div>
                     </div>
-                  </form>
-
-                </md-card-content>
-              </md-card>
+                  </md-card-content>
+                </md-card>
+              </div>
             </div>
             <!-- page 2 show_print -->
             <div ng-if="p23" flex-xs flex-gt-xs="100" layout="column">
@@ -765,8 +587,7 @@
                           </button>
                         </div>
                         <div class="padleft">
-                          <button class="btn btn-basic width10vW marginleft15"
-                            ng-click="clear_UOM()" title="">
+                          <button class="btn btn-basic width10vW marginleft15" ng-click="clear_UOM()" title="">
                             clear
                             <!-- <span class="glyphicon glyphicon-save"></span> -->
                           </button>
@@ -803,9 +624,9 @@
                           <td class="align-l">{{detail.valuedescription}}</td>
                           <td class="align-l">
                             <button class="btn btn-basic width10vW marginleft15"
-                            ng-click="delete_UOM(detail.valuedescription,detail.locallanguagedesc,$index)" title="">
-                            delete
-                          </button>
+                              ng-click="delete_UOM(detail.valuedescription,detail.locallanguagedesc,$index)" title="">
+                              delete
+                            </button>
                           </td>
 
 
@@ -826,15 +647,14 @@
 
 
                         <div class="padleft">
-                          <button class="btn btn-basic width10vW marginleft15"
-                            ng-click="save_form(vm.valuedescription)" title="">
+                          <button class="btn btn-basic width10vW marginleft15" ng-click="save_form(vm.valuedescription)"
+                            title="">
                             บันทึก
                             <!-- <span class="glyphicon glyphicon-save"></span> -->
                           </button>
                         </div>
                         <div class="padleft">
-                          <button class="btn btn-basic width10vW marginleft15"
-                            ng-click="clear_form()" title="">
+                          <button class="btn btn-basic width10vW marginleft15" ng-click="clear_form()" title="">
                             clear
                             <!-- <span class="glyphicon glyphicon-save"></span> -->
                           </button>
@@ -850,9 +670,9 @@
                           <td class="align-l">{{detail.valuedescription}}</td>
                           <td class="align-l">
                             <button class="btn btn-basic width10vW marginleft15"
-                            ng-click="delete_form(detail.valuedescription,$index)" title="">
-                            delete
-                          </button>
+                              ng-click="delete_form(detail.valuedescription,$index)" title="">
+                              delete
+                            </button>
                           </td>
 
 
@@ -873,11 +693,11 @@
 
                       </div>
                       <Br>
-                        <div flex layout="row">
-                          <div class="padleft">
-                            <input type="text" name="i1" class="form-control width50vW marginleft15" placeholder="Eng"
-                              ng-model="vm.description" value="vm.description" />
-                          </div>
+                      <div flex layout="row">
+                        <div class="padleft">
+                          <input type="text" name="i1" class="form-control width50vW marginleft15" placeholder="Eng"
+                            ng-model="vm.description" value="vm.description" />
+                        </div>
                         <div class="padleft">
                           <button class="btn btn-basic width10vW marginleft15"
                             ng-click="save_frequency(vm.description,vm.locallangdesc)" title="">
@@ -886,8 +706,7 @@
                           </button>
                         </div>
                         <div class="padleft">
-                          <button class="btn btn-basic width10vW marginleft15"
-                            ng-click="clear_frequency()" title="">
+                          <button class="btn btn-basic width10vW marginleft15" ng-click="clear_frequency()" title="">
                             clear
                             <!-- <span class="glyphicon glyphicon-save"></span> -->
                           </button>
@@ -904,9 +723,9 @@
                           <td class="align-l">{{detail.description}}</td>
                           <td class="align-l">
                             <button class="btn btn-basic width10vW marginleft15"
-                            ng-click="deletefrequency(detail.description,detail.locallangdesc,$index)" title="">
-                            delete
-                          </button>
+                              ng-click="deletefrequency(detail.description,detail.locallangdesc,$index)" title="">
+                              delete
+                            </button>
                           </td>
 
 
