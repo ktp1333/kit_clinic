@@ -30,6 +30,9 @@ module.exports = function (app) {
     app.post('/local/newvisit', local.newvisit);
     app.post('/local/findvisit', local.findvisit);
     app.post('/local/save_order', local.save_order);
+    app.post('/local/findorder', local.findorder);
+    // app.post('/local/save_order', local.save_order);
+    
     var local_json = require('./local_json.route.js');
     app.post('/local_json/readjson', local_json.readjson);
     app.post('/local_json/writejson', local_json.writejson);

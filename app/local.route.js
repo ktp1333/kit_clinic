@@ -253,10 +253,6 @@ exports.newvisit = function (req, res) {
                 })
             });
     });
-
-
-
-  
 }
 exports.findvisit = function (req, res) {
 
@@ -276,7 +272,6 @@ exports.findvisit = function (req, res) {
         });
     });
 }
-
 exports.save_order = function (req, res) {
     MongoClient.connect(dbpath, (connectErr, db) => {
         var dbo = db;
@@ -325,5 +320,23 @@ exports.save_order = function (req, res) {
                 }
 
             });
+    });
+}
+exports.findorder = function (req, res) {
+    MongoClient.connect(dbpath, (connectErr, db) => {
+        var dbo = db;
+        dbo.collection(req.body.mfile).aggregate([{
+            $match: {
+                "statusflag": "A",
+                "HN": req.body.HN,
+                "EN": req.body.EN
+            }
+        },]).toArray((err, docs) => {
+            console.log(docs);
+            res.status(200).json({
+                data: docs
+            });
+            db.close();
+        });
     });
 }

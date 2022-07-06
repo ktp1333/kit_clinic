@@ -82,6 +82,8 @@ app.controller('a_clinicController', function ($scope, $location, $http, $timeou
     $scope.save_drugdispense = save_drugdispense;
     $scope.clearsearchdrug = clearsearchdrug;
     $scope.lbl_savedrug = '';
+    $scope.find_orders = find_orders;
+    $scope.show_listorders = true;
     //---------------------------------------
     var today = new Date();
     // $scope.ptnote = {};
@@ -470,6 +472,8 @@ app.controller('a_clinicController', function ($scope, $location, $http, $timeou
         $scope.show_setup_UOM = false;
         $scope.show_setup_form = false;
         $scope.show_setup_frequency = false;
+        $scope.show_listorders = false;
+
     }
     function setup_newdrug() {
         closeallpage4();
@@ -756,12 +760,24 @@ app.controller('a_clinicController', function ($scope, $location, $http, $timeou
             EN: EN,
             HN: HN,
         }).success(function (data) {
-            // find_frequencies();
+            find_orders(HN, EN);
             // $scope.frequencytxt="บันทึกรายการเรียบร้อย";
             // clear_frequency();
         });
     }
+    function find_orders(HN, EN) {
+        $http.post("/local/findorder", {
+            mfile: 'visit',
+            EN: EN,
+            HN: HN,
+        }).success(function (data) {
+            $scope.allorders = data.data[0].order;
+            console.log($scope.allorders);
 
+        });
+        $scope.show_listorders = true;
+        $scope.show_inputdrug = false;
+    }
     //--------library
 
     function gohome() {

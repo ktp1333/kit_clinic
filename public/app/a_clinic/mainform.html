@@ -172,7 +172,8 @@
                       <div><button type="submit" class="btn btn-primary"
                         ng-click="clearsearchdrug()">clear</button></div>
                     </div>
-                  
+
+
                     <div ng-if="show_finddrug">
                       <div style="min-height: 40vH;max-height:40vH;overflow-y:scroll;">
                         <table class="table">
@@ -194,7 +195,7 @@
 
                     <div ng-if="show_inputdrug">
                       <div flex layout="column" class="form-group">
-                        {{tradename}}
+                        <div class="fontm fontr5"> {{tradename}}</div>  
                         <Br>
                         <div flex layout="column">
                           <div class="padleft">
@@ -243,7 +244,27 @@
                       </div>
                       <div class="marginleft15 fontm fontr5">{{lbl_savedrug}}</div>
                     </div>
+
+
                   </md-card-content>
+                </md-card>
+              </div>
+              <div>
+                <md-card>
+                  <div ng-if="show_listorders">
+                    <div class="align-c fontm fontr5"> Prescription:</div>
+                    <div style="min-height: 60vH;max-height:60vH;overflow-y:scroll;">
+                      <table class="table">
+                        <tr ng-repeat="detail in allorders ">
+                          <td class="text3">{{ $index + 1 }}</td>
+                          <td class="align-l">{{detail.tradename}}</td>
+                          <td class="align-l">{{detail.defaultdose}}</td>
+                          <td class="align-l">{{detail.fq}}</td>
+                          <td class="align-l">{{detail.amount}}</td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
                 </md-card>
               </div>
             </div>
